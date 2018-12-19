@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27367379-23"></script>
+	<script type="module" src="js/index.js"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-27367379-23');
+	</script>
+
+	<title>Emma.club - Edit Profile</title>
+	<meta name="description" content="Emma.club" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+</head>
+<body>
+
+	<nav class="navbar">
+		<a class="logo">
+		</a>
+		<ul class="menu">
+			<li class="menu__item"><a href="library.html" class="menu__item-link">Library</a></li>
+			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
+			<li class="menu__item"><a href="sign-in.html" class="menu__item-link">Log out</a></li>
+		</ul>
+	</nav>
+
+	<section class="modal-wrapper">
+		<div class="modal-overlay"></div>
+		<div class="modal">
+			<button class="button button--round button--close">x</button>
+			<div class="avatar-container avatar-container--large">
+				<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
+			</div>
+			<label for="file" class="file-input-wrapper">
+				<span class="button">Upload avatar</span>
+				<input type="file" name="file" id="file" class="file-input">
+			</label>
+		</div>
+	</section>
+
+	<section class="container container--640">
+		<h1 class="page__header page__header--left">Edit Profile</h1>
+		<div class="account-info account-info--center">
+			<div class="avatar-container">
+				<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
+			</div>
+			<div class="half-button-wrapper">
+				<a class="button button-modal">Edit Avatar</a>
+				<a href="preview-banner.html" class="button">Edit Preview Banner</a>
+			</div>
+		</div>
+		<form action="">
+			<section class="form-wrapper">
+				<fieldset class="form">
+					<legend class="form__title">Personal details</legend>
+					<p class="form__field-title">Name</p>
+					<input type="text" name="name" placeholder="enter your name" class="form__field">
+					<p class="form__field-title">About</p>
+					<textarea name="about" id="about" placeholder="enter your description" class="form__field form__field--large" cols="30" rows="10"></textarea>
+					<!-- <input type="text" name="description" placeholder="enter your descripion" class="form__field form__field--large"> -->
+					<p class="form__field-title">Date of birth</p>
+					<input type="date" name="dateofbirth" class="form__field">
+					<p class="form__field-title">Occupation</p>
+					<select id="occupation" class="form__field">
+						<option value="">select an occupation</option>
+						<option value="webcammodel">Webcam Model</option>
+						<option value="pornstar">Porn Star</option>
+						<option value="actress">Actress</option>
+						<option value="student">Student</option>
+						<option value="model">Model</option>
+						<option value="stripper">Stripper</option>
+						<option value="naughtygirl">Naughty Girl</option>
+						<option value="dominatrix">Dominatrix</option>
+						<option value="fetishmodel">Fetish Model</option>
+						<option value="glamourmodel">Glamour Model</option>
+						<option value="supermodel">Super Model</option>
+						<option value="publicfigure">Public Figure</option>
+					</select>
+					<p class="form__field-title">Gender</p>
+					<select id="gender" class="form__field">
+						<option value="">select a gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="trans">Trans</option>
+						<option value="genderqueer">Genderqueer</option>
+					</select>
+					<p class="form__field-title">Orientation</p>
+					<select id="orientation" class="form__field">
+						<option value="">select an orientation</option>
+						<option value="straight">Straight</option>
+						<option value="gay">Gay</option>
+						<option value="lesbian">Lesbian</option>
+						<option value="bicurious">Bi-curious</option>
+						<option value="bisexual">Bisexual</option>
+						<option value="pansexual">Pansexual</option>
+						<option value="sapiosexual">Sapiosexual</option>
+						<option value="asexual">Asexual</option>
+					</select>
+					<p class="form__field-title">Country</p>
+					<select name="country" id="country" class="form__field"><option value="">select a country</option><option value="2">Afghanistan</option><option value="3">Andorra</option><option value="4">Antigua and Barbuda</option><option value="5">Anguilla</option><option value="6">Albania</option><option value="7">Armenia</option><option value="8">Angola</option><option value="9">Antarctica</option><option value="10">Argentina</option><option value="11">American Samoa</option><option value="12">Austria</option><option value="13">Australia</option><option value="14">Aruba</option><option value="15">Aland Islands</option><option value="16">Azerbaijan</option><option value="17">Bosnia-Herzegovina</option><option value="18">Barbados</option><option value="19">Bangladesh</option><option value="20">Belgium</option><option value="21">Burkina Faso</option><option value="22">Bulgaria</option><option value="23">Bahrein</option><option value="24">Burundi</option><option value="25">Benin</option><option value="26">St. Barthelemy</option><option value="27">Bermuda</option><option value="28">Brunei Darussalam</option><option value="29">Bolivia</option><option value="30">Caribbean Netherlands</option><option value="31">Brazil</option><option value="32">Bahamas</option><option value="33">Bhutan</option><option value="34">Bouvet Island</option><option value="35">Botswana</option><option value="36">Belarus</option><option value="37">Belize</option><option value="38">Canada</option><option value="39">Cocos Islands</option><option value="40">Congo, Democratic Republic of</option><option value="41">Central African Republic</option><option value="42">Congo</option><option value="43">Switzerland</option><option value="44">Cote d'Ivoire</option><option value="45">Cook Islands</option><option value="46">Chile</option><option value="47">Cameroon</option><option value="48">China</option><option value="49">Columbia</option><option value="50">Costa Rica</option><option value="51">Cuba</option><option value="52">Cape Verde</option><option value="53">Curacao</option><option value="54">Christmas Island</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="57">Germany</option><option value="58">Djibouti</option><option value="59">Denmark</option><option value="60">Dominica</option><option value="61">Dominican Republic</option><option value="62">Algeria</option><option value="63">Ecuador</option><option value="64">Estonia</option><option value="65">Egypt</option><option value="66">Western Sahara</option><option value="67">Eritrea</option><option value="68">Spain</option><option value="69">Ethiopia</option><option value="70">Finland</option><option value="71">Fiji Islands</option><option value="72">Falkland Islands</option><option value="73">Micronesia, Federated States of</option><option value="74">Faeroe Islands</option><option value="75">France</option><option value="76">Gabon</option><option value="77">United Kingdom</option><option value="78">Grenada</option><option value="79">Georgia</option><option value="80">French Guiana</option><option value="81">Guernsey</option><option value="82">Ghana</option><option value="83">Gibraltar</option><option value="84">Greenland</option><option value="85">Gambia</option><option value="86">Guinea</option><option value="87">Guadeloupe</option><option value="88">Equatorial Guinea</option><option value="89">Greece</option><option value="90">South Georgia/Sandwich Islands</option><option value="91">Guatemala</option><option value="92">Guam</option><option value="93">Guinea-Bissau</option><option value="94">Guyana</option><option value="95">Hong Kong</option><option value="96">Heard and McDonald Islands</option><option value="97">Honduras</option><option value="98">Croatia</option><option value="99">Haiti</option><option value="100">Hungary</option><option value="101">Indonesia</option><option value="102">Ireland</option><option value="103">Israel</option><option value="104">Isle of Man</option><option value="105">India</option><option value="106">British Indian Ocean Territory</option><option value="107">Iraq</option><option value="108">Iran</option><option value="109">Iceland</option><option value="110">Italy</option><option value="111">Jersey</option><option value="112">Jamaica</option><option value="113">Jordan</option><option value="114">Japan</option><option value="115">Kenya</option><option value="116">Kyrgyzstan</option><option value="117">Cambodia</option><option value="118">Kiribati</option><option value="119">Comoros</option><option value="120">St.Kitts and Nevis</option><option value="121">North Korea</option><option value="122">South Korea</option><option value="123">Kuwait</option><option value="124">Cayman Islands</option><option value="125">Kazakhstan</option><option value="126">Laos</option><option value="127">Lebanon</option><option value="128">St.Lucia</option><option value="129">Liechtenstein</option><option value="130">Sri Lanka</option><option value="131">Liberia</option><option value="132">Lesotho</option><option value="133">Lithuania</option><option value="134">Luxembourg</option><option value="135">Latvia</option><option value="136">Libyan Arab Jamahiriya</option><option value="137">Morocco</option><option value="138">Monaco</option><option value="139">Republic of Moldova</option><option value="140">Montenegro</option><option value="141">Saint Martin</option><option value="142">Madagascar</option><option value="143">Marshall Islands</option><option value="144">Macedonia</option><option value="145">Mali</option><option value="146">Myanmar</option><option value="147">Mongolia</option><option value="148">Macau</option><option value="149">Northern Mariana Islands</option><option value="150">Martinique</option><option value="151">Mauritania</option><option value="152">Montserrat</option><option value="153">Malta</option><option value="154">Mauritius</option><option value="155">Maldives</option><option value="156">Malawi</option><option value="157">Mexico</option><option value="158">Malaysia</option><option value="159">Mozambique</option><option value="160">Namibia</option><option value="161">New Caladonia</option><option value="162">Niger</option><option value="163">Norfolk Island</option><option value="164">Nigeria</option><option value="165">Nicaragua</option><option value="166">Netherlands</option><option value="167">Norway</option><option value="168">Nepal</option><option value="169">Nauru</option><option value="170">Niue</option><option value="171">New Zealand</option><option value="172">Oman</option><option value="173">Panama</option><option value="174">Peru</option><option value="175">French Polynesia</option><option value="176">Papua New Guinea</option><option value="177">Philippines</option><option value="178">Pakistan</option><option value="179">Poland</option><option value="180">St.Pierre and Miquelon</option><option value="181">Pitcairn</option><option value="182">Puerto Rico</option><option value="183">Palestinian Territory</option><option value="184">Portugal</option><option value="185">Palau</option><option value="186">Paraguay</option><option value="187">Qatar</option><option value="188">Reunion</option><option value="189">Romania</option><option value="190">Serbia</option><option value="191">Russian Federation</option><option value="192">Rwanda</option><option value="193">Saudi Arabia</option><option value="194">Solomon Islands</option><option value="195">Seychelles</option><option value="196">Sudan</option><option value="197">Sweden</option><option value="198">Singapore</option><option value="199">St.Helena</option><option value="200">Slovenia</option><option value="201">Svalbard and Jan Mayen Islands</option><option value="202">Slovak Republic</option><option value="203">Sierra Leone</option><option value="204">San Marino</option><option value="205">Senegal</option><option value="206">Somalia</option><option value="207">Suriname</option><option value="208">South Sudan</option><option value="209">Sao Tome and Principe</option><option value="210">El Salvador</option><option value="211">St. Maarten</option><option value="212">Syria</option><option value="213">Swaziland</option><option value="214">Turks and Caicos Islands</option><option value="215">Chad</option><option value="216">French Southern Territories</option><option value="217">Togo</option><option value="218">Thailand</option><option value="219">Tajikistan</option><option value="220">Tokelau</option><option value="221">Timor Leste</option><option value="222">Turkmenistan</option><option value="223">Tunesia</option><option value="224">Tonga</option><option value="225">Turkey</option><option value="226">Trinidad and Tobago</option><option value="227">Tuvalu</option><option value="228">Taiwan</option><option value="229">Tanzania</option><option value="230">Ukraine</option><option value="231">Uganda</option><option value="232">United Arab Emirates</option><option value="233">United States Outlying Islands</option><option value="234">U.S.A.</option><option value="235">Uruguay</option><option value="236">Uzbekistan</option><option value="237">Vatican City</option><option value="238">St. Vincent and the Grenadines</option><option value="239">Venezuela</option><option value="240">British Virgin Islands</option><option value="241">US Virgin Islands</option><option value="242">Vietnam</option><option value="243">Vanuatu</option><option value="244">Wallis and Fortuna Islands</option><option value="245">Samoa</option><option value="246">Yemen</option><option value="247">Mayotte</option><option value="248">South Africa</option><option value="249">Zambia</option><option value="250">Zimbabwe</option></select>
+					<p class="form__field-title">Nationality</p>
+					<select name="nationality" id="nationality" class="form__field"><option value="">select a nationality</option><option value="2">Afghanistan</option><option value="3">Andorra</option><option value="4">Antigua and Barbuda</option><option value="5">Anguilla</option><option value="6">Albania</option><option value="7">Armenia</option><option value="8">Angola</option><option value="9">Antarctica</option><option value="10">Argentina</option><option value="11">American Samoa</option><option value="12">Austria</option><option value="13">Australia</option><option value="14">Aruba</option><option value="15">Aland Islands</option><option value="16">Azerbaijan</option><option value="17">Bosnia-Herzegovina</option><option value="18">Barbados</option><option value="19">Bangladesh</option><option value="20">Belgium</option><option value="21">Burkina Faso</option><option value="22">Bulgaria</option><option value="23">Bahrein</option><option value="24">Burundi</option><option value="25">Benin</option><option value="26">St. Barthelemy</option><option value="27">Bermuda</option><option value="28">Brunei Darussalam</option><option value="29">Bolivia</option><option value="30">Caribbean Netherlands</option><option value="31">Brazil</option><option value="32">Bahamas</option><option value="33">Bhutan</option><option value="34">Bouvet Island</option><option value="35">Botswana</option><option value="36">Belarus</option><option value="37">Belize</option><option value="38">Canada</option><option value="39">Cocos Islands</option><option value="40">Congo, Democratic Republic of</option><option value="41">Central African Republic</option><option value="42">Congo</option><option value="43">Switzerland</option><option value="44">Cote d'Ivoire</option><option value="45">Cook Islands</option><option value="46">Chile</option><option value="47">Cameroon</option><option value="48">China</option><option value="49">Columbia</option><option value="50">Costa Rica</option><option value="51">Cuba</option><option value="52">Cape Verde</option><option value="53">Curacao</option><option value="54">Christmas Island</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="57">Germany</option><option value="58">Djibouti</option><option value="59">Denmark</option><option value="60">Dominica</option><option value="61">Dominican Republic</option><option value="62">Algeria</option><option value="63">Ecuador</option><option value="64">Estonia</option><option value="65">Egypt</option><option value="66">Western Sahara</option><option value="67">Eritrea</option><option value="68">Spain</option><option value="69">Ethiopia</option><option value="70">Finland</option><option value="71">Fiji Islands</option><option value="72">Falkland Islands</option><option value="73">Micronesia, Federated States of</option><option value="74">Faeroe Islands</option><option value="75">France</option><option value="76">Gabon</option><option value="77">United Kingdom</option><option value="78">Grenada</option><option value="79">Georgia</option><option value="80">French Guiana</option><option value="81">Guernsey</option><option value="82">Ghana</option><option value="83">Gibraltar</option><option value="84">Greenland</option><option value="85">Gambia</option><option value="86">Guinea</option><option value="87">Guadeloupe</option><option value="88">Equatorial Guinea</option><option value="89">Greece</option><option value="90">South Georgia/Sandwich Islands</option><option value="91">Guatemala</option><option value="92">Guam</option><option value="93">Guinea-Bissau</option><option value="94">Guyana</option><option value="95">Hong Kong</option><option value="96">Heard and McDonald Islands</option><option value="97">Honduras</option><option value="98">Croatia</option><option value="99">Haiti</option><option value="100">Hungary</option><option value="101">Indonesia</option><option value="102">Ireland</option><option value="103">Israel</option><option value="104">Isle of Man</option><option value="105">India</option><option value="106">British Indian Ocean Territory</option><option value="107">Iraq</option><option value="108">Iran</option><option value="109">Iceland</option><option value="110">Italy</option><option value="111">Jersey</option><option value="112">Jamaica</option><option value="113">Jordan</option><option value="114">Japan</option><option value="115">Kenya</option><option value="116">Kyrgyzstan</option><option value="117">Cambodia</option><option value="118">Kiribati</option><option value="119">Comoros</option><option value="120">St.Kitts and Nevis</option><option value="121">North Korea</option><option value="122">South Korea</option><option value="123">Kuwait</option><option value="124">Cayman Islands</option><option value="125">Kazakhstan</option><option value="126">Laos</option><option value="127">Lebanon</option><option value="128">St.Lucia</option><option value="129">Liechtenstein</option><option value="130">Sri Lanka</option><option value="131">Liberia</option><option value="132">Lesotho</option><option value="133">Lithuania</option><option value="134">Luxembourg</option><option value="135">Latvia</option><option value="136">Libyan Arab Jamahiriya</option><option value="137">Morocco</option><option value="138">Monaco</option><option value="139">Republic of Moldova</option><option value="140">Montenegro</option><option value="141">Saint Martin</option><option value="142">Madagascar</option><option value="143">Marshall Islands</option><option value="144">Macedonia</option><option value="145">Mali</option><option value="146">Myanmar</option><option value="147">Mongolia</option><option value="148">Macau</option><option value="149">Northern Mariana Islands</option><option value="150">Martinique</option><option value="151">Mauritania</option><option value="152">Montserrat</option><option value="153">Malta</option><option value="154">Mauritius</option><option value="155">Maldives</option><option value="156">Malawi</option><option value="157">Mexico</option><option value="158">Malaysia</option><option value="159">Mozambique</option><option value="160">Namibia</option><option value="161">New Caladonia</option><option value="162">Niger</option><option value="163">Norfolk Island</option><option value="164">Nigeria</option><option value="165">Nicaragua</option><option value="166">Netherlands</option><option value="167">Norway</option><option value="168">Nepal</option><option value="169">Nauru</option><option value="170">Niue</option><option value="171">New Zealand</option><option value="172">Oman</option><option value="173">Panama</option><option value="174">Peru</option><option value="175">French Polynesia</option><option value="176">Papua New Guinea</option><option value="177">Philippines</option><option value="178">Pakistan</option><option value="179">Poland</option><option value="180">St.Pierre and Miquelon</option><option value="181">Pitcairn</option><option value="182">Puerto Rico</option><option value="183">Palestinian Territory</option><option value="184">Portugal</option><option value="185">Palau</option><option value="186">Paraguay</option><option value="187">Qatar</option><option value="188">Reunion</option><option value="189">Romania</option><option value="190">Serbia</option><option value="191">Russian Federation</option><option value="192">Rwanda</option><option value="193">Saudi Arabia</option><option value="194">Solomon Islands</option><option value="195">Seychelles</option><option value="196">Sudan</option><option value="197">Sweden</option><option value="198">Singapore</option><option value="199">St.Helena</option><option value="200">Slovenia</option><option value="201">Svalbard and Jan Mayen Islands</option><option value="202">Slovak Republic</option><option value="203">Sierra Leone</option><option value="204">San Marino</option><option value="205">Senegal</option><option value="206">Somalia</option><option value="207">Suriname</option><option value="208">South Sudan</option><option value="209">Sao Tome and Principe</option><option value="210">El Salvador</option><option value="211">St. Maarten</option><option value="212">Syria</option><option value="213">Swaziland</option><option value="214">Turks and Caicos Islands</option><option value="215">Chad</option><option value="216">French Southern Territories</option><option value="217">Togo</option><option value="218">Thailand</option><option value="219">Tajikistan</option><option value="220">Tokelau</option><option value="221">Timor Leste</option><option value="222">Turkmenistan</option><option value="223">Tunesia</option><option value="224">Tonga</option><option value="225">Turkey</option><option value="226">Trinidad and Tobago</option><option value="227">Tuvalu</option><option value="228">Taiwan</option><option value="229">Tanzania</option><option value="230">Ukraine</option><option value="231">Uganda</option><option value="232">United Arab Emirates</option><option value="233">United States Outlying Islands</option><option value="234">U.S.A.</option><option value="235">Uruguay</option><option value="236">Uzbekistan</option><option value="237">Vatican City</option><option value="238">St. Vincent and the Grenadines</option><option value="239">Venezuela</option><option value="240">British Virgin Islands</option><option value="241">US Virgin Islands</option><option value="242">Vietnam</option><option value="243">Vanuatu</option><option value="244">Wallis and Fortuna Islands</option><option value="245">Samoa</option><option value="246">Yemen</option><option value="247">Mayotte</option><option value="248">South Africa</option><option value="249">Zambia</option><option value="250">Zimbabwe</option></select>
+					<p class="form__field-title">Language(s)</p>
+					<input type="text" name="languages" placeholder="enter your language(s)" class="form__field">
+					<!-- <select id="option-languages-ids" name="option_languages[_ids][]" class="form__field form__field--multiple" multiple="multiple"><option value="1">English</option><option value="2">Afar</option><option value="3">Abkhazian</option><option value="4">Afrikaans</option><option value="5">Amharic</option><option value="6">Arabic</option><option value="7">Assamese</option><option value="8">Aymara</option><option value="9">Azerbaijani</option><option value="10">Bashkir</option><option value="11">Belarusian</option><option value="12">Bulgarian</option><option value="13">Bihari</option><option value="14">Bislama</option><option value="15">Bengali/Bangla</option><option value="16">Tibetan</option><option value="17">Breton</option><option value="18">Catalan</option><option value="19">Corsican</option><option value="20">Czech</option><option value="21">Welsh</option><option value="22">Danish</option><option value="23">German</option><option value="24">Bhutani</option><option value="25">Greek</option><option value="26">Esperanto</option><option value="27">Spanish</option><option value="28">Estonian</option><option value="29">Basque</option><option value="30">Persian</option><option value="31">Finnish</option><option value="32">Fiji</option><option value="33">Faeroese</option><option value="34">French</option><option value="35">Frisian</option><option value="36">Irish</option><option value="37">Scots/Gaelic</option><option value="38">Galician</option><option value="39">Guarani</option><option value="40">Gujarati</option><option value="41">Hausa</option><option value="42">Hindi</option><option value="43">Croatian</option><option value="44">Hungarian</option><option value="45">Armenian</option><option value="46">Interlingua</option><option value="47">Interlingue</option><option value="48">Inupiak</option><option value="49">Indonesian</option><option value="50">Icelandic</option><option value="51">Italian</option><option value="52">Hebrew</option><option value="53">Japanese</option><option value="54">Yiddish</option><option value="55">Javanese</option><option value="56">Georgian</option><option value="57">Kazakh</option><option value="58">Greenlandic</option><option value="59">Cambodian</option><option value="60">Kannada</option><option value="61">Korean</option><option value="62">Kashmiri</option><option value="63">Kurdish</option><option value="64">Kirghiz</option><option value="65">Latin</option><option value="66">Lingala</option><option value="67">Laothian</option><option value="68">Lithuanian</option><option value="69">Latvian/Lettish</option><option value="70">Malagasy</option><option value="71">Maori</option><option value="72">Macedonian</option><option value="73">Malayalam</option><option value="74">Mongolian</option><option value="75">Moldavian</option><option value="76">Marathi</option><option value="77">Malay</option><option value="78">Maltese</option><option value="79">Burmese</option><option value="80">Nauru</option><option value="81">Nepali</option><option value="82">Dutch</option><option value="83">Norwegian</option><option value="84">Occitan</option><option value="85">(Afan)/Oromoor/Oriya</option><option value="86">Punjabi</option><option value="87">Polish</option><option value="88">Pashto/Pushto</option><option value="89">Portuguese</option><option value="90">Quechua</option><option value="91">Rhaeto-Romance</option><option value="92">Kirundi</option><option value="93">Romanian</option><option value="94">Russian</option><option value="95">Kinyarwanda</option><option value="96">Sanskrit</option><option value="97">Sindhi</option><option value="98">Sangro</option><option value="99">Serbo-Croatian</option><option value="100">Singhalese</option><option value="101">Slovak</option><option value="102">Slovenian</option><option value="103">Samoan</option><option value="104">Shona</option><option value="105">Somali</option><option value="106">Albanian</option><option value="107">Serbian</option><option value="108">Siswati</option><option value="109">Sesotho</option><option value="110">Sundanese</option><option value="111">Swedish</option><option value="112">Swahili</option><option value="113">Tamil</option><option value="114">Telugu</option><option value="115">Tajik</option><option value="116">Thai</option><option value="117">Tigrinya</option><option value="118">Turkmen</option><option value="119">Tagalog</option><option value="120">Setswana</option><option value="121">Tonga</option><option value="122">Turkish</option><option value="123">Tsonga</option><option value="124">Tatar</option><option value="125">Twi</option><option value="126">Ukrainian</option><option value="127">Urdu</option><option value="128">Uzbek</option><option value="129">Vietnamese</option><option value="130">Volapuk</option><option value="131">Wolof</option><option value="132">Xhosa</option><option value="133">Yoruba</option><option value="134">Chinese</option><option value="135">Zulu</option></select> -->
+					<p class="form__field-title">Status</p>
+					<select id="status" class="form__field">
+						<option value="">select a status</option>
+						<option value="single">Single</option>
+						<option value="relationship">In A Relationship</option>
+						<option value="married">Married</option>
+						<option value="engaged">Engaged</option>
+						<option value="openrelationship">Open Relationship</option>
+						<option value="complicated">It's Complicated</option>
+						<option value="widowed">Widowed</option>
+						<option value="divorced">Divorced</option>
+					</select>
+					<p class="form__field-title">Education</p>
+					<select id="education" class="form__field">
+						<option value="">select an education</option>
+						<option value="schooloflife">School of life</option>
+						<option value="selfmade">Self-Made</option>
+						<option value="highsschooldiploma">High School Diploma</option>
+						<option value="vocationalschool">Vocational School</option>
+						<option value="communitycollege">Community College</option>
+						<option value="collegeuniversitydegree">College or University Degree</option>
+						<option value="certificate">Certificate(s)</option>
+						<option value="bachelorsip">Bachelor's In Progress</option>
+						<option value="bachelors">Bachelor's</option>
+						<option value="mastersip">Master's In Progress</option>
+						<option value="masters">Master's</option>
+						<option value="phdip">PHD In Progress</option>
+						<option value="phd">PHD</option>
+					</select>
+					<p class="form__field-title">Education Major</p>
+					<input type="text" name="major" placeholder="enter your education major" class="form__field">
+					<p class="form__field-title">Astrology Sign</p>
+					<select id="astrogolysign" class="form__field">
+						<option value="">select a sign</option>
+						<option value="aries">Aries</option>
+						<option value="taurus">Taurus</option>
+						<option value="gemini">Gemini</option>
+						<option value="cancer">Cancer</option>
+						<option value="leo">Leo</option>
+						<option value="virgo">Virgo</option>
+						<option value="libra">Libra</option>
+						<option value="scorpio">Scorpio</option>
+						<option value="sagittarius">Sagittarius</option>
+						<option value="capricorn">Capricorn</option>
+						<option value="aquarius">Aquarius</option>
+						<option value="pisces">Pisces</option>
+						<option value="dontbelieve">I don't believe in Astrology</option>
+					</select>
+				</fieldset>
+				<fieldset class="form">
+					<legend class="form__title">Body details</legend>
+					<p class="form__field-title">Ethnicity</p>
+					<select id="ethnicity" class="form__field">
+						<option value="">select an ethnicity</option>
+						<option value="asian">Asian</option>
+						<option value="blackebony">Black / Ebony</option>
+						<option value="eastindian">East Indian</option>
+						<option value="latinohispanic">Latino / Hispanic</option>
+						<option value="mixed">Mixed</option>
+						<option value="middleeastern">Middle Eastern</option>
+						<option value="nativeamericanalaskan">Native American / Alaskan</option>
+						<option value="pacificislander">Pacific Islander</option>
+						<option value="whitecaucasian">White / Caucasian</option>
+						<option value="other">Other</option>
+					</select>
+					<p class="form__field-title">Height</p>
+					<input type="number" name="height" placeholder="enter your height" step="0.01" class="form__field">
+					<p class="form__field-title">Weight</p>
+					<input type="number" name="weight" placeholder="enter your weight" step="0.1" class="form__field">
+					<p class="form__field-title">Hair Color</p>
+					<select id="haircolor" class="form__field">
+						<option value="">select a color</option>
+						<option value="black">Black</option>
+						<option value="blonde">Blonde</option>
+						<option value="darkblonde">Dark Blonde</option>
+						<option value="platinumblonde">Platinum Blonde</option>
+						<option value="brunette">Brunette</option>
+						<option value="darkbrown">Dark Brown</option>
+						<option value="redhead">Redhead</option>
+						<option value="auburn">Auburn</option>
+						<option value="blue">Blue</option>
+						<option value="green">Green</option>
+						<option value="grey">Grey</option>
+						<option value="pink">Pink</option>
+						<option value="purple">Purple</option>
+						<option value="orange">Orange</option>
+						<option value="saltpepper">Salt & Pepper</option>
+						<option value="many">Many</option>
+					</select>
+					<p class="form__field-title">Eye Color</p>
+					<select id="eyecolor" class="form__field">
+						<option value="">select a color</option>
+						<option value="black">Black</option>
+						<option value="blue">Blue</option>
+						<option value="brown">Brown</option>
+						<option value="grey">Grey</option>
+						<option value="green">Green</option>
+						<option value="hazel">Hazel</option>
+					</select>
+					<p class="form__field-title">Body Type</p>
+					<select id="bodytype" class="form__field">
+						<option value="">select a body type</option>
+						<option value="slender">Slender</option>
+						<option value="athletictoned">Athletic & Toned</option>
+						<option value="fewextrapounds">A Few Extra Pounds</option>
+						<option value="aboutaverage">About Average</option>
+						<option value="stocky">Stocky</option>
+						<option value="voluptuous">Voluptuous</option>
+						<option value="veryvoluptuous">Very Voluptuous</option>
+					</select>
+					<p class="form__field-title">Breast Measurement</p>
+					<input type="number" name="breastmeasurement" placeholder="enter your breast measurement" step="0.1" class="form__field">
+					<p class="form__field-title">Breast Type</p>
+					<select id="breasttype" class="form__field">
+						<option value="">select a breast type</option>
+						<option value="natural">Natural</option>
+						<option value="silicon">Silicon</option>
+						<option value="saline">Saline</option>
+						<option value="cohesivegel">Cohesive Gel</option>
+					</select>
+					<p class="form__field-title">Breast Implant Size</p>
+					<select id="breastsize" class="form__field">
+						<option value="">select a breast size</option>
+						<option value="xs">XS</option>
+						<option value="s">S</option>
+						<option value="m">M</option>
+						<option value="l">L</option>
+						<option value="xl">XL</option>
+						<option value="xxl">XXL</option>
+						<option value="xxxl">XXXL</option>
+					</select>
+					<p class="form__field-title">Waist Measurement</p>
+					<input type="number" name="waistmeasurement" placeholder="enter your waist measurement" step="0.1" class="form__field">
+					<p class="form__field-title">Hips Measurement</p>
+					<input type="number" name="hipsmeasurement" placeholder="enter your hips measurement" step="0.1" class="form__field">
+					<div class="form__extras-wrapper">
+						<input type="checkbox" id="tattoos" name="tattoos" class="form__checkbox">
+						<label for="tattoos" class="form__checkbox-label">Tattoos</label>
+					</div>
+				</fieldset>
+			</section>
+			<legend class="form__title">Contact details</legend>
+			<section class="form-wrapper form-wrapper--half form-wrapper--responsive">
+				<fieldset class="form">
+					<p class="form__field-title">Post name</p>
+					<input type="text" name="postname" placeholder="enter your post name" class="form__field">
+				</fieldset>
+				<fieldset class="form">
+					<p class="form__field-title">Address</p>
+					<input type="text" name="address" placeholder="enter your current address" class="form__field">
+				</fieldset>
+				<fieldset class="form">
+					<p class="form__field-title">Postal code</p>
+					<input type="text" name="postalcode" placeholder="enter your postal code" class="form__field">
+				</fieldset>
+				<fieldset class="form">
+					<p class="form__field-title">City</p>
+					<input type="text" name="city" placeholder="enter your city" class="form__field">
+				</fieldset>
+			</section>
+			<legend class="form__title">Other</legend>
+			<section class="form-wrapper form-wrapper--third form-wrapper--narrow">
+				<fieldset class="form form--full">
+					<p class="form__field-title">Websites</p>
+					<textarea name="websites" id="websites" placeholder="you haven't added any websites" class="form__field form__field--large" cols="30" rows="10"></textarea>
+				</fieldset>
+				<fieldset class="form form--full">
+					<p class="form__field-title">Camsites</p>
+					<textarea name="camsites" id="camsites" placeholder="you haven't added any camsites" class="form__field form__field--large" cols="30" rows="10"></textarea>
+				</fieldset>
+				<fieldset class="form form--full">
+					<p class="form__field-title">Stripclubs</p>
+					<textarea name="stripclubs" id="stripclubs" placeholder="you haven't added any stripclubs" class="form__field form__field--large" cols="30" rows="10"></textarea>
+				</fieldset>
+			</section>
+			<input type="submit" name="button" value="accept" id="button" class="form__button button button--center">
+		</form>
+	</section>
+	
+</body>
+</html>

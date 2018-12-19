@@ -1,0 +1,24 @@
+.tag {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: $pink;
+	color: $white;
+	font-size: $font-size-small;
+	border: 2px solid $pink;
+	border-radius: 20px;
+	padding: 2px $font-size-regular;
+	margin: 5px 10px 5px 0;
+	cursor: pointer;
+
+	&--add {
+		background: $light-gray;
+		border-color: $light-gray;
+		cursor: unset;
+	}
+
+	i {
+		color: $white;
+		margin: 3px 0 0 5px;
+	}
+}

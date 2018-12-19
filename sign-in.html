@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27367379-23"></script>
+	<script type="module" src="js/index.js"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-27367379-23');
+	</script>
+
+	<title>Emma.club - Sign in</title>
+	<meta name="description" content="Emma.club" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar">
+		<a class="logo">
+		</a>
+		<ul class="menu">
+			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
+		</ul>
+	</nav>
+
+	<section class="modal-wrapper">
+		<div class="modal-overlay"></div>
+		<div class="modal">
+			<button class="button button--round button--close">x</button>
+			<form action="">
+				<h2 class="page__header">Reset Password</h2>
+				<fieldset class="form form--dynamic">
+					<legend class="form__legend">please enter your e-mail address and we will send you instructions how to reset your password</legend>
+					<input type="email" name="email" placeholder="please enter your e-mail address" class="form__field" autocomplete="off">
+					<div class="half-button-wrapper">
+						<button class="button button-cancel button--ghost button--half">Cancel</button>
+						<input type="submit" name="button" value="send" id="button" class="form__button button button--half">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+	<section class="container container--center">
+		<div class="form-popup">
+			<h1 class="page__header">Sign in</h1>
+			<form action="">
+				<fieldset class="form">
+					<legend class="form__legend">Please enter your e-mail and password</legend>
+					<p class="form__field-title">E-mail</p>
+					<input type="email" name="email" placeholder="enter your e-mail address" class="form__field" autocomplete="off">
+					<p class="form__field-title">Password</p>
+					<input type="password" name="password" placeholder="enter your password" class="form__field" autocomplete="off">
+					<div class="form__extras-wrapper">
+						<input type="checkbox" id="remember" name="remember" value="remember me" class="form__checkbox" checked>
+						<label for="remember" class="form__checkbox-label">Remember me</label>
+						<a class="form__link button-modal">Forgot password?</a>
+					</div>
+					<input type="submit" name="button" value="sign in" id="button" class="form__button button button--full">
+					<p class="form__text">Don't have an account? <a href="register.html" class="form__text-link">Register now</a></p>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+</body>
+</html>

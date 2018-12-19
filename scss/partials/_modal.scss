@@ -1,0 +1,46 @@
+.modal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	background: $white;
+	padding: 20px;
+	z-index: 1000;
+	opacity: 0;
+	transform: translateY(-100vh);
+	transition: transform 0.1s ease-in-out 0.1s, opacity 0.05s ease-in-out;
+
+	&--active {
+		opacity: 1;
+		transform: translateY(0);
+		transition: transform 0.2s ease-in-out, opacity 0.05s ease-in-out;
+	}
+
+	&-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		top: 50vh;
+		left: 50vw;
+		z-index: 1000;
+	}
+
+	&-overlay {
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		background: #000;
+		opacity: 0;
+		z-index: 990;
+		transform: translateY(100%);
+		transition: transform 0.01s ease-in-out, opacity 0.19s ease-in-out 0.01s;
+
+		&--active {
+			opacity: 0.5;
+			transform: translateY(0);
+			transition: transform 0.01s ease-in-out, opacity 0.14s ease-in-out 0.01s;
+		}
+	}
+}

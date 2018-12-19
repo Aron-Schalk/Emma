@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600');
+
+body {
+	font-family: $font-family-regular;
+	font-size: $font-size-regular;
+	font-weight: $font-weight-normal;
+	line-height: 1.5;
+	color: $dark-gray;
+}
+
+.page__header {
+	font-family: $font-family-regular;
+	font-size: $font-size-xx-large;
+	font-weight: $font-weight-light;
+	line-height: 1;
+	color: $red;
+	letter-spacing: 1px;
+	margin-bottom: 40px;
+}
+
+.fa, .fas {
+	font-size: $font-size-small;
+}
