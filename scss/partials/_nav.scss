@@ -3,6 +3,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-content: center;
+	height: 70px;
 	background: $red;
 	padding: 0 20px;
 }
@@ -34,5 +35,42 @@
 			text-transform: uppercase;
 			padding: 24px 20px;
 		}
+	}
+}
+
+.hamburger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 26px;
+	height: 20px;
+	transition: all ease-in-out 0.05s;
+
+	&-container {
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		padding: 8px;
+		background: $white;
+		border-radius: 2px;
+		z-index: 1;
+		cursor: pointer;
+		transition: all ease-in-out 0.05s;
+
+		&:hover {
+			background: transparent;
+
+			.hamburger {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&__bar {
+		width: 100%;
+		height: 4px;
+		background: $red;
+		border-radius: 20px;
 	}
 }

@@ -73,6 +73,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  height: 70px;
   background: #b21717;
   padding: 0 20px; }
 
@@ -95,6 +96,34 @@ body {
       color: #fff;
       text-transform: uppercase;
       padding: 24px 20px; }
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 26px;
+  height: 20px;
+  transition: all ease-in-out 0.05s; }
+  .hamburger-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 2px;
+    z-index: 1;
+    cursor: pointer;
+    transition: all ease-in-out 0.05s; }
+    .hamburger-container:hover {
+      background: transparent; }
+      .hamburger-container:hover .hamburger {
+        transform: scale(1.05); }
+  .hamburger__bar {
+    width: 100%;
+    height: 4px;
+    background: #b21717;
+    border-radius: 20px; }
 
 .container {
   width: 100%;
@@ -576,9 +605,8 @@ input[type=range]::-webkit-slider-thumb {
   padding: 10px 20px;
   margin: 20px 10px;
   cursor: pointer;
-  transition: background-color ease-in-out 0.1s, border-color ease-in-out 0.1s; }
+  transition: all ease-in-out 0.1s; }
   .button:hover {
-    color: #fff;
     background: #e21717;
     border-color: #e21717;
     transform: scale(1.01); }
