@@ -1,39 +1,57 @@
-.navbar {
-	position: sticky;
-	display: flex;
-	justify-content: flex-end;
-	align-content: center;
-	height: 70px;
-	background: $red;
-	padding: 0 20px;
-}
-
 .menu {
 	display: flex;
-	list-style-type: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 200px;
+	height: 100vh;
+	background: $red;
+	padding: 86px 0;
+	z-index: 90;
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-content: flex-start;
+		list-style-type: none;
+		padding: 0 16px;
+	}
+
 	&__item {
-		height: 70px;
+		padding: 16px;
+		transition: all ease-in-out 0.05s;
 
 		&:hover {
-			background: $white;
-
-			.menu__item-link {
-				color: $red;
-			}
-		}
-
-		&:active {
-			font-weight: $font-weight-bold;
+			transform: translateX(2px);
 		}
 
 		&-link {
-			display: flex;
-			align-items: center;
+			font-size: $font-size-regular;
+			font-weight: $font-weight-bold;
+			color: $white;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.submenu {
+	width: 200px;
+	background: $dark-red;
+	padding: 14px;
+	margin-left: -16px;
+
+	&__item {
+		padding: 16px;
+
+		&-link {
 			font-size: $font-size-small;
 			font-weight: $font-weight-bold;
 			color: $white;
 			text-transform: uppercase;
-			padding: 24px 20px;
 		}
 	}
 }
@@ -51,25 +69,25 @@
 		position: fixed;
 		top: 20px;
 		right: 20px;
-		padding: 8px;
+		padding: 13px;
 		background: $white;
 		border-radius: 2px;
-		z-index: 1;
+		z-index: 100;
 		cursor: pointer;
 		transition: all ease-in-out 0.05s;
 
 		&:hover {
 			background: transparent;
 
-			.hamburger {
-				transform: scale(1.05);
+			.hamburger__bar {
+				height: 2px;
 			}
 		}
 	}
 
 	&__bar {
 		width: 100%;
-		height: 4px;
+		height: 2px;
 		background: $red;
 		border-radius: 20px;
 	}
