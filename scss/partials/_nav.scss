@@ -10,6 +10,7 @@
 	height: 100vh;
 	background: $red;
 	padding: 86px 0;
+	overflow-y: scroll;
 	z-index: 90;
 
 	&__items {
@@ -22,7 +23,7 @@
 	}
 
 	&__item {
-		padding: 16px;
+		margin: 16px;
 		transition: all ease-in-out 0.05s;
 
 		&:hover {
@@ -41,11 +42,15 @@
 .submenu {
 	width: 200px;
 	background: $dark-red;
-	padding: 14px;
 	margin-left: -16px;
 
 	&__item {
-		padding: 16px;
+		margin: 32px;
+		transition: all ease-in-out 0.05s;
+
+		&:hover {
+			transform: translateX(2px);
+		}
 
 		&-link {
 			font-size: $font-size-small;

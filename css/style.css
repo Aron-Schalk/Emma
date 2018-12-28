@@ -80,6 +80,7 @@ body {
   height: 100vh;
   background: #b21717;
   padding: 86px 0;
+  overflow-y: scroll;
   z-index: 90; }
   .menu__items {
     display: flex;
@@ -89,7 +90,7 @@ body {
     list-style-type: none;
     padding: 0 16px; }
   .menu__item {
-    padding: 16px;
+    margin: 16px;
     transition: all ease-in-out 0.05s; }
     .menu__item:hover {
       transform: translateX(2px); }
@@ -101,11 +102,14 @@ body {
 
 .submenu {
   width: 200px;
-  background: #bc3434;
+  background: #931717;
   padding: 14px;
   margin-left: -16px; }
   .submenu__item {
-    padding: 16px; }
+    margin: 16px;
+    transition: all ease-in-out 0.05s; }
+    .submenu__item:hover {
+      transform: translateX(2px); }
     .submenu__item-link {
       font-size: 14px;
       font-weight: 600;

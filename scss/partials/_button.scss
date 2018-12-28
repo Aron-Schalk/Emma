@@ -19,8 +19,8 @@
 	transition: all ease-in-out 0.1s;
 
 	&:hover {
-		background: $dark-red;
-		border-color: $dark-red;
+		background: $light-red;
+		border-color: $light-red;
 		transform: scale(1.01);
 	}
 
@@ -168,7 +168,7 @@
 
 	&:hover {
 		color: $white;
-		background: $dark-red;
+		background: $light-red;
 	}
 }
 
