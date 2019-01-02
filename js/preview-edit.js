@@ -9,9 +9,15 @@ export default class PreviewToggle {
 			 
 		};
 
-		this.elements.togglebutton.addEventListener('click', this.toggle.bind(this));
-		this.elements.applybutton.addEventListener('click', this.toggle.bind(this));
-		this.elements.collapsebutton.addEventListener('click', this.toggle.bind(this));
+		if(this.elements.togglebutton){
+			this.elements.togglebutton.addEventListener('click', this.toggle.bind(this));
+		}
+		if(this.elements.applybutton){
+			this.elements.applybutton.addEventListener('click', this.toggle.bind(this));
+		}
+		if(this.elements.collapsebutton){
+			this.elements.collapsebutton.addEventListener('click', this.toggle.bind(this));
+		}
 	}
 
 	toggle() {

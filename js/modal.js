@@ -9,10 +9,18 @@ export default class ModalToggle {
 			cancelbutton: document.querySelector('.button-cancel')
 		};
 
-		this.elements.openbutton.addEventListener('click', this.toggle.bind(this));
-		this.elements.overlay.addEventListener('click', this.toggle.bind(this));
-		this.elements.closebutton.addEventListener('click', this.toggle.bind(this));
-		this.elements.cancelbutton.addEventListener('click', this.toggle.bind(this));
+		if(this.elements.openbutton){
+			this.elements.openbutton.addEventListener('click', this.toggle.bind(this));
+		}
+		if(this.elements.overlay){
+			this.elements.overlay.addEventListener('click', this.toggle.bind(this));
+		}
+		if(this.elements.closebutton){
+			this.elements.closebutton.addEventListener('click', this.toggle.bind(this));
+		}
+		if(this.elements.cancelbutton){
+			this.elements.cancelbutton.addEventListener('click', this.toggle.bind(this));
+		}
 	}
 
 	toggle() {

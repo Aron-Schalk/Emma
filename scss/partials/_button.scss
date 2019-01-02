@@ -110,10 +110,16 @@
 		top: -15px;
 		right: -15px;
 		min-width: unset;
+		color: $white;
 		background: $dark-gray;
 		border: 1px solid $dark-gray;
 		margin: 0;
 		padding: 0;
+
+		i {
+			font-size: $font-size-large;
+			color: $white;
+		}
 	}
 
 	&-collapse {
