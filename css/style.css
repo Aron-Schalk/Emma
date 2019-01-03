@@ -37,7 +37,8 @@ body {
   align-items: center;
   position: absolute;
   background: #fff;
-  padding: 20px;
+  border-radius: 4px;
+  padding: 40px 80px;
   z-index: 1000;
   opacity: 0;
   transform: translateY(-100vh);
@@ -263,9 +264,9 @@ body {
     flex-direction: column;
     align-items: center; }
     .account-info--center .avatar-container {
-      margin-bottom: 64px; }
+      margin-bottom: 40px; }
     @media only screen and (max-width: 641px) {
-      .account-info--center .half-button-wrapper {
+      .account-info--center .double-button-wrapper {
         grid-template-columns: 1fr;
         grid-gap: 0; } }
   .account-info__section {
@@ -289,24 +290,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 200px;
   height: 200px;
   background: #f4f4f4;
   border: 4px solid #fff;
   border-radius: 10%; }
-  @media only screen and (max-width: 641px) {
-    .avatar-container {
-      width: 300px;
-      height: 300px; } }
+  .avatar-container .button--round {
+    background: #b21717; }
+    .avatar-container .button--round i {
+      color: #fff; }
+    .avatar-container .button--round:hover {
+      background: #bc3434; }
   .avatar-container--small {
     width: 100px;
     height: 100px; }
   .avatar-container--large {
     width: 300px;
     height: 300px; }
+  .avatar-container:hover .avatar__button {
+    opacity: 1; }
+  .avatar-container:hover .avatar-overlay {
+    opacity: 0.2; }
+
+.avatar-overlay {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #121010;
+  border-radius: 10%;
+  opacity: 0;
+  transition: all ease-in-out 0.05s; }
 
 .avatar__image {
   width: 50%; }
+
+.avatar__button {
+  position: absolute;
+  opacity: 0; }
 
 .sidebar .avatar-container {
   margin-top: -100px; }
@@ -435,6 +457,7 @@ body {
     margin-left: auto;
     cursor: pointer; }
     .form__link:hover {
+      color: #bc3434;
       text-decoration: none; }
   .form__radio-text {
     text-align: center;
@@ -448,6 +471,7 @@ body {
       color: #b21717;
       font-weight: 600; }
       .form__text-link:hover {
+        color: #bc3434;
         text-decoration: underline; }
   .form__button {
     margin: 40px 0; }
@@ -728,13 +752,13 @@ input[type=range]::-webkit-slider-thumb {
   .button:active {
     font-weight: 400; }
   .button--ghost {
-    color: #b21717;
-    background: #f4f4f4;
-    border-color: #b21717; }
+    color: #121010;
+    background: #fff;
+    border-color: #121010; }
     .button--ghost:hover {
-      color: #b21717;
-      background: #fff;
-      border-color: #b21717; }
+      color: #121010;
+      background: #f4f4f4;
+      border-color: #f4f4f4; }
     .button--ghost:active {
       font-weight: 400; }
   .button--light {
@@ -750,6 +774,8 @@ input[type=range]::-webkit-slider-thumb {
   .button--full {
     width: 100%;
     margin: 40px 0 20px; }
+  .button--right {
+    margin: 40px 0 20px auto; }
   .button--half {
     width: 100%;
     margin: 0; }
@@ -767,12 +793,13 @@ input[type=range]::-webkit-slider-thumb {
     border: none;
     border-radius: 100%;
     cursor: pointer;
-    transition: all ease-in-out 0.15s; }
+    transition: all ease-in-out 0.1s; }
     .button--round i {
       color: #b21717;
       margin: 0; }
     .button--round:hover {
       background: #fff;
+      border: none;
       transform: scale(1.1); }
   .button--close {
     position: absolute;
@@ -787,6 +814,8 @@ input[type=range]::-webkit-slider-thumb {
     .button--close i {
       font-size: 18px;
       color: #fff; }
+    .button--close:hover {
+      background: #121010; }
   .button-collapse {
     display: none; }
     .button-collapse--show {
@@ -807,10 +836,9 @@ input[type=range]::-webkit-slider-thumb {
     grid-gap: 20px;
     margin: 20px 0; }
 
-.half-button-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px; }
+.double-button-wrapper {
+  display: flex;
+  justify-content: center; }
 
 .radio__container input {
   position: absolute;
@@ -1020,12 +1048,22 @@ a {
       display: none; } }
 
 .preview-banner {
+  position: relative;
   width: 100%;
-  max-height: 40vh;
+  height: 50vh;
+  max-height: 360px;
   overflow: hidden;
   object-fit: cover; }
+  .preview-banner:hover .preview-banner__button {
+    opacity: 1; }
   .preview-banner__image {
     width: 100%; }
+  .preview-banner__button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    transition: all ease-in-out 0.1s; }
 
 .layout-container {
   display: grid;

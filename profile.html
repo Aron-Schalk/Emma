@@ -21,6 +21,21 @@
 </head>
 <body>
 
+	<section class="modal-wrapper">
+		<div class="modal-overlay"></div>
+		<div class="modal">
+
+			<button class="button button--round button--close"><i class="fas fa-times"></i></button>
+			<div class="avatar-container avatar-container--large">
+				<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
+			</div>
+			<label for="file" class="file-input-wrapper">
+				<span class="button">Upload avatar</span>
+				<input type="file" name="file" id="file" class="file-input">
+			</label>
+		</div>
+	</section>
+
 	<div class="hamburger-container">
 		<a class="hamburger">
 			<div class="hamburger__bar"></div>
@@ -48,12 +63,15 @@
 
 	<section class="preview-banner">
 		<img src="img/banner.jpg" alt="preview banner" class="preview-banner__image">
+		<a href="preview-banner.html" class="preview-banner__button button">Edit Preview Banner</a>
 	</section>
 	<section class="container container--no-top">
 		<div class="layout-container">
 			<div class="sidebar">
 				<div class="avatar-container">
+					<div class="avatar-overlay"></div>
 					<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
+					<a class="avatar__button button--round button-modal"><i class="fas fa-pen"></i></a>
 				</div>
 				<h2 class="sidebar__header">Emma VIP Name</h2>
 				<a href="profile-edit.html" class="button button--full">Edit profile</a>

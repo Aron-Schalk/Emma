@@ -146,6 +146,7 @@
 		cursor: pointer;
 
 		&:hover {
+			color: $light-red;
 			text-decoration: none;
 		}
 	}
@@ -166,6 +167,7 @@
 			font-weight: $font-weight-bold;
 
 			&:hover {
+				color: $light-red;
 				text-decoration: underline;
 			}
 		}

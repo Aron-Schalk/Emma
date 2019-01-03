@@ -29,24 +29,6 @@
 		</ul>
 	</nav>
 
-	<section class="modal-wrapper">
-		<div class="modal-overlay"></div>
-		<div class="modal">
-			<button class="button button--round button--close">x</button>
-			<form action="">
-				<h2 class="page__header">Reset Password</h2>
-				<fieldset class="form form--dynamic">
-					<legend class="form__legend">please enter your e-mail address and we will send you instructions how to reset your password</legend>
-					<input type="email" name="email" placeholder="please enter your e-mail address" class="form__field" autocomplete="off">
-					<div class="half-button-wrapper">
-						<button class="button button-cancel button--ghost button--half">Cancel</button>
-						<input type="submit" name="button" value="send" id="button" class="form__button button button--half">
-					</div>
-				</fieldset>
-			</form>
-		</div>
-	</section>
-
 	<section class="container container--center">
 		<div class="form-popup">
 			<h1 class="page__header">Sign in</h1>
@@ -60,7 +42,7 @@
 					<div class="form__extras-wrapper">
 						<input type="checkbox" id="remember" name="remember" value="remember me" class="form__checkbox" checked>
 						<label for="remember" class="form__checkbox-label">Remember me</label>
-						<a class="form__link button-modal">Forgot password?</a>
+						<a href="change-password.html" class="form__link">Forgot password?</a>
 					</div>
 					<input type="submit" name="button" value="sign in" id="button" class="form__button button button--full">
 					<p class="form__text">Don't have an account? <a href="register.html" class="form__text-link">Register now</a></p>

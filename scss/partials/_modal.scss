@@ -5,7 +5,8 @@
 	align-items: center;
 	position: absolute;
 	background: $white;
-	padding: 20px;
+	border-radius: 4px;
+	padding: 40px 80px;
 	z-index: 1000;
 	opacity: 0;
 	transform: translateY(-100vh);

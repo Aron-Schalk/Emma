@@ -29,14 +29,14 @@
 	}
 
 	&--ghost {
-		color: $red;
-		background: $light-gray;
-		border-color: $red;
+		color: $dark-gray;
+		background: $white;
+		border-color: $dark-gray;
 
 		&:hover {
-			color: $red;
-			background: $white;
-			border-color: $red;
+			color: $dark-gray;
+			background: $light-gray;
+			border-color: $light-gray;
 		}
 	
 		&:active {
@@ -65,6 +65,10 @@
 		margin: 40px 0 20px;
 	}
 
+	&--right {
+		margin: 40px 0 20px auto; 
+	}
+
 	&--half {
 		width: 100%;
 		margin: 0;
@@ -86,7 +90,7 @@
 		border: none;
 		border-radius: 100%;
 		cursor: pointer;
-		transition: all ease-in-out 0.15s;
+		transition: all ease-in-out 0.1s;
 
 		i {
 			// font-size: $font-size-x-small;
@@ -96,6 +100,7 @@
 	
 		&:hover {
 			background: $white;
+			border: none;
 			transform: scale(1.1);
 		}
 	}
@@ -114,6 +119,10 @@
 		i {
 			font-size: $font-size-large;
 			color: $white;
+		}
+
+		&:hover {
+			background: $dark-gray;
 		}
 	}
 
@@ -151,10 +160,9 @@
 	}
 }
 
-.half-button-wrapper {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 20px;
+.double-button-wrapper {
+	display: flex;
+	justify-content: center;
 }
 
 .radio__container input {
