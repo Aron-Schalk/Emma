@@ -16,12 +16,12 @@
 	padding: 10px 20px;
 	margin: 20px 10px;
 	cursor: pointer;
-	transition: all ease-in-out 0.1s;
+	transition: all ease-in-out 0.05s;
 
 	&:hover {
 		background: $light-red;
 		border-color: $light-red;
-		transform: scale(1.01);
+		transform: scale(1.015);
 	}
 
 	&:active {
@@ -82,26 +82,21 @@
 		width: 40px;
 		height: 40px;
 		color: $red;
-		background: transparent;
-		border: 1px solid $red;
+		background: $light-gray;
+		border: none;
 		border-radius: 100%;
 		cursor: pointer;
 		transition: all ease-in-out 0.15s;
 
 		i {
-			font-size: $font-size-x-small;
+			// font-size: $font-size-x-small;
 			color: $red;
 			margin: 0;
 		}
 	
 		&:hover {
-			color: $white;
-			background: $red;
-			transform: unset;
-
-			i {
-				color: $white;
-			}
+			background: $white;
+			transform: scale(1.1);
 		}
 	}
 
