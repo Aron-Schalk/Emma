@@ -21,28 +21,58 @@
 </head>
 <body>
 
-	<nav class="navbar">
-		<a class="logo">
+	<section class="modal-wrapper">
+		<div class="modal-overlay"></div>
+		<div class="modal">
+			<button class="button button--round button--close"><i class="fas fa-times"></i></button>
+			<div class="avatar-container avatar-container--large">
+				<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
+			</div>
+			<label for="file" class="file-input-wrapper">
+				<span class="button">Upload avatar</span>
+				<input type="file" name="file" id="file" class="file-input">
+			</label>
+		</div>
+	</section>
+
+	<div class="hamburger-container">
+		<a class="hamburger">
+			<div class="hamburger__bar"></div>
+			<div class="hamburger__bar"></div>
+			<div class="hamburger__bar"></div>
 		</a>
-		<ul class="menu">
-			<li class="menu__item"><a href="library.html" class="menu__item-link">Library</a></li>
+	</div>
+
+	<nav class="menu">
+		<!-- <a class="logo">
+		</a> -->
+		<ul class="menu__items">
+			<li class="menu__item"><a class="menu__item-link submenu__trigger">Home</a></li>
+			<ul class="submenu">
+				<li class="submenu__item"><a href="profile.html" class="submenu__item-link">Videos</a></li>
+				<li class="submenu__item"><a href="profile-images.html" class="submenu__item-link">Images</a></li>
+				<li class="submenu__item"><a href="profile-items.html" class="submenu__item-link">Items</a></li>
+				<li class="submenu__item"><a href="change-password.html" class="submenu__item-link">Profile</a></li>
+				<li class="submenu__item"><a href="sale-links.html" class="submenu__item-link">Sale links</a></li>
+			</ul>
 			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
 			<li class="menu__item"><a href="sign-in.html" class="menu__item-link">Log out</a></li>
 		</ul>
 	</nav>
 
-	<section class="container container--640">
-		<h1 class="page__header page__header--left">Edit Profile</h1>
-		<div class="account-info account-info--center">
-			<div class="avatar-container">
-				<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
-			</div>
-			<div class="half-button-wrapper">
-				<a class="button button-modal">Edit Avatar</a>
-				<a href="preview-banner.html" class="button">Edit Preview Banner</a>
-			</div>
+	<section class="preview-banner">
+		<img src="img/banner.jpg" alt="preview banner" class="preview-banner__image">
+		<a href="preview-banner.html" class="preview-banner__button button">Edit Preview Banner</a>
+	</section>
+	<section class="container container--no-top">
+		<div class="avatar-container avatar-container--alt">
+			<div class="avatar-overlay"></div>
+			<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
+			<a class="avatar__button button--round button-modal"><i class="fas fa-pen"></i></a>
 		</div>
-		<form action="">
+		<form  class="form-container" action="">
+			<h1 class="page__header page__header--alt">Edit Profile</h1>
+			<a href="change-password.html" class="form__link">Change password</a>
 			<section class="form-wrapper">
 				<fieldset class="form">
 					<legend class="form__title">Personal details</legend>
@@ -236,18 +266,18 @@
 						<label for="tattoos" class="form__checkbox-label">Tattoos</label>
 					</div>
 				</fieldset>
+				<fieldset class="form">
+					<legend class="form__title">Contact details</legend>
+					<p class="form__field-title">Post name</p>
+					<input type="text" name="postname" placeholder="enter your post name" class="form__field">
+					<p class="form__field-title">Address</p>
+					<input type="text" name="address" placeholder="enter your current address" class="form__field">
+					<p class="form__field-title">Postal code</p>
+					<input type="text" name="postalcode" placeholder="enter your postal code" class="form__field">
+					<p class="form__field-title">City</p>
+					<input type="text" name="city" placeholder="enter your city" class="form__field">
+				</fieldset>
 			</section>
-			<legend class="form__title">Contact details</legend>
-			<fieldset class="form">
-				<p class="form__field-title">Post name</p>
-				<input type="text" name="postname" placeholder="enter your post name" class="form__field">
-				<p class="form__field-title">Address</p>
-				<input type="text" name="address" placeholder="enter your current address" class="form__field">
-				<p class="form__field-title">Postal code</p>
-				<input type="text" name="postalcode" placeholder="enter your postal code" class="form__field">
-				<p class="form__field-title">City</p>
-				<input type="text" name="city" placeholder="enter your city" class="form__field">
-			</fieldset>
 			<legend class="form__title">Other</legend>
 			<section class="form-wrapper form-wrapper--third form-wrapper--narrow">
 				<fieldset class="form form--full">
@@ -263,7 +293,7 @@
 					<textarea name="stripclubs" id="stripclubs" placeholder="you haven't added any stripclubs" class="form__field form__field--large" cols="30" rows="10"></textarea>
 				</fieldset>
 			</section>
-			<input type="submit" name="button" value="accept" id="button" class="form__button button button--center">
+			<input type="submit" name="button" value="save" id="button" class="form__button button button--center">
 		</form>
 	</section>
 	

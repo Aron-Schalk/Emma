@@ -22,11 +22,26 @@
 </head>
 <body>
 
-	<nav class="navbar">
-		<a class="logo">
+	<div class="hamburger-container">
+		<a class="hamburger">
+			<div class="hamburger__bar"></div>
+			<div class="hamburger__bar"></div>
+			<div class="hamburger__bar"></div>
 		</a>
-		<ul class="menu">
-			<li class="menu__item"><a href="library.html" class="menu__item-link">Library</a></li>
+	</div>
+
+	<nav class="menu">
+		<!-- <a class="logo">
+		</a> -->
+		<ul class="menu__items">
+			<li class="menu__item"><a class="menu__item-link submenu__trigger">Home</a></li>
+			<ul class="submenu">
+				<li class="submenu__item"><a href="profile.html" class="submenu__item-link">Videos</a></li>
+				<li class="submenu__item"><a href="profile-images.html" class="submenu__item-link">Images</a></li>
+				<li class="submenu__item"><a href="profile-items.html" class="submenu__item-link">Items</a></li>
+				<li class="submenu__item"><a href="change-password.html" class="submenu__item-link">Profile</a></li>
+				<li class="submenu__item"><a href="sale-links.html" class="submenu__item-link">Sale links</a></li>
+			</ul>
 			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
 			<li class="menu__item"><a href="sign-in.html" class="menu__item-link">Log out</a></li>
 		</ul>

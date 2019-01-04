@@ -1,14 +1,6 @@
 .form-container {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: wrap;
-	min-height: 45px;
-	margin-top: 10px;
-
-	input {
-		margin: 0;
-	}
+	max-width: 640px;
+	margin: 0 auto;
 }
 
 .form-wrapper {
@@ -248,6 +240,7 @@
 	border-radius: 20px;
 	padding: 10px;
 	margin: 0 0 $font-size-regular;
+	cursor: auto;
 	transition: all ease-in-out 0.15s;
 
 	@include media-query('tablet') {
@@ -260,7 +253,7 @@
 
 	&:hover, &:focus-within {
 		background: $white;
-		padding-left: 16px;
+		text-indent: 6px;
 	}
 
 	&::placeholder {
@@ -311,20 +304,15 @@
 	}
 }
 
-.form input[type=date].form__field {
-	cursor: text;
-}
-
-.form select.form__field {
-	cursor: pointer;
+.form select.form__field:hover {
+	background: $white;
 }
 
 .form select.form__field, input[type=date].form__field {
 	background: $light-gray;
-	border-radius: 20px;
 	padding-left: 10px;
 
 	&:hover {
-		padding-left: 16px;
+		background: $white;
 	}
 }

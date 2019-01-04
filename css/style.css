@@ -9,7 +9,8 @@
 
 body {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: #f4f4f4; }
 
 body {
   font-family: Nunito, sans-serif;
@@ -25,7 +26,9 @@ body {
   line-height: 1;
   color: #b21717;
   letter-spacing: 1px;
-  margin-bottom: 40px; }
+  margin: 60px 0 40px; }
+  .page__header--alt {
+    margin: 40px 0 20px; }
 
 .fa, .fas {
   font-size: 14px; }
@@ -239,7 +242,11 @@ body {
   height: 100%;
   background: #fff;
   margin: 0 auto 120px;
-  padding: 100px 20px 0; }
+  padding: 40px 40px 60px; }
+  @media only screen and (max-width: 641px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px; } }
   .container--center {
     display: flex;
     justify-content: center;
@@ -254,7 +261,10 @@ body {
         max-width: unset; }
   .container--no-top {
     max-width: 1320px;
-    padding: 0 20px; }
+    padding-top: 0; }
+    @media only screen and (max-width: 641px) {
+      .container--no-top {
+        padding-top: 40px; } }
 
 .account-info {
   display: flex;
@@ -308,6 +318,11 @@ body {
   .avatar-container--large {
     width: 300px;
     height: 300px; }
+  .avatar-container--alt {
+    margin: -100px 0 0; }
+    @media only screen and (max-width: 641px) {
+      .avatar-container--alt {
+        margin: 80px auto; } }
   .avatar-container:hover .avatar__button {
     opacity: 1; }
   .avatar-container:hover .avatar-overlay {
@@ -332,14 +347,18 @@ body {
 
 .sidebar .avatar-container {
   margin-top: -100px; }
+  @media only screen and (max-width: 641px) {
+    .sidebar .avatar-container {
+      margin: 80px auto 0; } }
 
 .sidebar__header {
+  word-break: break-word;
   margin: 40px 0 0; }
 
 .sidebar__item {
   font-weight: 300;
   text-align: left;
-  margin: 40px 0; }
+  margin: 20px 0; }
   .sidebar__item-list {
     list-style-type: none; }
   .sidebar__item--header {
@@ -357,14 +376,8 @@ body {
     margin-right: 8px; }
 
 .form-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 45px;
-  margin-top: 10px; }
-  .form-container input {
-    margin: 0; }
+  max-width: 640px;
+  margin: 0 auto; }
 
 .form-wrapper {
   display: grid;
@@ -526,13 +539,14 @@ body {
   border-radius: 20px;
   padding: 10px;
   margin: 0 0 16px;
+  cursor: auto;
   transition: all ease-in-out 0.15s; }
   @media only screen and (max-width: 769px) {
     .form__field {
       max-width: unset; } }
   .form__field:hover, .form__field:focus-within {
     background: #fff;
-    padding-left: 16px; }
+    text-indent: 6px; }
   .form__field::placeholder {
     font-weight: 300;
     color: #121010; }
@@ -565,18 +579,14 @@ body {
       padding: 5px 10px;
       margin: 2px 0; }
 
-.form input[type=date].form__field {
-  cursor: text; }
-
-.form select.form__field {
-  cursor: pointer; }
+.form select.form__field:hover {
+  background: #fff; }
 
 .form select.form__field, input[type=date].form__field {
   background: #f4f4f4;
-  border-radius: 20px;
   padding-left: 10px; }
   .form select.form__field:hover, input[type=date].form__field:hover {
-    padding-left: 16px; }
+    background: #fff; }
 
 .table-list {
   display: flex;
@@ -781,7 +791,7 @@ input[type=range]::-webkit-slider-thumb {
     margin: 0; }
   .button--center {
     max-width: 400px;
-    margin: 80px auto 20px; }
+    margin: 60px auto 20px; }
   .button--round {
     display: flex;
     justify-content: center;
@@ -1050,36 +1060,34 @@ a {
 .preview-banner {
   position: relative;
   width: 100%;
-  height: 50vh;
-  max-height: 360px;
+  max-width: 1320px;
+  max-height: 50vh;
+  margin: 0 auto;
   overflow: hidden;
   object-fit: cover; }
   .preview-banner:hover .preview-banner__button {
     opacity: 1; }
   .preview-banner__image {
+    display: block;
     width: 100%; }
   .preview-banner__button {
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 30px;
     opacity: 0;
     transition: all ease-in-out 0.1s; }
 
-.layout-container {
+.sidebar-layout {
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-gap: 60px;
   transition: all ease-in-out 0.15s; }
   @media only screen and (max-width: 769px) {
-    .layout-container {
+    .sidebar-layout {
       grid-gap: 30px; } }
   @media only screen and (max-width: 641px) {
-    .layout-container {
-      grid-template-columns: 1fr; }
-      .layout-container .avatar-container {
-        width: 300px;
-        height: 300px;
-        margin: 80px auto 0; } }
+    .sidebar-layout {
+      grid-template-columns: 1fr; } }
 
 .your-videos .content__list-item {
   border-bottom: 1px solid #8d8d8d; }
