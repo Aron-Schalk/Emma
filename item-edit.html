@@ -39,17 +39,18 @@
 				<li class="submenu__item"><a href="profile.html" class="submenu__item-link">Videos</a></li>
 				<li class="submenu__item"><a href="profile-images.html" class="submenu__item-link">Images</a></li>
 				<li class="submenu__item"><a href="profile-items.html" class="submenu__item-link">Items</a></li>
-				<li class="submenu__item"><a href="change-password.html" class="submenu__item-link">Profile</a></li>
 				<li class="submenu__item"><a href="sale-links.html" class="submenu__item-link">Sale links</a></li>
+				<li class="submenu__item"><a href="profile-edit.html" class="submenu__item-link">Edit Profile</a></li>
 			</ul>
 			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
 			<li class="menu__item"><a href="sign-in.html" class="menu__item-link">Log out</a></li>
 		</ul>
 	</nav>
 
-	<section class="container container--640">
-		<h1 class="page__header ">Edit Item</h1>
-		<p class="sidebar__item sidebar__item--header">Emma Store Rules</p>
+	<section class="container">
+		<div class="content-info">	
+			<h1 class="page__header ">Edit Item</h1>
+			<p class="sidebar__item sidebar__item--header">Emma Store Rules</p>
 			<ul class="sidebar__item-list">
 				<li class="sidebar__item">Upload at least 1 image</li>
 				<li class="sidebar__item">Supported file types: jpg, jpeg, png, gif</li>
@@ -59,18 +60,15 @@
 				<li class="sidebar__item">If you're having trouble with creating/uploading an item to the Store, please contact us at <a href="mailto:help@emma.club">help@emma.club</a></li>
 				<li class="sidebar__item sidebar__item--grey">By uploading an image I confirm that it does not violate <a href="">Emma Terms</a>*</li>
 			</ul>
-		<div class="content__image-container">
-			<img src="img/leaf.jpg" alt="" class="content__image">
-		</div>
-		<fieldset class="form">
-			<legend class="form__title">Details</legend>
-			<p class="form__field-title">Title</p>
-			<input type="text" name="title" value="Item title" placeholder="Please enter a title" class="form__field">
-			<p class="form__field-title">Description</p>
-			<textarea name="description" id="about" placeholder="Please enter a description" class="form__field form__field--large" cols="30" rows="10">Item description</textarea>
-		</fieldset>
-		<section class="form-wrapper form-wrapper--third form-wrapper--narrow store-content__details">
+			<div class="content__image-container">
+				<img src="img/leaf.jpg" alt="" class="content__image">
+			</div>
 			<fieldset class="form">
+				<legend class="form__title">Details</legend>
+				<p class="form__field-title">Title</p>
+				<input type="text" name="title" value="Item title" placeholder="Please enter a title" class="form__field">
+				<p class="form__field-title">Description</p>
+				<textarea name="description" id="about" placeholder="Please enter a description" class="form__field form__field--large" cols="30" rows="10">Item description</textarea>
 				<p class="form__field-title">Category</p>
 				<select id="category" class="form__field">
 					<option value="accessories" selected="selected">Accessories</option>
@@ -95,21 +93,17 @@
 					<option value="vidbundle">Vid Bundle</option>
 					<option value="others">Others</option>
 				</select>
-			</fieldset>
-			<fieldset class="form">
 				<p class="form__field-title">Price</p>
 				<input type="number" name="price" min="0" step="0.05" placeholder="$ 0.00" class="form__field">
-			</fieldset>
-			<fieldset class="form">
 				<p class="form__field-title">Status</p>
 				<select id="status" class="form__field">
 					<option value="online">Online</option>
 					<option value="offline">Offline</option>
 				</select>
 			</fieldset>
+			<button class="button button--center">Save</button>
+		</div>
 		</section>
- 		<button class="button button--center">Save</button>
-	</section>
-	
-</body>
-</html>
+		
+	</body>
+	</html>

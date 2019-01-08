@@ -6,7 +6,7 @@
 	width: 100%;
 	height: 100%;
 	background: $red;
-	border-radius: 2px;
+	border-radius: 50px;
 	cursor: pointer;
 	transition: all ease-in-out 0.05s;
 
@@ -53,14 +53,14 @@
 		position: fixed;
 		top: 20px;
 		right: 20px;
-		width: 52px;
-		height: 46px;
+		width: 50px;
+		height: 50px;
 		z-index: 100;
 
 	}
 
 	&__bar {
-		width: 30px;
+		width: 24px;
 		height: 2px;
 		background: $white;
 		border-radius: 20px;
@@ -92,7 +92,7 @@
 		height: 100%;
 		padding: 66px 0 0;
 		overflow-y: scroll;
-		transition: all ease-in-out 0.15s;
+		transition: right ease-in-out 0.15s;
 	}
 
 	&::-webkit-scrollbar {
@@ -172,7 +172,7 @@
 	overflow: hidden;
 	z-index: -80;
 	transform: translateY(-100%);
-	transition: transform 0.1s ease-in-out 0.05s;
+	transition: transform 0.05s ease-in-out 0.05s;
 
 	@include media-query('tablet-small') {
 		// position: unset;
@@ -187,20 +187,20 @@
 	&--show {
 		// height: auto;
 		transform: translateY(0);
-		transition: transform ease-in-out 0.15s;
+		transition: transform ease-in-out 0.1s;
 
 		.submenu__item-link {
 			opacity: 1;
-			transition: transform ease-in-out 0.1s, opacity 0.1s ease-in-out 0.15s;
+			transition: transform ease-in-out 0.1s, opacity 0.1s ease-in-out 0.1s;
 		}
 
 		@include media-query('tablet-small') {
 			position: unset;
 			background: $dark-red;
-			transition: transform ease-in-out 0.15s;
+			transition: transform ease-in-out 0.05s;
 
 			.submenu__item-link {
-				transition: opacity 0.1s ease-in-out 0.15s;
+				transition: opacity 0.1s ease-in-out 0.05s;
 			}
 		}
 	}

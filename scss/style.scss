@@ -42,11 +42,9 @@ a {
 }
 
 .content-info {
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-	flex-direction: column;
-	margin-bottom: 20px;
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 10px 0 0;
 }
 
 .my-content {
@@ -184,9 +182,9 @@ a {
 
 	@include media-query('tablet-small') {
 
-		.table__item:nth-of-type(2) {
-			padding: 0;
-		}
+		// .table__item:nth-of-type(2) {
+		// 	padding: 0;
+		// }
 	}
 }
 
@@ -201,9 +199,11 @@ a {
 		align-items: center;
 		position: relative;
 		width: 100%;
+		max-width: 640px;
 		height: auto;
 		background: $light-gray;
 		border-radius: 20px;
+		margin: 0 auto;
 
 		&--small {
 			max-width: 300px;
@@ -243,7 +243,6 @@ a {
 	font-size: $font-size-large;
 	font-weight: $font-weight-bold;
 	color: $red;
-	cursor: pointer;
 
 	&--margin {
 		margin: 20px 0;
@@ -254,7 +253,6 @@ a {
 	font-size: $font-size-small;
 	color: $red;
 	text-transform: uppercase;
-	cursor: pointer;
 
 	@include media-query('tablet-small') {
 		&--text {
