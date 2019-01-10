@@ -30,11 +30,22 @@
 	</nav>
 
 	<section class="container container--center">
-		<div class="form-popup">
-			<h1 class="page__header">Register</h1>
+		<h1 class="page__header page__header--flat">Register</h1>
+		<div class="form-container">
 			<form action="">
+				<p class="form__radio-text form__legend">I want to be a:</p>
+				<div class="double-button-wrapper">
+					<label class="radio__container">
+						<input type="radio" name="account-type" value="member" checked>
+						<span class="radio__button button button--ghost">Member</span>
+					</label>
+					<label class="radio__container">
+						<input type="radio" name="account-type" value="vip">
+						<span class="radio__button button button--ghost">Vip</span>
+					</label>
+				</div>
 				<fieldset class="form">
-					<legend class="form__legend">Please enter your e-mail and password</legend>
+					<legend class="form__legend">Please enter your e-mail and password.</legend>
 					<p class="form__field-title">E-mail</p>
 					<input type="email" name="email" placeholder="enter your e-mail address" autocomplete="off" class="form__field">
 					<p class="form__field-title">Password</p>
@@ -49,20 +60,9 @@
 						<input type="checkbox" id="agecheck" name="agecheck" class="form__checkbox">
 						<label for="agecheck" class="form__checkbox-label">I am 18 years of age or older *</label>
 					</div>
-					<p class="form__radio-text">I want to be a:</p>
-					<div class="double-button-wrapper">
-						<label class="radio__container">
-							<input type="radio" name="account-type" value="member" checked>
-							<span class="radio__button button button--ghost">Member</span>
-						</label>
-						<label class="radio__container">
-							<input type="radio" name="account-type" value="vip">
-							<span class="radio__button button button--ghost">Vip</span>
-						</label>
-					</div>
-					<p class="form__text">By registering I confirm to have read and accept the TOS conditions *</p>
-					<input type="submit" name="button" value="register" id="button" class="form__button button button--full">
-					<p class="form__text">Already have an account? <a href="sign-in.html" class="form__text-link">Sign in now</a></p>
+					<input type="submit" name="button" value="register" id="button" class="form__button button button--center">
+					<p class="form__text">By registering I confirm to have read and accept the TOS conditions. *</p>
+					<p class="form__text">Already have an account? <a href="sign-in.html" class="link">Sign in now</a></p>
 				</fieldset>
 			</form>
 		</div>

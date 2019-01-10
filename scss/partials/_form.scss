@@ -1,47 +1,11 @@
 .form-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 	max-width: 640px;
 	margin: 0 auto;
-}
-
-.form-wrapper {
-	display: grid;
-	grid-column-gap: 40px;
-	width: 100%;
-	max-width: 1000px;
-
-	&--half {
-		grid-template-columns: repeat(2, minmax(200px, 1fr));
-		
-		@include media-query('tablet') {
-			grid-template-columns: 1fr;
-		}
-	}
-
-	&--third {
-		grid-template-columns: repeat(3, minmax(200px, 1fr));
-	}
-
-	&--fourth {
-		grid-template-columns: repeat(4, minmax(200px, 1fr));
-		grid-column-gap: 20px;
-	}
-
-	&--narrow {
-		grid-template-columns: repeat(3, minmax(150px, 1fr));
-		max-width: 100%;
-
-		@include media-query('tablet-small') {
-			grid-template-columns: 1fr;
-
-			.form {
-				margin-top: -20px;
-			}
-		}
-	}
 
 	.form {
-		width: 100%;
-		max-width: 100%;
 		margin: 40px 0 0;
 	}
 
@@ -55,7 +19,6 @@
 
 	input, select {
 		border-radius: 20px;
-		margin: 0 0 20px;
 	}
 
 	textarea {
@@ -88,10 +51,10 @@
 }
 
 .form {
-	width: auto;
+	width: 100%;
 	max-width: 640px;
 	border: none;
-	margin: 80px auto;
+	margin: 80px auto 0;
 
 	&--dynamic {
 		width: unset;
@@ -100,7 +63,8 @@
 
 	&__legend {
 		width: 100%;
-		padding: 0 0 $font-size-regular;
+		font-size: $font-size-large;
+		margin: 0 0 20px;
 
 		&--left {
 			text-align: left;
@@ -115,7 +79,7 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		margin-bottom: 20px;
+		margin: 36px 0;
 	}
 
 	&__checkbox {
@@ -124,14 +88,14 @@
 		cursor: pointer;
 
 		&-label {
-			font-size: $font-size-small;
+			font-size: $font-size-regular;
 			margin-left: 12px;
 			cursor: pointer;
 		}
 	}
 
 	&__link {
-		font-size: $font-size-small;
+		font-size: $font-size-regular;
 		color: $red;
 		text-decoration: underline;
 		margin-left: auto;
@@ -145,11 +109,11 @@
 
 	&__radio-text {
 		text-align: center;
-		margin-bottom: 10px;
+		margin: 20px 0 10px;
 	}
 
 	&__text {
-		font-size: $font-size-x-small;
+		font-size: $font-size-regular;
 		color: $gray;
 		text-align: center;
 		margin: 20px 0;
@@ -228,18 +192,20 @@
 }
 
 .form__field {
-	display: block;
+	// display: block;
 	position: relative;
 	width: 100%;
 	height: 40px;
 	background: $light-gray;
-	font: normal 400 14px/1.4 Nunito, sans-serif;
+	font-family: Nunito, sans-serif;
+	font-size: $font-size-regular;
+	line-height: 1.4;
 	outline: none;
 	color: $dark-gray;
 	border: none;
 	border-radius: 20px;
 	padding: 10px;
-	margin: 0 0 $font-size-regular;
+	margin-bottom: $font-size-regular;
 	cursor: auto;
 	transition: all ease-in-out 0.15s;
 
@@ -253,12 +219,16 @@
 
 	&:hover, &:focus-within {
 		background: $white;
-		text-indent: 6px;
+		text-indent: 4px;
 	}
 
 	&::placeholder {
 		font-weight: $font-weight-light;
 		color: $dark-gray;
+	}
+
+	&-title {
+		line-height: 2;
 	}
 
 	&--alt {

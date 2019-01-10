@@ -70,10 +70,12 @@
 			<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
 			<a class="avatar__button button--round button-modal"><i class="fas fa-pen"></i></a>
 		</div>
+		<h1 class="page__header page__header--flat">Edit Profile</h1>
+		<div class="link-wrapper">
+			<a href="change-password.html" class="link link--underline link--center">Change password</a>
+		</div>
 		<form  class="form-container" action="">
-			<h1 class="page__header page__header--alt">Edit Profile</h1>
-			<a href="change-password.html" class="form__link">Change password</a>
-			<section class="form-wrapper">
+			<section class="form-container">
 				<fieldset class="form">
 					<legend class="form__title">Personal details</legend>
 					<p class="form__field-title">Name</p>
@@ -262,8 +264,8 @@
 					<p class="form__field-title">Hips Measurement</p>
 					<input type="number" name="hipsmeasurement" placeholder="enter your hips measurement" step="0.1" class="form__field">
 					<div class="form__extras-wrapper">
-						<input type="checkbox" id="tattoos" name="tattoos" class="form__checkbox">
-						<label for="tattoos" class="form__checkbox-label">Tattoos</label>
+						<input class="checkbox" type="checkbox" id="tattoos" name="tattoos" checked>
+						<label class="checkbox-label" for="tattoos">Tattoos</label>
 					</div>
 				</fieldset>
 				<fieldset class="form">
@@ -277,23 +279,17 @@
 					<p class="form__field-title">City</p>
 					<input type="text" name="city" placeholder="enter your city" class="form__field">
 				</fieldset>
-			</section>
-			<legend class="form__title">Other</legend>
-			<section class="form-wrapper form-wrapper--third form-wrapper--narrow">
-				<fieldset class="form form--full">
+				<fieldset class="form">
+					<legend class="form__title">Other</legend>
 					<p class="form__field-title">Websites</p>
 					<textarea name="websites" id="websites" placeholder="you haven't added any websites" class="form__field form__field--large" cols="30" rows="10"></textarea>
-				</fieldset>
-				<fieldset class="form form--full">
 					<p class="form__field-title">Camsites</p>
 					<textarea name="camsites" id="camsites" placeholder="you haven't added any camsites" class="form__field form__field--large" cols="30" rows="10"></textarea>
-				</fieldset>
-				<fieldset class="form form--full">
 					<p class="form__field-title">Stripclubs</p>
 					<textarea name="stripclubs" id="stripclubs" placeholder="you haven't added any stripclubs" class="form__field form__field--large" cols="30" rows="10"></textarea>
+					<input type="submit" name="button" value="save" id="button" class="form__button button button--center">
 				</fieldset>
 			</section>
-			<input type="submit" name="button" value="save" id="button" class="form__button button button--center">
 		</form>
 	</section>
 	

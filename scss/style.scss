@@ -3,8 +3,8 @@
 
 // Modules
 @import 'modules/_vars.scss';
-@import 'modules/_defaults.scss';
 @import 'modules/_typo.scss';
+@import 'modules/_defaults.scss';
 
 // Partials
 @import 'partials/_modal.scss';
@@ -15,11 +15,101 @@
 @import 'partials/_form.scss';
 @import 'partials/_table.scss';
 @import 'partials/_preview-edit.scss';
+@import 'partials/_link.scss';
 @import 'partials/_button.scss';
 @import 'partials/_tag.scss';
 
-a {
+// .checkbox {
+// 	width: 20px;
+// 	height: $font-size-large;
+// 	cursor: pointer;
+
+// 	&-label {
+// 		font-size: $font-size-regular;
+// 		margin-left: 12px;
+// 		cursor: pointer;
+// 	}
+// }
+
+.checkbox {
+	position: absolute;
+	opacity: 0;
+  
+	& + label {
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+		font-size: $font-size-regular;
+		padding: 0;
+		cursor: pointer;
+	}
+
+	& + label:before {
+	  content: '';
+	  width: 16px;
+	  height: 16px;
+	  background: $white;
+	  border: 1px solid $dark-gray;
+	  border-radius: 4px;
+	  margin-right: 12px;
+	  transition: all ease-in-out 0.15s;
+	}
+
+	// Box hover
+	&:hover + label:before {
+	background: $light-gray;
+	margin-right: 16px;
+	transform: scale(1.1);
+	}
+
+	// Box checked
+	&:checked + label:before {
+	background: $red;
+	border-color: $red;
+	}
+
+	// Checkmark
+	&:checked + label:after {
+		content: '';
+		position: absolute;
+		left: 4px;
+		top: 8px;
+		background: white;
+		width: 2px;
+		height: 2px;
+		box-shadow: 
+		  2px 0 0 white,
+		  4px 0 0 white,
+		  4px -2px 0 white,
+		  4px -4px 0 white,
+		  4px -6px 0 white,
+		  4px -8px 0 white;
+		transform: rotate(45deg);
+	  }
+}
+
+
+
+
+
+
+
+.page__header {
+	font-family: $font-family-regular;
+	font-size: $font-size-xx-large;
+	font-weight: $font-weight-normal;
+	line-height: 1;
+	text-align: center;
 	color: $red;
+	margin: 60px 0 40px;
+
+	&--flat {
+		margin: 20px 0;
+	}
+}
+
+.fa, .fas {
+	font-size: $font-size-small;
 }
 
 .page__description {

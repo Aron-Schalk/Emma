@@ -38,65 +38,32 @@
 		</ul>
 	</nav>
 
-	<section class="container">
-		<h1 class="page__header ">Have questions or suggestions?</h1>
-		<form action="" class="form-grid">
-			<section class="form form--left">
-				<fieldset class="full">
-					<legend class="form__legend form__legend--left form__legend--no-border">
-						The Emma Club Support Team is always here to help.
-					</legend>
-					<legend class="form__legend form__legend--left form__legend--no-border">
-						Please try to include as many details as possible. <br>
-						The more we know about your issue, the faster we can resolve it.
-					</legend>
-				</fieldset>
-				<fieldset class="left-half">
-					<p class="form__field-title">E-mail</p>
-					<input type="email" name="email" placeholder="please enter your e-mail address" required="required" class="form__field">
-				</fieldset>
-				<fieldset class="right-half">
-					<p class="form__field-title">Support Category</p>
-					<select id="category" required="required" class="form__field">
-						<option value="">General questions</option>
-						<option value="black">Questions on uploading video's</option>
-					</select>
-				</fieldset>
-				<fieldset class="full">
-					<p class="form__field-title">Subject</p>
-					<input type="text" name="subject" placeholder="please enter a subject" required="required" class="form__field">
-				</fieldset>
-				<fieldset class="full">
-					<p class="form__field-title">Description</p>
-					<textarea name="description" id="description" placeholder="Please enter a description" class="form__field form__field--large" cols="30" rows="10"></textarea>
-				</fieldset>
-				<fieldset class="full">
-					<legend class="form__legend form__legend--left form__legend--no-border">A member of our support staff will get back to you as soon as possible</legend>
-				</fieldset>
-				<fieldset class="full">
-					<input type="submit" name="button" value="submit" id="button" class="form__button button button--center">
-				</fieldset>
-				<!-- <div class="form__extras-wrapper">
-					<input type="checkbox" id="remember" name="remember" class="form__checkbox" checked>
-					<label for="remember" class="form__checkbox-label">Remember me</label>
-				</div>
-				<div class="form__extras-wrapper">
-					<input type="checkbox" id="agecheck" name="agecheck" class="form__checkbox">
-					<label for="agecheck" class="form__checkbox-label">I am 18 years of age or older *</label>
-				</div> -->
-				<!-- <p class="form__radio-text">I want to be a:</p>
-				<div class="half-button-wrapper">
-					<label class="radio__container">
-						<input type="radio" name="account-type" value="member" checked>
-						<span class="radio__button button button--half">Member</span>
-					</label>
-					<label class="radio__container">
-						<input type="radio" name="account-type" value="vip">
-						<span class="radio__button button button--half">Vip</span>
-					</label>
-				</div> -->
-				<!-- <p class="form__text">By registering I confirm to have read and accept the TOS conditions *</p> -->
-			</section>
+	<section class="container container--center">
+		<h1 class="page__header page__header--flat">Have questions or suggestions?</h1>
+		<form action="">
+			<fieldset class="form">
+				<legend class="form__legend form__legend--left form__legend--no-border">
+					The Emma Club Support Team is always here to help.
+				</legend>
+				<legend class="form__legend form__legend--left form__legend--no-border">
+					Please try to include as many details as possible. 
+					<br>
+					The more we know about your issue, the faster we can resolve it.
+				</legend>
+				<p class="form__field-title">E-mail</p>
+				<input type="email" name="email" placeholder="please enter your e-mail address" required="required" class="form__field">
+				<p class="form__field-title">Support Category</p>
+				<select id="category" required="required" class="form__field">
+					<option value="">General questions</option>
+					<option value="black">Questions on uploading video's</option>
+				</select>
+				<p class="form__field-title">Subject</p>
+				<input type="text" name="subject" placeholder="please enter a subject" required="required" class="form__field">
+				<p class="form__field-title">Description</p>
+				<textarea name="description" id="description" placeholder="Please enter a description" class="form__field form__field--large" cols="30" rows="10"></textarea>
+				<legend class="form__legend form__legend--left form__legend--no-border">A member of our support staff will get back to you as soon as possible.</legend>
+				<input type="submit" name="button" value="submit" id="button" class="form__button button button--center">
+			</fieldset>
 		</form>
 	</section>
 

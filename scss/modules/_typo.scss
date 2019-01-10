@@ -1,27 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600');
 
-body {
-	font-family: $font-family-regular;
-	font-size: $font-size-regular;
-	font-weight: $font-weight-normal;
-	line-height: 1.5;
-	color: $dark-gray;
-}
-
-.page__header {
-	font-family: $font-family-regular;
-	font-size: $font-size-xx-large;
-	font-weight: $font-weight-light;
-	line-height: 1;
-	color: $red;
-	letter-spacing: 1px;
-	margin: 60px 0 40px;
-
-	&--alt {
-		margin: 40px 0 20px;
-	}
-}
-
-.fa, .fas {
-	font-size: $font-size-small;
-}
+$font-family-regular: Nunito, sans-serif;
+$font-size-x-small: 13px;
+$font-size-small: 14px;
+$font-size-regular: 16px;
+$font-size-large: 18px;
+$font-size-x-large: 24px;
+$font-size-xx-large: 36px;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
