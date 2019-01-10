@@ -257,6 +257,26 @@ a {
       .container--no-top {
         padding-top: 40px; } }
 
+.preview-banner {
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  max-height: 50vh;
+  margin: 0 auto;
+  overflow: hidden;
+  object-fit: cover; }
+  .preview-banner:hover .preview-banner__button {
+    opacity: 1; }
+  .preview-banner__image {
+    display: block;
+    width: 100%; }
+  .preview-banner__button {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    opacity: 0;
+    transition: all ease-in-out 0.1s; }
+
 .account-info {
   display: flex;
   justify-content: flex-start;
@@ -902,14 +922,14 @@ input[type=range]::-webkit-slider-thumb {
 .checkbox {
   position: absolute;
   opacity: 0; }
-  .checkbox + label {
+  .checkbox + .checkbox-label {
     display: flex;
     align-items: flex-start;
     position: relative;
     font-size: 16px;
     padding: 0;
     cursor: pointer; }
-  .checkbox + label:before {
+  .checkbox + .checkbox-label:before {
     content: '';
     width: 16px;
     height: 16px;
@@ -918,14 +938,12 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 4px;
     margin-right: 12px;
     transition: all ease-in-out 0.15s; }
-  .checkbox:hover + label:before {
-    background: #f4f4f4;
-    margin-right: 16px;
-    transform: scale(1.1); }
-  .checkbox:checked + label:before {
+  .checkbox:hover + .checkbox-label:before {
+    margin-right: 16px; }
+  .checkbox:checked + .checkbox-label:before {
     background: #b21717;
     border-color: #b21717; }
-  .checkbox:checked + label:after {
+  .checkbox:checked + .checkbox-label:after {
     content: '';
     position: absolute;
     left: 4px;
@@ -934,7 +952,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 2px;
     height: 2px;
     box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-    transform: rotate(45deg); }
+    transform: rotate(40deg); }
 
 .page__header {
   font-family: Nunito, sans-serif;
@@ -1103,26 +1121,6 @@ input[type=range]::-webkit-slider-thumb {
   @media only screen and (max-width: 641px) {
     .content__link--text {
       display: none; } }
-
-.preview-banner {
-  position: relative;
-  width: 100%;
-  max-width: 1320px;
-  max-height: 50vh;
-  margin: 0 auto;
-  overflow: hidden;
-  object-fit: cover; }
-  .preview-banner:hover .preview-banner__button {
-    opacity: 1; }
-  .preview-banner__image {
-    display: block;
-    width: 100%; }
-  .preview-banner__button {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    opacity: 0;
-    transition: all ease-in-out 0.1s; }
 
 .sidebar-layout {
   display: grid;

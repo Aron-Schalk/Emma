@@ -10,6 +10,7 @@
 @import 'partials/_modal.scss';
 @import 'partials/_nav.scss';
 @import 'partials/_container.scss';
+@import 'partials/_preview-banner.scss';
 @import 'partials/_account.scss';
 @import 'partials/_sidebar.scss';
 @import 'partials/_form.scss';
@@ -18,81 +19,7 @@
 @import 'partials/_link.scss';
 @import 'partials/_button.scss';
 @import 'partials/_tag.scss';
-
-// .checkbox {
-// 	width: 20px;
-// 	height: $font-size-large;
-// 	cursor: pointer;
-
-// 	&-label {
-// 		font-size: $font-size-regular;
-// 		margin-left: 12px;
-// 		cursor: pointer;
-// 	}
-// }
-
-.checkbox {
-	position: absolute;
-	opacity: 0;
-  
-	& + label {
-		display: flex;
-		align-items: flex-start;
-		position: relative;
-		font-size: $font-size-regular;
-		padding: 0;
-		cursor: pointer;
-	}
-
-	& + label:before {
-	  content: '';
-	  width: 16px;
-	  height: 16px;
-	  background: $white;
-	  border: 1px solid $dark-gray;
-	  border-radius: 4px;
-	  margin-right: 12px;
-	  transition: all ease-in-out 0.15s;
-	}
-
-	// Box hover
-	&:hover + label:before {
-	background: $light-gray;
-	margin-right: 16px;
-	transform: scale(1.1);
-	}
-
-	// Box checked
-	&:checked + label:before {
-	background: $red;
-	border-color: $red;
-	}
-
-	// Checkmark
-	&:checked + label:after {
-		content: '';
-		position: absolute;
-		left: 4px;
-		top: 8px;
-		background: white;
-		width: 2px;
-		height: 2px;
-		box-shadow: 
-		  2px 0 0 white,
-		  4px 0 0 white,
-		  4px -2px 0 white,
-		  4px -4px 0 white,
-		  4px -6px 0 white,
-		  4px -8px 0 white;
-		transform: rotate(45deg);
-	  }
-}
-
-
-
-
-
-
+@import 'partials/_checkbox.scss';
 
 .page__header {
 	font-family: $font-family-regular;
@@ -348,33 +275,6 @@
 		&--text {
 			display: none;
 		}
-	}
-}
-
-.preview-banner {
-	position: relative;
-	width: 100%;
-	max-width: 1320px;
-	max-height: 50vh;
-	margin: 0 auto;
-	overflow: hidden;
-	object-fit: cover;
-
-	&:hover .preview-banner__button {
-		opacity: 1;
-	}
-
-	&__image {
-		display: block;
-		width: 100%;
-	}
-
-	&__button {
-		position: absolute;
-		top: 20px;
-		left: 30px;
-		opacity: 0;
-		transition: all ease-in-out 0.1s;
 	}
 }
 
