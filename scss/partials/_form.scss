@@ -48,7 +48,7 @@
 
 	&__legend {
 		width: 100%;
-		font-size: $m;
+		font-size: $size-regular;
 		margin: 0 0 20px;
 	}
 
@@ -65,7 +65,7 @@
 	}
 
 	&__text {
-		font-size: $s;
+		font-size: $size-small;
 		color: $color-gray;
 		text-align: center;
 		margin: 20px 0;
@@ -78,14 +78,14 @@
 	height: 40px;
 	background: $color-gray-light;
 	font-family: Nunito, sans-serif;
-	font-size: $s;
+	font-size: $size-small;
 	line-height: 1.4;
 	outline: none;
 	color: $color-gray-dark;
 	border: none;
 	border-radius: 20px;
 	padding: 10px;
-	margin-bottom: $m;
+	margin-bottom: $size-regular;
 	cursor: auto;
 	transition: all ease-in-out 0.15s;
 
@@ -105,7 +105,7 @@
 	}
 
 	&-title {
-		font-size: $xxs;
+		font-size: $size-xx-small;
 		font-weight: $bold;
 		color: $color-red;
 		line-height: 3;

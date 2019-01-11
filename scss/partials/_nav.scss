@@ -139,7 +139,7 @@
 		&-link {
 			display: block;
 			background: $color-red;
-			font-size: $m;
+			font-size: $size-regular;
 			font-weight: $bold;
 			color: $color-white;
 			text-transform: uppercase;
@@ -219,7 +219,7 @@
 
 		&-link {
 			display: block;
-			font-size: $s;
+			font-size: $size-small;
 			font-weight: $bold;
 			color: $color-white;
 			text-transform: uppercase;
