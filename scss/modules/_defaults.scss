@@ -10,15 +10,15 @@
 body {
 	width: 100%;
 	height: 100%;
-	background: $light-gray;
-	font-family: $font-family-regular;
-	font-size: $font-size-regular;
-	font-weight: $font-weight-normal;
+	background: $color-gray-light;
+	font-family: $primary-font;
+	font-size: $s;
+	font-weight: $normal;
 	line-height: 1.5;
-	color: $dark-gray;
+	color: $color-gray-dark;
 	overflow-x: hidden;
 }
 
 a {
-	color: $red;
+	color: $color-red;
 }

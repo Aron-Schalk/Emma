@@ -2,16 +2,16 @@
 	width: 100%;
 	max-width: 1320px;
 	height: 100%;
-	background: $white;
+	background: $color-white;
 	margin: 0 auto;
 	padding: 120px 80px 180px;
 
-	@include media-query('tablet') {
+	@include media-query('breakpoint-tablet') {
 		padding-left: 40px;
 		padding-right: 40px;
 	}
 
-	@include media-query('tablet-small') {
+	@include media-query('breakpoint-tablet-small') {
 		padding: 66px 20px 60px;
 	}
 
@@ -39,7 +39,7 @@
 		max-width: 1320px;
 		padding-top: 0;
 
-		@include media-query('tablet-small') {
+		@include media-query('breakpoint-tablet-small') {
 			padding-top: 40px;
 		}
 	}

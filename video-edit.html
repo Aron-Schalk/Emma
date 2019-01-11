@@ -47,89 +47,96 @@
 		</ul>
 	</nav>
 
-	<section class="container container--640">
-		<h1 class="page__header ">Edit Video</h1>
+	<section class="container container--center">
+		<h1 class="page__header page__header--flat">Edit Video</h1>
 		<div class="content__image-container">
 			<img src="img/leaf.jpg" alt="" class="content__image">
 		</div>
-		<button class="button-preview button-preview--show button button--center">Edit preview</button>
-		<div class="button-wrapper">
-			<button class="button-collapse button button--ghost button--half">Cancel</button>
-			<button class="button-apply button button--half">Apply</button>
+		<div class="form-container">
+			<form action="">
+				<button class="button-preview button-preview--show button button--center" type="button">Edit preview</button>
+				<div class="button-wrapper">
+					<button class="button-collapse button button--ghost button--half">Cancel</button>
+					<button class="button-apply button button--half">Apply</button>
+				</div>
+				<section class="preview-edit">
+					<div class="range-slider-wrapper">
+						<input type="range" value="100" min="0" max="100" class="range-slider">
+					</div>
+					<legend class="form__title form__title--alt">Preview clips</legend>
+					<ul class="preview-edit__clips content__list content__list--full">
+						<li class="content__list-item">
+							<div class="content__image-container">
+								<img src="img/leaf.jpg" alt="" class="content__image">
+							</div>
+						</li>
+						<li class="content__list-item">
+							<div class="content__image-container">
+								<img src="img/leaf.jpg" alt="" class="content__image">
+							</div>
+						</li>
+						<li class="content__list-item">
+							<div class="content__image-container">
+								<img src="img/leaf.jpg" alt="" class="content__image">
+							</div>
+						</li>
+						<li class="content__list-item">
+							<div class="content__image-container">
+								<img src="img/leaf.jpg" alt="" class="content__image">
+							</div>
+						</li>
+						<li class="content__list-item">
+							<div class="content__image-container">
+								<img src="img/leaf.jpg" alt="" class="content__image">
+							</div>
+						</li>
+					</ul>
+					<button class="button button--center">Re-generate</button>
+				</section>
+				<p class="form__field-title">Title</p>
+				<div class="flex-wrapper">
+					<input type="text" name="title" placeholder="Please enter a title" autocomplete="off" class="form__field">		
+					<select id="status" class="form__field video__status">
+						<option value="online">Online</option>
+						<option value="offline">Offline</option>
+					</select>
+				</div>
+				<p class="form__field-title">Description</p>
+				<textarea name="description" id="description" placeholder="Please enter a description"  class="form__field form__field--large" cols="30" rows="10"></textarea>
+				<section class="tag-wrapper">
+					<div class="tag valid">category<i class="fas fa-times"></i></div>
+					<div class="tag valid">category<i class="fas fa-times"></i></div>
+					<input type="text" name="categories" placeholder="add category" class="form__field tag--add">
+					<!-- <div class="tag tag--add"></div> -->
+				</section>
+				<!-- <legend class="form__field-title">Price</legend> -->
+				<p class="form__field-title">Price</p>
+				<div class="form__field">$<input type="number" name="price" min="0" step="0.1" placeholder="0" autocomplete="off" class="form__field form__field--inner"></div>
+				<!-- <legend class="form__field-title">Discount</legend> -->
+				<p class="form__field-title">Discount</p>
+					<div class="checkbox-wrapper">
+						<input class="checkbox" type="checkbox" id="discount" value="enable discount" name="discount">
+						<label class="checkbox-label" for="discount">Enable discount</label>
+					</div>
+					<div class="form__field">%<input type="number" name="discount" min="0" max="100" step="1" placeholder="0" autocomplete="off" class="form__field form__field--inner"></div>
+				<!-- <legend class="form__field-title">Specs</legend> -->
+				<p class="form__field-title">Specs</p>
+				<span class="video__spec-wrapper">
+					<strong>Length</strong>
+					<p class="video__spec-value">00:00:00</p>
+				</span>
+				<span class="video__spec-wrapper">
+					<strong>Resolution</strong>
+					<p class="video__spec-value">1280 x 720</p>
+				</span>
+				<!-- <legend class="form__field-title">GIF</legend> -->
+				<p class="form__field-title">Gif</p>
+				<div class="content__image-container content__image-container--small">
+					<img src="img/leaf.jpg" alt="" class="content__image">
+				</div>
+				<button class="button button--center">Save</button>
+			</form>
 		</div>
-		<section class="preview-edit">
-			<div class="range-slider-wrapper">
-				<input type="range" value="100" min="0" max="100" class="range-slider">
-			</div>
-			<legend class="form__title form__title--alt">Preview clips</legend>
-			<ul class="preview-edit__clips content__list content__list--full">
-				<li class="content__list-item">
-					<div class="content__image-container">
-						<img src="img/leaf.jpg" alt="" class="content__image">
-					</div>
-				</li>
-				<li class="content__list-item">
-					<div class="content__image-container">
-						<img src="img/leaf.jpg" alt="" class="content__image">
-					</div>
-				</li>
-				<li class="content__list-item">
-					<div class="content__image-container">
-						<img src="img/leaf.jpg" alt="" class="content__image">
-					</div>
-				</li>
-				<li class="content__list-item">
-					<div class="content__image-container">
-						<img src="img/leaf.jpg" alt="" class="content__image">
-					</div>
-				</li>
-				<li class="content__list-item">
-					<div class="content__image-container">
-						<img src="img/leaf.jpg" alt="" class="content__image">
-					</div>
-				</li>
-			</ul>
-			<button class="button button--center">Re-generate</button>
-		</section>
-		<p class="form__field-title">Title</p>
-		<div class="flex-wrapper">
-			<input type="text" name="title" placeholder="Please enter a title" autocomplete="off" class="form__field">		
-			<select id="status" class="form__field video__status">
-				<option value="online">Online</option>
-				<option value="offline">Offline</option>
-			</select>
-		</div>
-		<p class="form__field-title">Description</p>
-		<textarea name="description" id="description" placeholder="Please enter a description"  class="form__field form__field--large" cols="30" rows="10"></textarea>
-		<section class="form-container">
-			<div class="tag valid">category<i class="fas fa-times"></i></div>
-			<div class="tag valid">category<i class="fas fa-times"></i></div>
-			<div class="tag tag--add">
-				<input type="text" name="categories" placeholder="add category" class="form__field form__field--alt">
-			</div>
-		</section>
-		<legend class="form__field-title">Price</legend>
-		<span class="form__field price">$<input type="number" name="price" min="0" step="0.1" placeholder="0" autocomplete="off" class="form__field--inner"></span>
-		<legend class="form__field-title">Discount</legend>
-			<span class="checkbox-wrapper">
-				<input class="checkbox" type="checkbox" id="discount" value="enable discount" name="discount">
-				<label class="checkbox-label" for="discount">Enable discount</label>
-			</span>
-			<span class="form__field discount">%<input type="number" name="discount" min="0" max="100" step="1" placeholder="0" autocomplete="off" class="form__field--inner"></span>
-		<legend class="form__field-title">Specs</legend>
-		<span class="video__spec-wrapper">
-			<strong>Length</strong>
-			<p class="video__spec-value">00:00:00</p>
-		</span>
-		<span class="video__spec-wrapper">
-			<strong>Resolution</strong>
-			<p class="video__spec-value">1280 x 720</p>
-		</span>
-		<legend class="form__field-title">GIF</legend>
-		<div class="content__image-container content__image-container--small">
-			<img src="img/leaf.jpg" alt="" class="content__image">
-		</div>
- 		<button class="button button--center">Save</button>
 	</section>
 	
 </body>

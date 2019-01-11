@@ -22,12 +22,12 @@
 @import 'partials/_checkbox.scss';
 
 .page__header {
-	font-family: $font-family-regular;
-	font-size: $font-size-xx-large;
-	font-weight: $font-weight-normal;
+	font-family: $primary-font;
+	font-size: $xxl;
+	font-weight: $normal;
 	line-height: 1;
 	text-align: center;
-	color: $red;
+	color: $color-red;
 	margin: 60px 0 40px;
 
 	&--flat {
@@ -36,7 +36,7 @@
 }
 
 .fa, .fas {
-	font-size: $font-size-small;
+	font-size: $s;
 }
 
 .page__description {
@@ -48,13 +48,13 @@
 	}
 
 	&--grey {
-		color: $gray;
+		color: $color-gray;
 	}
 }
 
 .title-header {
-	font-size: $font-size-x-large;
-	color: $red;
+	font-size: $xl;
+	color: $color-red;
 	margin: 10px 0;
 }
 
@@ -74,11 +74,11 @@
 	align-items: center;
 	height: 60px;
 	list-style-type: none;
-	border-bottom: 1px solid $dark-gray;
+	border-bottom: 1px solid $color-gray-dark;
 	padding: 0 20px;
 	margin: 0 0 20px;
 	
-	@include media-query('tablet') {
+	@include media-query('breakpoint-tablet') {
 		padding: 0;
 	}
 
@@ -100,15 +100,15 @@
 	}
 
 	&-link {
-		font-weight: $font-weight-normal;
+		font-weight: $normal;
 		text-transform: uppercase;
 
 		&:hover {
-			font-weight: $font-weight-bold;
+			font-weight: $bold;
 		}
 
 		&--active {
-			font-weight: $font-weight-bold;
+			font-weight: $bold;
 		}
 	}
 }
@@ -143,10 +143,10 @@
 			padding: 10px;
 
 			&:hover {
-				background: $light-gray;
+				background: $color-gray-light;
 			}
 
-			@include media-query('tablet-small') {
+			@include media-query('breakpoint-tablet-small') {
 				display: block;
 				padding: 10px;
 			}
@@ -157,7 +157,7 @@
 			word-break: break-word;
 			margin-left: 20px;
 
-			@include media-query('tablet-small') {
+			@include media-query('breakpoint-tablet-small') {
 				margin-left: 0;
 			}
 		}
@@ -178,11 +178,11 @@
 		cursor: pointer;
 
 		i {
-			font-size: $font-size-x-small;
+			font-size: $xs;
 		}
 
 		&:hover {
-			background: $light-gray;
+			background: $color-gray-light;
 
 			.content__image-button {
 				opacity: 1;
@@ -197,7 +197,7 @@
 
 .content__library--images {
 
-	@include media-query('tablet-small') {
+	@include media-query('breakpoint-tablet-small') {
 
 		// .table__item:nth-of-type(2) {
 		// 	padding: 0;
@@ -218,7 +218,7 @@
 		width: 100%;
 		max-width: 640px;
 		height: auto;
-		background: $light-gray;
+		background: $color-gray-light;
 		border-radius: 20px;
 		margin: 0 auto;
 
@@ -240,15 +240,15 @@
 }
 
 .content__info {
-	padding: 8px $font-size-regular;
+	padding: 8px $m;
 }
 
 .content__details {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-size: $font-size-small;
-	font-weight: $font-weight-light;
+	font-size: $s;
+	font-weight: $thin;
 	margin: 16px 0;
 
 	i {
@@ -257,9 +257,9 @@
 }
 
 .content__title {
-	font-size: $font-size-large;
-	font-weight: $font-weight-bold;
-	color: $red;
+	font-size: $l;
+	font-weight: $bold;
+	color: $color-red;
 
 	&--margin {
 		margin: 20px 0;
@@ -267,11 +267,11 @@
 }
 
 .content__link {
-	font-size: $font-size-small;
-	color: $red;
+	font-size: $s;
+	color: $color-red;
 	text-transform: uppercase;
 
-	@include media-query('tablet-small') {
+	@include media-query('breakpoint-tablet-small') {
 		&--text {
 			display: none;
 		}
@@ -284,28 +284,28 @@
 	grid-gap: 60px;
 	transition: all ease-in-out 0.15s;
 
-	@include media-query('tablet') {
+	@include media-query('breakpoint-tablet') {
 		grid-gap: 30px;
 	}
 
-	@include media-query('tablet-small') {
+	@include media-query('breakpoint-tablet-small') {
 		grid-template-columns: 1fr;
 	}
 }
 
 .your-videos .content__list-item {
-	border-bottom: 1px solid $gray;
+	border-bottom: 1px solid $color-gray;
 
 	&:nth-of-type(1) {
-		border-top: 1px solid $gray;
+		border-top: 1px solid $color-gray;
 	}
 }
 
 .selected-videos .content__list-item {
-	border-bottom: 1px solid $gray;
+	border-bottom: 1px solid $color-gray;
 
 	&:nth-of-type(1) {
-		border-top: 1px solid $gray;
+		border-top: 1px solid $color-gray;
 	}
 }
 
@@ -316,7 +316,7 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 20px;
 
-	@include media-query('tablet-small') {
+	@include media-query('breakpoint-tablet-small') {
 		grid-gap: 10px;
 		margin: 0 -10px;
 		
@@ -332,9 +332,9 @@
 
 .section__title {
 	width: 100%;
-	font-weight: $font-weight-bold;
+	font-weight: $bold;
 	text-transform: uppercase;
-	border-bottom: 1px solid $dark-gray;
+	border-bottom: 1px solid $color-gray-dark;
 	padding: 10px 0;
 	margin-bottom: 10px;
 
@@ -347,7 +347,7 @@
 .selected-videos {
 	margin-bottom: 40px;
 
-	@include media-query('tablet-small') {
+	@include media-query('breakpoint-tablet-small') {
 		.button {
 			padding: 10px 20px;
 		}
@@ -418,24 +418,4 @@
 
 .flex-wrapper {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.checkbox-wrapper {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.discount {
-	margin-top: 10px;
-}
-
-.discount, .price {
-	width: 25%;
-
-	@media all and (max-width: 600px) {
-		width: 100%;
-	}
 }

@@ -1,19 +1,17 @@
 // Colors
-
-$white: #fff;
-$light-gray: #f4f4f4;
-$gray: #8d8d8d;
-$dark-gray: #121010;
-$light-red: #bc3434;
-$red: #b21717;
-$dark-red: #931717;
-$pink: #ca5e5e;
+$color-white: #fff;
+$color-gray: #8d8d8d;
+$color-gray-light: #f4f4f4;
+$color-gray-dark: #121010;
+$color-red: #b21717;
+$color-red-light: #bc3434;
+$color-red-dark: #931717;
+$color-pink: #ca5e5e;
 
 // Media-queries
-
 $breakpoints: (
-	"tablet-small": 640px,
-	"tablet": 768px
+	"breakpoint-tablet-small": 640px,
+	"breakpoint-tablet": 768px
 );
 @mixin media-query($width, $type: max) {
 	@if map_has_key($breakpoints, $width) {

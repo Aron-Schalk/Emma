@@ -3,10 +3,12 @@
 }
 
 .link {
+	transition: all 0.1s ease-in-out;
 
 	&:hover {
-		color: $dark-red;
+		color: $color-red-dark;
 		text-decoration: underline;
+		transform: translateY(-2px);
 	}
 
 	&--underline {

@@ -1,3 +1,7 @@
+.checkbox-wrapper {
+	margin-bottom: 8px;
+}
+
 .checkbox {
 	position: absolute;
 	opacity: 0;
@@ -6,7 +10,7 @@
 		display: flex;
 		align-items: flex-start;
 		position: relative;
-		font-size: $font-size-regular;
+		font-size: $s;
 		padding: 0;
 		cursor: pointer;
 	}
@@ -15,8 +19,8 @@
 	  content: '';
 	  width: 16px;
 	  height: 16px;
-	  background: $white;
-	  border: 1px solid $dark-gray;
+	  background: $color-white;
+	  border: 1px solid $color-gray-dark;
 	  border-radius: 4px;
 	  margin-right: 12px;
 	  transition: all ease-in-out 0.15s;
@@ -27,8 +31,8 @@
 	}
 
 	&:checked + .checkbox-label:before {
-		background: $red;
-		border-color: $red;
+		background: $color-red;
+		border-color: $color-red;
 	}
 
 	&:checked + .checkbox-label:after {
