@@ -1,0 +1,42 @@
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	list-style-type: none;
+
+	&::after {
+		content: "";
+		flex-grow: 3;
+	}
+
+	&--vertical {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.grid__item {
+	flex-grow: 1;
+	flex-shrink: 0;
+	width: 30%;
+	margin: 0 10px 20px;
+	cursor: pointer;
+
+	&:hover {
+		background: $color-gray-light;
+
+		.content__image-button {
+			opacity: 1;
+		}
+	}
+
+	&--static {
+		flex-grow: unset;
+		width: calc(50% - 20px);
+	}
+
+	&--full {
+		width: 100%;
+		margin: 0 0 10px;
+	}
+}

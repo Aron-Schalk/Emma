@@ -1,24 +1,27 @@
 .tag-wrapper {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .tag {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	max-height: 24px;
 	background: $color-pink;
 	color: $color-white;
 	border-radius: 20px;
 	padding: 2px $size-regular;
-	margin: 6px 10px 6px 0;
+	margin: 0 10px 16px 0;
 	cursor: pointer;
 
 	&--add {
 		width: unset;
-		height: 30px;
 		background: $color-white;
+		color: $color-gray-dark;
 		border: 1px solid $color-gray-dark;
-		margin: 6px 0;
+		margin: 0 0 16px;
+		cursor: auto;
 
 		&:hover {
 			background: $color-gray-light;

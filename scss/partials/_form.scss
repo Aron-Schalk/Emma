@@ -5,6 +5,10 @@
 	max-width: 640px;
 	margin: 0 auto;
 
+	&--wide {
+		max-width: unset;
+	}
+
 	.form {
 		margin: 40px 0 0;
 	}
@@ -72,6 +76,30 @@
 	}
 }
 
+.form__field-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 -10px;
+}
+
+.form__field-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	padding: 0 10px;
+}
+
+.form__field-title {
+	font-size: $size-xx-small;
+	font-weight: $bold;
+	color: $color-red;
+	line-height: 3;
+	text-transform: uppercase;
+}
+
 .form__field {
 	position: relative;
 	width: 100%;
@@ -93,7 +121,6 @@
 		max-width: unset;
 	}
 
-
 	&:hover, &:focus-within {
 		background: $color-white;
 		text-indent: 4px;
@@ -102,14 +129,6 @@
 	&::placeholder {
 		font-weight: $thin;
 		color: $color-gray-dark;
-	}
-
-	&-title {
-		font-size: $size-xx-small;
-		font-weight: $bold;
-		color: $color-red;
-		line-height: 3;
-		text-transform: uppercase;
 	}
 
 	&--inner {
@@ -127,6 +146,11 @@
 		&:hover, &:focus-within {
 			text-indent: 6px;
 		}
+	}
+
+	&--small {
+		width: 20%;
+		min-width: 140px;
 	}
 
 	&--large {
@@ -152,14 +176,6 @@
 		}
 	}
 }
-
-// .form select.form__field:hover {
-// 	background: $color-white;
-// }
-
-// .form select.form__field:focus-within {
-// 	background: $color-gray-light;
-// }
 
 .form select.form__field, input[type=date].form__field {
 	background: $color-gray-light;

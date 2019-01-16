@@ -1,9 +1,22 @@
 .sidebar {
+	width: 200px;
+
+	@include media-query('breakpoint-tablet') {
+		width: 100%;
+	}
+
+	&--wide {
+		width: 30%;
+
+		@include media-query('breakpoint-tablet') {
+			width: 100%;
+		}
+	}
 
 	.avatar-container {
 		margin-top: -100px;
 
-		@include media-query('breakpoint-tablet-small') {
+		@include media-query('breakpoint-tablet') {
 			margin: 80px auto 0;
 		}
 	}
