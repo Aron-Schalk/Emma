@@ -7,10 +7,6 @@
 	overflow: hidden;
 	object-fit: cover;
 
-	&:hover .preview-banner__button {
-		opacity: 1;
-	}
-
 	&__image {
 		display: block;
 		width: 100%;

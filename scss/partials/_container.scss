@@ -2,7 +2,7 @@
 	width: 100%;
 	max-width: 1320px;
 	height: 100%;
-	background: $color-white;
+	// background: $color-white;
 	margin: 0 auto;
 	padding: 120px 80px 180px;
 
@@ -57,16 +57,6 @@
 
 		& > section {
 			width: calc(100% - 260px);
-
-			@include media-query('breakpoint-tablet') {
-				width: 100%;
-			}
-		}
-	}
-
-	&--sidebar-wide {
-		& > section {
-			width: calc(100% - 30% - 60px);
 
 			@include media-query('breakpoint-tablet') {
 				width: 100%;

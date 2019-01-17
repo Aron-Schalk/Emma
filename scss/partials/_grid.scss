@@ -3,6 +3,7 @@
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	list-style-type: none;
+	margin: 0 -10px;
 
 	&::after {
 		content: "";
@@ -21,9 +22,11 @@
 	width: 30%;
 	margin: 0 10px 20px;
 	cursor: pointer;
+	transition: all ease-in-out 0.1s;
 
 	&:hover {
 		background: $color-gray-light;
+		transform: translateY(-2px);
 
 		.content__image-button {
 			opacity: 1;

@@ -48,11 +48,11 @@
 	</nav>
 
 	<section class="video-wrapper">
-		<video class="video" width="100%" height="100%" controls="controls">
+		<video class="video video--center" width="100%" height="100%" controls="controls">
 			<source src="img/video.mp4" type="video/mp4">
 		</video>
 	</section>
-	<section class="container container--no-top container--sidebar container--sidebar-wide">
+	<section class="container container--no-top container--sidebar">
 		<section>
 			<div class="form-container form-container--wide">
 				<form action="">
@@ -90,8 +90,10 @@
 					</section>
 				</form>
 				<legend class="form__title">Video Preview</legend>
-				<div class="content__image-container">
-					<img src="img/leaf.jpg" alt="" class="content__image">
+				<div class="video-wrapper">
+					<video class="video" width="100%" height="100%" controls="controls">
+						<source src="img/video.mp4" type="video/mp4">
+					</video>
 				</div>
 				<div class="form-container form-container--wide">
 					<legend class="form__title form__title--alt">Duration</legend>
@@ -126,7 +128,7 @@
 				</div>
 			</div>
 		</section>
-		<div class="sidebar sidebar--wide">
+		<div class="sidebar">
 			<legend class="form__title">Specs</legend>
 			<span class="video__spec-wrapper">
 				<strong>Length</strong>
