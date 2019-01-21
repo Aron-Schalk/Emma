@@ -50,12 +50,6 @@
 	border: none;
 	margin: 80px auto 0;
 
-	&__legend {
-		width: 100%;
-		font-size: $size-regular;
-		margin: 0 0 20px;
-	}
-
 	&__extras-wrapper {
 		display: flex;
 		justify-content: flex-start;
@@ -73,6 +67,16 @@
 		color: $color-gray;
 		text-align: center;
 		margin: 20px 0;
+	}
+}
+
+.form__legend {
+	width: 100%;
+	font-size: $size-regular;
+	margin: 0 0 20px;
+
+	&--margin {
+		margin: 40px 0;
 	}
 }
 

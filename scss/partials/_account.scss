@@ -2,9 +2,22 @@
 	font-size: $size-xx-large;
 	font-weight: $normal;
 
+	@include media-query('breakpoint-tablet') {
+		display: none;
+	}
+
 	&--absolute {
 		position: absolute;
-		top: 476px;
+		top: 427px;
+	}
+
+	&--mobile {
+		display: none;
+		text-align: center;
+
+		@include media-query('breakpoint-tablet') {
+			display: block;
+		}
 	}
 	
 	&--white {
@@ -94,7 +107,7 @@
 		margin: -100px 0 0;
 
 		@include media-query('breakpoint-tablet-small') {
-			margin: 80px auto;
+			margin: 0 auto;
 		}
 	}
 

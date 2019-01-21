@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27367379-23"></script>
+	<script type="module" src="js/index.js"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-27367379-23');
+	</script>
+
+	<title>Emma.club - Upload</title>
+	<meta name="description" content="Emma.club" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+	<section class="modal-wrapper">
+		<div class="modal-overlay"></div>
+		<div class="modal">
+			<button class="button button--round button--close"><i class="fas fa-times"></i></button>
+			<div class="avatar-container avatar-container--large">
+				<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
+			</div>
+			<label for="file" class="file-input-wrapper">
+				<span class="button">Upload avatar</span>
+				<input type="file" name="file" id="file" class="file-input">
+			</label>
+		</div>
+	</section>
+
+	<div class="hamburger-container">
+		<a class="hamburger">
+			<div class="hamburger__bar"></div>
+			<div class="hamburger__bar"></div>
+			<div class="hamburger__bar"></div>
+		</a>
+	</div>
+
+	<nav class="menu">
+		<!-- <a class="logo">
+		</a> -->
+		<ul class="menu__items">
+			<li class="menu__item"><a class="menu__item-link submenu__trigger">Home</a></li>
+			<ul class="submenu">
+				<li class="submenu__item"><a href="profile.html" class="submenu__item-link">Videos</a></li>
+				<li class="submenu__item"><a href="profile-images.html" class="submenu__item-link">Images</a></li>
+				<li class="submenu__item"><a href="profile-items.html" class="submenu__item-link">Items</a></li>
+				<li class="submenu__item"><a href="sale-links.html" class="submenu__item-link">Sale links</a></li>
+				<li class="submenu__item"><a href="profile-edit.html" class="submenu__item-link">Edit Profile</a></li>
+			</ul>
+			<li class="menu__item"><a href="upload-content.html" class="menu__item-link">Upload</a></li>
+			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
+			<li class="menu__item"><a href="sign-in.html" class="menu__item-link">Log out</a></li>
+		</ul>
+	</nav>
+	<section class="container container--center">
+		<h1 class="page__header">Upload content</h1>
+		<div class="form-container">
+					<legend class="form__legend form__legend--margin">What do you want to upload?</legend>
+					<ul class="grid grid--space-around">
+						<li class="grid__item grid__item--center grid__item--border">
+							<a href="video-add.html" class="grid__item-link">
+								<p class="header header--center">Video</p>
+							</a>
+						</li>
+						<li class="grid__item grid__item--center grid__item--border">
+							<a href="image-add.html" class="grid__item-link">
+								<p class="header header--center">Image</p>
+							</a>
+						</li>
+						<li class="grid__item grid__item--center grid__item--border">
+							<a href="item-add.html" class="grid__item-link">
+								<p class="header header--center">Store Item</p>
+							</a>
+						</li>
+					</ul>
+					<legend class="form__legend form__legend--margin">By uploading content I confirm that it does not violate <a href="" class="link link--underline">Emma Terms</a></a></legend>
+					<legend class="form__legend">If you're having trouble with creating/uploading content, please contact us at <a href="mailto:help@emma.club">help@emma.club</a></legend>
+		</div>
+	</section>
+	<section class="footer">
+		<ul class="footer__list">
+			<li class="footer__item"><a href="support.html" class="footer__item-link">Support</a></li>
+			<li class="footer__item"><a href="sign-in.html" class="footer__item-link">Log out</a></li>
+		</ul>
+	</section>
+	
+</body>
+</html>

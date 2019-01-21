@@ -39,7 +39,7 @@
 		max-width: 1320px;
 		padding-top: 0;
 
-		@include media-query('breakpoint-tablet-small') {
+		@include media-query('breakpoint-tablet') {
 			padding-top: 40px;
 		}
 	}

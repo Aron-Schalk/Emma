@@ -6,6 +6,10 @@
 	height: 160px;
 	border-top: 1px solid $color-gray;
 	padding: 40px 0;
+
+	@include media-query('breakpoint-tablet') {
+		height: unset;
+	}
 }
 
 .footer__list {
@@ -14,11 +18,19 @@
 	align-items: center;
 	width: auto;
 	margin: 0 auto;
+
+	@include media-query('breakpoint-tablet-small') {
+		flex-direction: column;
+	}
 }
 
 .footer__item {
 	margin: 0 40px;
 	transition: all 0.1s ease-in-out;
+
+	@include media-query('breakpoint-tablet-small') {
+		margin: 20px 0;
+	}
 
 	&:hover {
 		transform: translateY(-2px);

@@ -55,6 +55,7 @@
 				<li class="submenu__item"><a href="sale-links.html" class="submenu__item-link">Sale links</a></li>
 				<li class="submenu__item"><a href="profile-edit.html" class="submenu__item-link">Edit Profile</a></li>
 			</ul>
+			<li class="menu__item"><a href="upload-content.html" class="menu__item-link">Upload</a></li>
 			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
 			<li class="menu__item"><a href="sign-in.html" class="menu__item-link">Log out</a></li>
 		</ul>
@@ -74,16 +75,18 @@
 				<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
 				<a class="avatar__button button--round button-modal"><i class="fas fa-pen"></i></a>
 			</div>
+			<h2 class="name name--mobile">Ivanna B. Spanked</h2>
 			<p class="sidebar__item">
 				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 			</p>
 			<p class="sidebar__item sidebar__item--grey">
 				<i class="fas fa-map-marker-alt"></i>Amsterdam, Netherlands
-				<br>
+			</p>
+			<p class="sidebar__item sidebar__item--grey">
 				<i class="far fa-clock"></i>October 2018
 			</p>
-			<a href="video-add.html" class="button button--narrow button--center">Upload content</a>
+			<a href="upload-content.html" class="button button--narrow button--center">Upload content</a>
 			<a href="profile-edit.html" class="button button--ghost button--narrow button--center">Edit profile</a>
 		</div>
 		<section class="my-content">
@@ -100,7 +103,17 @@
 					<option value="hardcore">Hardcore</option>
 					<option value="keihardcore">Keihardcore</option>
 				</select>
-				<p class="filter__sort">Sort by:</p>
+				<select id="filter" class="form__field form__field--small">
+					<option value="">Sort by:</option>
+					<option value="1">Name (A-Z)</option>
+					<option value="2">Name (Z-A)</option>
+					<option value="3">Views (Most)</option>
+					<option value="4">Views (Least)</option>
+					<option value="5">Price (Highest)</option>
+					<option value="6">Price (Lowest)</option>
+					<option value="7">Date (Newest)</option>
+					<option value="8">Date (Oldest)</option>
+				</select>
 			</div>
 			<section class="content__library--video">
 				<ul class="grid">

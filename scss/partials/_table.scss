@@ -54,7 +54,7 @@
 	}
 
 	&--image {
-		width: 30%;
+		width: 40%;
 
 		@include media-query('breakpoint-tablet') {
 			width: unset;

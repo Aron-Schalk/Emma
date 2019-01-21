@@ -21,6 +21,20 @@
 </head>
 <body>
 
+	<section class="modal-wrapper">
+		<div class="modal-overlay"></div>
+		<div class="modal">
+			<button class="button button--round button--close"><i class="fas fa-times"></i></button>
+			<div class="avatar-container avatar-container--large">
+				<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
+			</div>
+			<label for="file" class="file-input-wrapper">
+				<span class="button">Upload avatar</span>
+				<input type="file" name="file" id="file" class="file-input">
+			</label>
+		</div>
+	</section>
+
 	<div class="hamburger-container">
 		<a class="hamburger">
 			<div class="hamburger__bar"></div>
@@ -46,116 +60,133 @@
 		</ul>
 	</nav>
 
-	<section class="preview-banner">
-		<img src="img/banner.jpg" alt="preview banner" class="preview-banner__image">
+	<section class="video-wrapper video-wrapper--banner">
+		<video class="video video--banner" width="100%" height="100%" autoplay="autoplay" muted="muted" loop="loop" >
+			<source src="img/video.mp4" type="video/mp4">
+		</video>
+		<div class="video-shadow"></div>
 		<a href="preview-banner.html" class="preview-banner__button button">Edit Preview Banner</a>
 	</section>
-	<section class="container container--no-top">
-		<div class="sidebar-layout">
-			<div class="sidebar">
-				<div class="avatar-container">
-					<div class="avatar-overlay"></div>
-					<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
-					<a class="avatar__button button--round button-modal"><i class="fas fa-pen"></i></a>
-				</div>
-				<h2 class="sidebar__header">Emma VIP Name</h2>
-				<p class="sidebar__item">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-					Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-				</p>
-				<p class="sidebar__item sidebar__item--grey">
-					<i class="fas fa-map-marker-alt"></i>Amsterdam, Netherlands
-					<br>
-					<i class="far fa-clock"></i>October 2018
-				</p>
-				<a href="profile-edit.html" class="button button--ghost button--narrow button--center">Edit profile</a>
+	<section class="container container--no-top container--sidebar">
+		<div class="sidebar">
+			<div class="avatar-container">
+				<div class="avatar-overlay"></div>
+				<img src="img/eggplant.png" alt="Avatar" class="avatar__image">
+				<a class="avatar__button button--round button-modal"><i class="fas fa-pen"></i></a>
 			</div>
-			<section class="my-content">
-				<ul class="content__nav">
-					<li class="content__nav-item"><a href="profile.html" class="content__nav-link">Videos</a></li>
-					<li class="content__nav-item"><a href="profile-images.html" class="content__nav-link content__nav-link--active">Images</a></li>
-					<li class="content__nav-item"><a href="profile-items.html" class="content__nav-link">Items</a></li>
-					<li class="content__nav-item content__nav-item--end"><a href="/image-add.html"><button class="button--round"><i class="fas fa-plus"></i></button></a></li>
-				</ul>
-				<div class="content__filter-container">
-					<p class="filter__categories">Categories:</p>
-					<p class="filter__sort">Sort by:</p>
-				</div>
-				<section class="content-table content__library--images">
-						<ul class="table-list table-list--images table__content-item">
-							<li class="table__item table__item--image">
-								<div class="content__image-container">
-									<img src="img/leaf.jpg" alt="" class="content__image">
-									<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
-								</div>
-							</li>
-							<li class="table__item table__item--large">
-								<a href="/image-view.html" class="content__title">Image title</a>
-							</li>
-							<li class="table__item table__item--right">
-								<a class="button--round"><i class="fas fa-times"></i></a>
-							</li>
-						</ul>
-						<ul class="table-list table-list--images table__content-item">
-							<li class="table__item table__item--image">
-								<div class="content__image-container">
-									<img src="img/leaf.jpg" alt="" class="content__image">
-									<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
-								</div>
-							</li>
-							<li class="table__item table__item--large">
-								<a href="/image-view.html" class="content__title">Image title</a>
-							</li>
-							<li class="table__item table__item--right">
-								<a class="button--round"><i class="fas fa-times"></i></a>
-							</li>
-						</ul>
-						<ul class="table-list table-list--images table__content-item">
-							<li class="table__item table__item--image">
-								<div class="content__image-container">
-									<img src="img/leaf.jpg" alt="" class="content__image">
-									<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
-								</div>
-							</li>
-							<li class="table__item table__item--large">
-								<a href="/image-view.html" class="content__title">Image title</a>
-							</li>
-							<li class="table__item table__item--right">
-								<a class="button--round"><i class="fas fa-times"></i></a>
-							</li>
-						</ul>
-						<ul class="table-list table-list--images table__content-item">
-							<li class="table__item table__item--image">
-								<div class="content__image-container">
-									<img src="img/leaf.jpg" alt="" class="content__image">
-									<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
-								</div>
-							</li>
-							<li class="table__item table__item--large">
-								<a href="/image-view.html" class="content__title">Image title</a>
-							</li>
-							<li class="table__item table__item--right">
-								<a class="button--round"><i class="fas fa-times"></i></a>
-							</li>
-						</ul>
-						<ul class="table-list table-list--images table__content-item">
-							<li class="table__item table__item--image">
-								<div class="content__image-container">
-									<img src="img/leaf.jpg" alt="" class="content__image">
-									<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
-								</div>
-							</li>
-							<li class="table__item table__item--large">
-								<a href="/image-view.html" class="content__title">Image title</a>
-							</li>
-							<li class="table__item table__item--right">
-								<a class="button--round"><i class="fas fa-times"></i></a>
-							</li>
-						</ul>
-					</section>
-			</section>
+			<h2 class="name name--mobile">Ivanna B. Spanked</h2>
+			<p class="sidebar__item">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+			</p>
+			<p class="sidebar__item sidebar__item--grey">
+				<i class="fas fa-map-marker-alt"></i>Amsterdam, Netherlands
+			</p>
+			<p class="sidebar__item sidebar__item--grey">
+				<i class="far fa-clock"></i>October 2018
+			</p>
+			<a href="upload-content.html" class="button button--narrow button--center">Upload content</a>
+			<a href="profile-edit.html" class="button button--ghost button--narrow button--center">Edit profile</a>
 		</div>
-
+		<section class="my-content">
+			<h2 class="name name--absolute name--white">Ivanna B. Spanked</h2>
+			<ul class="content__nav">
+				<li class="content__nav-item"><a href="profile.html" class="content__nav-link">Videos</a></li>
+				<li class="content__nav-item"><a href="profile-images.html" class="content__nav-link content__nav-link--active">Images</a></li>
+				<li class="content__nav-item"><a href="profile-items.html" class="content__nav-link">Items</a></li>
+			</ul>
+			<div class="content__filter-container">
+				<select id="category" class="form__field form__field--small">
+					<option value="">Category:</option>
+					<option value="softcore">Softcore</option>
+					<option value="hardcore">Hardcore</option>
+					<option value="keihardcore">Keihardcore</option>
+				</select>
+				<select id="filter" class="form__field form__field--small">
+					<option value="">Sort by:</option>
+					<option value="1">Name (A-Z)</option>
+					<option value="2">Name (Z-A)</option>
+					<option value="3">Views (Most)</option>
+					<option value="4">Views (Least)</option>
+					<option value="5">Price (Highest)</option>
+					<option value="6">Price (Lowest)</option>
+					<option value="7">Date (Newest)</option>
+					<option value="8">Date (Oldest)</option>
+				</select>
+			</div>
+		<section class="content-table content__library--images">
+				<ul class="table-list table-list--images table__content-item">
+					<li class="table__item table__item--image">
+						<div class="content__image-container">
+							<img src="img/leaf.jpg" alt="" class="content__image">
+							<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
+						</div>
+					</li>
+					<li class="table__item table__item--large">
+						<a href="/image-view.html" class="content__title">Image title</a>
+					</li>
+					<li class="table__item table__item--right">
+						<a class="button--round"><i class="fas fa-times"></i></a>
+					</li>
+				</ul>
+				<ul class="table-list table-list--images table__content-item">
+					<li class="table__item table__item--image">
+						<div class="content__image-container">
+							<img src="img/leaf.jpg" alt="" class="content__image">
+							<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
+						</div>
+					</li>
+					<li class="table__item table__item--large">
+						<a href="/image-view.html" class="content__title">Image title</a>
+					</li>
+					<li class="table__item table__item--right">
+						<a class="button--round"><i class="fas fa-times"></i></a>
+					</li>
+				</ul>
+				<ul class="table-list table-list--images table__content-item">
+					<li class="table__item table__item--image">
+						<div class="content__image-container">
+							<img src="img/leaf.jpg" alt="" class="content__image">
+							<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
+						</div>
+					</li>
+					<li class="table__item table__item--large">
+						<a href="/image-view.html" class="content__title">Image title</a>
+					</li>
+					<li class="table__item table__item--right">
+						<a class="button--round"><i class="fas fa-times"></i></a>
+					</li>
+				</ul>
+				<ul class="table-list table-list--images table__content-item">
+					<li class="table__item table__item--image">
+						<div class="content__image-container">
+							<img src="img/leaf.jpg" alt="" class="content__image">
+							<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
+						</div>
+					</li>
+					<li class="table__item table__item--large">
+						<a href="/image-view.html" class="content__title">Image title</a>
+					</li>
+					<li class="table__item table__item--right">
+						<a class="button--round"><i class="fas fa-times"></i></a>
+					</li>
+				</ul>
+				<ul class="table-list table-list--images table__content-item">
+					<li class="table__item table__item--image">
+						<div class="content__image-container">
+							<img src="img/leaf.jpg" alt="" class="content__image">
+							<a class="content__image-button button--round"><i class="fas fa-times"></i></a>
+						</div>
+					</li>
+					<li class="table__item table__item--large">
+						<a href="/image-view.html" class="content__title">Image title</a>
+					</li>
+					<li class="table__item table__item--right">
+						<a class="button--round"><i class="fas fa-times"></i></a>
+					</li>
+				</ul>
+			</section>
+		</section>
 	</section>
 	
 </body>

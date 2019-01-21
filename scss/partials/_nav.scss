@@ -89,8 +89,8 @@
 		top: 0;
 		right: -200px;
 		width: 200px;
-		height: 100%;
-		padding: 66px 0 0;
+		min-height: 100%;
+		padding: 100px 0 0;
 		overflow-y: scroll;
 		transition: right ease-in-out 0.15s;
 	}
