@@ -23,6 +23,7 @@
 @import 'partials/_checkbox.scss';
 @import 'partials/_range-slider.scss';
 @import 'partials/_footer.scss';
+@import 'partials/_icon.scss';
 
 .page__header {
 	font-family: $family-primary;
@@ -36,10 +37,6 @@
 	&--flat {
 		margin: 20px 0;
 	}
-}
-
-.fa, .fas {
-	font-size: $size-small;
 }
 
 .page__description {
@@ -176,7 +173,6 @@
 
 		.content__title {
 			width: 100%;
-			word-break: break-word;
 			margin-left: 20px;
 
 			@include media-query('breakpoint-tablet-small') {
@@ -215,16 +211,6 @@
 	margin-top: 0;
 }
 
-.content__library--images {
-
-	@include media-query('breakpoint-tablet-small') {
-
-		// .table__item:nth-of-type(2) {
-		// 	padding: 0;
-		// }
-	}
-}
-
 // Content Image
 .content__image {
 	width: 100%;
@@ -242,6 +228,7 @@
 		background: $color-gray-light;
 		border-radius: 20px;
 		margin: 0 auto;
+		z-index: -1;
 
 		&--small {
 			max-width: 300px;
@@ -251,28 +238,32 @@
 			margin: 120px auto;
 		}
 	}
+}
 
-	&-button {
-		opacity: 0;
-		position: absolute;
-		top: 10px;
-		right: 10px;
+.content__image-button {
+	opacity: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
 
-		@include media-query('breakpoint-tablet-small') {
-			opacity: 1;
-			left: 10px;
-			width: 50px;
-			height: 50px;
+	@include media-query('breakpoint-tablet-small') {
+		opacity: 1;
+		left: 10px;
+		width: 50px;
+		height: 50px;
 
-			i {
-				font-size: 16px;
-			}
+		i {
+			font-size: 16px;
 		}
+	}
+
+	&--left {
+		left: 10px;
 	}
 }
 
 .content__info {
-	padding: 8px 16px;
+	padding: 24px 16px;
 
 	@include media-query('breakpoint-tablet-small') {
 		padding: 24px 32px;
@@ -283,12 +274,18 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-size: $size-small;
-	font-weight: $thin;
+	font-size: $size-regular;
+	font-weight: $bold;
 	margin: 16px 0 4px;
+}
 
+.content__detail {
 	i {
 		margin-right: 4px;
+	}
+
+	&--right {
+		margin-left: auto;
 	}
 }
 
@@ -297,12 +294,17 @@
 	line-height: 1.2;
 	font-weight: $normal;
 	color: $color-red;
-	word-wrap: break-all;
+	word-wrap: break-word;
 	text-overflow: ellipsis;
+	margin-bottom: 16px;
 
 	&--margin {
 		margin: 20px 0;
 	}
+}
+
+.content__description {
+	margin-bottom: 20px;
 }
 
 .content__link {
@@ -316,10 +318,6 @@
 		}
 	}
 }
-
-
-
-
 
 .your-videos .content__list-item {
 	border-bottom: 1px solid $color-gray;

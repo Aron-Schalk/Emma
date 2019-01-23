@@ -7,6 +7,10 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	width: 100%;
 	height: 100%;

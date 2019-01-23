@@ -55,6 +55,7 @@
 				<li class="submenu__item"><a href="sale-links.html" class="submenu__item-link">Sale links</a></li>
 				<li class="submenu__item"><a href="profile-edit.html" class="submenu__item-link">Edit Profile</a></li>
 			</ul>
+			<li class="menu__item"><a href="upload-content.html" class="menu__item-link">Upload</a></li>
 			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
 			<li class="menu__item"><a href="sign-in.html" class="menu__item-link">Log out</a></li>
 		</ul>
@@ -96,83 +97,101 @@
 					<li class="content__nav-item"><a href="profile-items.html" class="content__nav-link content__nav-link--active">Items</a></li>
 				</ul>
 				<div class="content__filter-container">
-				<select id="category" class="form__field form__field--small">
-					<option value="">Category:</option>
-					<option value="softcore">Softcore</option>
-					<option value="hardcore">Hardcore</option>
-					<option value="keihardcore">Keihardcore</option>
-				</select>
-				<select id="filter" class="form__field form__field--small">
-					<option value="">Sort by:</option>
-					<option value="1">Name (A-Z)</option>
-					<option value="2">Name (Z-A)</option>
-					<option value="3">Views (Most)</option>
-					<option value="4">Views (Least)</option>
-					<option value="5">Price (Highest)</option>
-					<option value="6">Price (Lowest)</option>
-					<option value="7">Date (Newest)</option>
-					<option value="8">Date (Oldest)</option>
-				</select>
-			</div>
-				<section class="content-table content__library--items">
-					<ul class="table-list table-list--nowrap table__header">
-						<li class="table__item">
-							<p class="table__header-text">Title</p>
-						</li>
-						<li class="table__item">
-							<p class="table__header-text">Price</p>
-						</li>
-						<li class="table__item">
-							<p class="table__header-text">Status</p>
-						</li>
-						<li class="table__item"></li>
-					</ul>
-					<ul class="table-list table-list--nowrap table__content-item">
-						<li class="table__item">
-							<a href="item-view.html" class="content__title">Item title</a>
-						</li>
-						<li class="table__item">
-							<p class="table__content-price">$ 20</p>
-						</li>
-						<li class="table__item">
-							<p class="table__content-status">Online</p>
-						</li>
-						<li class="table__item">
-							<a href="item-edit.html" class="button--round"><i class="fas fa-pen"></i></a>
-						</li>
-					</ul>
-					<ul class="table-list table-list--nowrap table__content-item">
-						<li class="table__item">
-							<a href="item-view.html" class="content__title">Item title</a>
-						</li>
-						<li class="table__item">
-							<p class="table__content-price">$ 20</p>
-						</li>
-						<li class="table__item">
-							<p class="table__content-status">Online</p>
-						</li>
-						<li class="table__item">
-							<a href="item-edit.html" class="button--round"><i class="fas fa-pen"></i></a>
-						</li>
-					</ul>
-					<ul class="table-list table-list--nowrap table__content-item">
-						<li class="table__item">
-							<a href="item-view.html" class="content__title">Item title</a>
-						</li>
-						<li class="table__item">
-							<p class="table__content-price">$ 20</p>
-						</li>
-						<li class="table__item">
-							<p class="table__content-status">Online</p>
-						</li>
-						<li class="table__item">
-							<a href="item-edit.html" class="button--round"><i class="fas fa-pen"></i></a>
-						</li>
-					</ul>
-				</section>
+					<select id="category" class="form__field form__field--small">
+						<option value="">Category:</option>
+						<option value="softcore">Softcore</option>
+						<option value="hardcore">Hardcore</option>
+						<option value="keihardcore">Keihardcore</option>
+					</select>
+					<select id="filter" class="form__field form__field--small">
+						<option value="">Sort by:</option>
+						<option value="1">Name (A-Z)</option>
+						<option value="2">Name (Z-A)</option>
+						<option value="3">Views (Most)</option>
+						<option value="4">Views (Least)</option>
+						<option value="5">Price (Highest)</option>
+						<option value="6">Price (Lowest)</option>
+						<option value="7">Date (Newest)</option>
+						<option value="8">Date (Oldest)</option>
+					</select>
+				</div>
+				<ul class="grid">
+					<li class="grid__item grid__item--half">
+						<a class="grid__item-link" href="item-view.html"></a>
+						<a class="content__image-button content__image-button--left button--round"><i class="fas fa-times"></i></a>
+						<a href="item-edit.html" class="content__image-button button--round"><i class="fas fa-pen"></i></a>
+						<div class="content__image-container">
+							<img src="img/leaf.jpg" alt="" class="content__image">
+						</div>
+						<div class="content__info">
+							<p class="content__title">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+							<p class="content__description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dignissimos labore neque error laudantium cumque libero perferendis sapiente ad a officiis, voluptatum reprehenderit numquam distinctio dolore, repudiandae voluptatem culpa. Inventore.
+							</p>
+							<section class="tag-wrapper tag-wrapper--flat">
+								<div class="tag valid">category<i class="fas fa-times"></i></div>
+								<div class="tag valid">category<i class="fas fa-times"></i></div>
+								<div class="tag valid">category<i class="fas fa-times"></i></div>
+							</section>
+							<div class="content__details">
+								<p class="content__detail content__detail--right content__price"><i class="fas fa-dollar-sign"></i>25,00</p>
+							</div>
+						</div>
+					</li>
+					<li class="grid__item grid__item--half">
+						<a class="grid__item-link" href="item-view.html"></a>
+						<a class="content__image-button content__image-button--left button--round"><i class="fas fa-times"></i></a>
+						<a href="item-edit.html" class="content__image-button button--round"><i class="fas fa-pen"></i></a>
+						<div class="content__image-container">
+							<img src="img/leaf.jpg" alt="" class="content__image">
+						</div>
+						<div class="content__info">
+							<p class="content__title">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+							<p class="content__description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dignissimos labore neque error laudantium cumque libero perferendis sapiente ad a officiis, voluptatum reprehenderit numquam distinctio dolore, repudiandae voluptatem culpa. Inventore.
+							</p>
+							<section class="tag-wrapper tag-wrapper--flat">
+								<div class="tag valid">category<i class="fas fa-times"></i></div>
+								<div class="tag valid">category<i class="fas fa-times"></i></div>
+								<div class="tag valid">category<i class="fas fa-times"></i></div>
+							</section>
+							<div class="content__details">
+								<p class="content__detail content__detail--right content__price"><i class="fas fa-dollar-sign"></i>25,00</p>
+							</div>
+						</div>
+					</li>
+					<li class="grid__item grid__item--half">
+						<a class="grid__item-link" href="item-view.html"></a>
+						<a class="content__image-button content__image-button--left button--round"><i class="fas fa-times"></i></a>
+						<a href="item-edit.html" class="content__image-button button--round"><i class="fas fa-pen"></i></a>
+						<div class="content__image-container">
+							<img src="img/leaf.jpg" alt="" class="content__image">
+						</div>
+						<div class="content__info">
+							<p class="content__title">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+							<p class="content__description">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dignissimos labore neque error laudantium cumque libero perferendis sapiente ad a officiis, voluptatum reprehenderit numquam distinctio dolore, repudiandae voluptatem culpa. Inventore.
+							</p>
+							<section class="tag-wrapper tag-wrapper--flat">
+								<div class="tag valid">category<i class="fas fa-times"></i></div>
+								<div class="tag valid">category<i class="fas fa-times"></i></div>
+								<div class="tag valid">category<i class="fas fa-times"></i></div>
+							</section>
+							<div class="content__details">
+								<p class="content__detail content__detail--right content__price"><i class="fas fa-dollar-sign"></i>25,00</p>
+							</div>
+						</div>
+					</li>
+				</ul>
 			</section>
-		</div>
-
+		</section>
+	</section>
+	
+<section class="footer">
+		<ul class="footer__list">
+			<li class="footer__item"><a href="support.html" class="footer__item-link">Support</a></li>
+			<li class="footer__item"><a href="sign-in.html" class="footer__item-link">Log out</a></li>
+		</ul>
 	</section>
 	
 </body>

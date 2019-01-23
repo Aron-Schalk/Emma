@@ -1,6 +1,11 @@
 .tag-wrapper {
 	display: flex;
 	flex-wrap: wrap;
+
+	&--flat {
+		max-height: 40px;
+		overflow: hidden;
+	}
 }
 
 .tag {
