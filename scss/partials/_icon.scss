@@ -1,7 +1,12 @@
-.fa, .fas {
-	font-size: $size-small;
+.icon {
+	font-size: $size-regular;
+
+	&--small {
+		font-size: $size-small;
+	}
+
+	&--large {
+		font-size: $size-large;
+	}
 }
 
-.fas.fa-times {
-	font-size: $size-large;
-}

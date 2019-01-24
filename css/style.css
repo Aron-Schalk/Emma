@@ -231,7 +231,7 @@ a {
   max-width: 1320px;
   height: 100%;
   margin: 0 auto;
-  padding: 120px 80px 180px; }
+  padding: 120px 4% 180px; }
   @media only screen and (max-width: 769px) {
     .container {
       padding-left: 40px;
@@ -1055,11 +1055,10 @@ input[type=range]::-webkit-slider-thumb {
     text-transform: uppercase;
     padding: 20px; }
 
-.fa, .fas {
+.icon {
   font-size: 14px; }
-
-.fas.fa-times {
-  font-size: 18px; }
+  .icon--large {
+    font-size: 18px; }
 
 .page__header {
   font-family: Nunito, sans-serif;
