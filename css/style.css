@@ -677,7 +677,8 @@ a {
       margin: 0; } }
   .grid--vertical {
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: flex-start;
+    margin: 0; }
   .grid--space-around {
     justify-content: space-around; }
 
@@ -708,9 +709,11 @@ a {
       background: linear-gradient(transparent 40px, #f4f4f4); }
   .grid__item--static {
     flex-grow: unset;
-    width: calc(50% - 20px); }
+    width: calc(50% - 20px);
+    margin: 0 10px 20px; }
   .grid__item--full {
     width: 100%;
+    max-width: unset;
     margin: 0 0 10px; }
   .grid__item--half {
     width: calc(50% - 20px);
