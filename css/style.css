@@ -869,7 +869,6 @@ a {
     margin: 0;
     padding: 0; }
     .button--close i {
-      font-size: 18px;
       color: #fff; }
     .button--close:hover {
       background: #121010; }
@@ -1056,7 +1055,9 @@ input[type=range]::-webkit-slider-thumb {
     padding: 20px; }
 
 .icon {
-  font-size: 14px; }
+  font-size: 16px; }
+  .icon--small {
+    font-size: 14px; }
   .icon--large {
     font-size: 18px; }
 
@@ -1187,8 +1188,6 @@ input[type=range]::-webkit-slider-thumb {
     background: #f4f4f4; }
     .content__list-item:hover .content__image-button {
       opacity: 1; }
-  .content__list-item i {
-    font-size: 13px; }
 
 .content__library--items {
   margin-top: 0; }
@@ -1224,9 +1223,7 @@ input[type=range]::-webkit-slider-thumb {
       opacity: 1;
       left: 10px;
       width: 50px;
-      height: 50px; }
-      .content__image-button i {
-        font-size: 16px; } }
+      height: 50px; } }
   .content__image-button--left {
     left: 10px; }
 
