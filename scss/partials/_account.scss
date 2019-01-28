@@ -6,6 +6,11 @@
 		display: none;
 	}
 
+	&--small {
+		font-size: $size-regular;
+		font-weight: $bold;
+	}
+
 	&--absolute {
 		position: absolute;
 		top: 427px;
@@ -96,6 +101,12 @@
 	&--small {
 		width: 100px;
 		height: 100px;
+	}
+
+	&--x-small {
+		width: 48px;
+		height: 48px;
+		margin-right: 10px;
 	}
 
 	&--large {

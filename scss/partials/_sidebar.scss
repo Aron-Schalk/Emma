@@ -33,7 +33,7 @@
 			text-transform: uppercase;
 		}
 
-		&--grey {
+		&--gray {
 			color: $color-gray;
 
 			@include media-query('breakpoint-tablet') {

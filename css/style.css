@@ -296,6 +296,9 @@ a {
   @media only screen and (max-width: 769px) {
     .name {
       display: none; } }
+  .name--small {
+    font-size: 16px;
+    font-weight: 600; }
   .name--absolute {
     position: absolute;
     top: 427px; }
@@ -358,6 +361,10 @@ a {
   .avatar-container--small {
     width: 100px;
     height: 100px; }
+  .avatar-container--x-small {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px; }
   .avatar-container--large {
     width: 300px;
     height: 300px; }
@@ -411,10 +418,10 @@ a {
       font-weight: 600;
       color: #b21717;
       text-transform: uppercase; }
-    .sidebar__item--grey {
+    .sidebar__item--gray {
       color: #8d8d8d; }
       @media only screen and (max-width: 769px) {
-        .sidebar__item--grey {
+        .sidebar__item--gray {
           text-align: center; } }
     .sidebar__item-link {
       text-transform: uppercase;
@@ -1080,7 +1087,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-bottom: 20px; }
   .page__description--left {
     text-align: left; }
-  .page__description--grey {
+  .page__description--gray {
     color: #8d8d8d; }
 
 .title-header {
@@ -1243,6 +1250,8 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 16px;
   font-weight: 600;
   margin: 16px 0 4px; }
+  .content__details--alt {
+    margin: 10px 0; }
 
 .content__detail i {
   margin-right: 4px; }
@@ -1259,7 +1268,9 @@ input[type=range]::-webkit-slider-thumb {
   text-overflow: ellipsis;
   margin-bottom: 16px; }
   .content__title--margin {
-    margin: 20px 0; }
+    margin: 20px 0 10px; }
+  .content__title--large {
+    font-size: 36px; }
 
 .content__description {
   position: relative;
@@ -1393,6 +1404,8 @@ input[type=range]::-webkit-slider-thumb {
 
 .flex-wrapper {
   display: flex; }
+  .flex-wrapper--vertical {
+    flex-direction: column; }
 
 .header {
   font-size: 18px;
@@ -1403,3 +1416,14 @@ input[type=range]::-webkit-slider-thumb {
   .header--center {
     display: block;
     text-align: center; }
+
+.paragraph {
+  font-size: 14px;
+  font-weight: 400; }
+  .paragraph--gray {
+    color: #8d8d8d; }
+
+.seperator {
+  height: 1px;
+  background: #121010;
+  border: none; }
