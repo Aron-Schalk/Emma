@@ -11,7 +11,7 @@ $color-pink: #ca5e5e;
 // Media-queries
 $breakpoints: (
 	"breakpoint-tablet-small": 640px,
-	"breakpoint-tablet": 768px,
+	"breakpoint-tablet": 812px,
 );
 @mixin media-query($width, $type: max) {
 	@if map_has_key($breakpoints, $width) {

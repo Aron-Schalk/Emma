@@ -2,10 +2,6 @@
 	font-size: $size-xx-large;
 	font-weight: $normal;
 
-	@include media-query('breakpoint-tablet') {
-		display: none;
-	}
-
 	&--small {
 		font-size: $size-regular;
 		font-weight: $bold;
@@ -22,6 +18,12 @@
 
 		@include media-query('breakpoint-tablet') {
 			display: block;
+		}
+	}
+
+	&--mobile-hide {
+		@include media-query('breakpoint-tablet') {
+			display: none;
 		}
 	}
 	

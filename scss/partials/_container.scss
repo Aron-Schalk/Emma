@@ -55,7 +55,7 @@
 		}
 
 		& > section {
-			width: calc(100% - 260px);
+			width: calc(100% - 240px);
 
 			@include media-query('breakpoint-tablet') {
 				width: 100%;

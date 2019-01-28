@@ -273,6 +273,25 @@
 	&--alt {
 		margin: 10px 0;
 	}
+
+	&--left {
+		justify-content: flex-start;
+	}
+	
+	&--right {
+		justify-content: flex-end;
+	}
+
+	&--half {
+		flex: 1 1 50%;
+		max-width: 50%;
+
+		@include media-query('breakpoint-tablet') {
+			justify-content: center;
+			flex: 1 1 100%;
+			max-width: 100%;
+		}
+	}
 }
 
 .content__detail {
@@ -282,6 +301,17 @@
 
 	&--right {
 		margin-left: auto;
+	}
+
+	&--label {
+		background: $color-gray-light;
+		border-radius: 2px;
+		margin: 0 4px;
+		padding: 7px;
+
+		@include media-query('breakpoint-tablet') {
+			margin: 0 10px;
+		}
 	}
 }
 
@@ -464,6 +494,10 @@
 	&--center {
 		min-height: 480px;
 		max-height: 80vh;
+
+		@include media-query('breakpoint-tablet') {
+			min-height: unset;
+		}
 	}
 
 	&--banner {
@@ -501,6 +535,18 @@
 	&--vertical {
 		flex-direction: column;
 	}
+
+	&--wrap {
+		flex-wrap: wrap;
+
+		@include media-query('breakpoint-tablet') {
+			margin-top: 20px;
+		}
+	}
+
+	&--bottom {
+		align-items: flex-end;
+	}
 }
 
 .header {
@@ -528,5 +574,25 @@
 .seperator {
 	height: 1px;
 	background: $color-gray-dark;
+	color: $color-gray-dark;
 	border: none;
+
+	&--light {
+		background-color: $color-gray;
+		color: $color-gray;
+	}
+
+	&--small {
+		width: 5px;
+		margin: 0 7px;
+	}
+}
+
+.content__price {
+
+	&--alt {
+		font-size: $size-large;
+		font-weight: $bold;
+		color: $color-red;
+	}
 }
