@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27367379-23"></script>
+	<script type="module" src="./js/index.js"></script>
+
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-27367379-23');
+	</script>
+
+	<title>Emma.club - Add Video</title>
+	<meta name="description" content="Emma.club" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="hamburger-container">
+		<a class="hamburger">
+			<div class="hamburger__bar"></div>
+			<div class="hamburger__bar"></div>
+			<div class="hamburger__bar"></div>
+		</a>
+	</div>
+
+	<nav class="menu">
+		<!-- <a class="logo">
+		</a> -->
+		<ul class="menu__items">
+			<li class="menu__item"><a class="menu__item-link submenu__trigger">Home</a></li>
+			<ul class="submenu">
+				<li class="submenu__item"><a href="profile.html" class="submenu__item-link">Videos</a></li>
+				<li class="submenu__item"><a href="profile-images.html" class="submenu__item-link">Images</a></li>
+				<li class="submenu__item"><a href="profile-items.html" class="submenu__item-link">Items</a></li>
+				<li class="submenu__item"><a href="sale-links.html" class="submenu__item-link">Sale links</a></li>
+				<li class="submenu__item"><a href="profile-edit.html" class="submenu__item-link">Edit Profile</a></li>
+			</ul>
+			<li class="menu__item"><a href="upload-content.html" class="menu__item-link">Upload</a></li>
+			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
+			<li class="menu__item"><a href="sign-in.html" class="menu__item-link">Log out</a></li>
+		</ul>
+	</nav>
+
+	<section class="container container--640">
+		<h1 class="page__header ">Add Video</h1>
+		<div class="content__image-container">
+			<!-- <img src="img/leaf.jpg" alt="" class="content__image"> -->
+			<label for="file" class="file-input-wrapper file-input-wrapper--full">
+				<span class="button button--light button--center">Upload Video</span>
+				<input type="file" name="file" id="file" class="file-input">
+			</label>
+		</div>
+		<button class="button-preview button-preview--show button button--center">Edit preview</button>
+		<div class="button-wrapper">
+			<button class="button-collapse button button--ghost button--half">Cancel</button>
+			<button class="button-apply button button--half">Apply</button>
+		</div>
+		<section class="preview-edit">
+			<div class="range-slider-wrapper">
+				<input type="range" value="100" min="0" max="100" class="range-slider">
+			</div>
+			<legend class="form__title form__title--alt">Preview clips</legend>
+			<ul class="preview-edit__clips content__list content__list--full">
+				<li class="content__list-item">
+					<div class="content__image-container">
+						<img src="img/leaf.jpg" alt="" class="content__image">
+					</div>
+				</li>
+				<li class="content__list-item">
+					<div class="content__image-container">
+						<img src="img/leaf.jpg" alt="" class="content__image">
+					</div>
+				</li>
+				<li class="content__list-item">
+					<div class="content__image-container">
+						<img src="img/leaf.jpg" alt="" class="content__image">
+					</div>
+				</li>
+				<li class="content__list-item">
+					<div class="content__image-container">
+						<img src="img/leaf.jpg" alt="" class="content__image">
+					</div>
+				</li>
+				<li class="content__list-item">
+					<div class="content__image-container">
+						<img src="img/leaf.jpg" alt="" class="content__image">
+					</div>
+				</li>
+			</ul>
+			<button class="button button--center">Re-generate</button>
+		</section>
+		<p class="form__field-title">Title</p>
+		<div class="flex-wrapper">
+			<input type="text" name="title" placeholder="Please enter a title" autocomplete="off" class="form__field">		
+			<select id="status" class="form__field video__status">
+				<option value="online">Online</option>
+				<option value="offline">Offline</option>
+			</select>
+		</div>
+		<p class="form__field-title">Description</p>
+		<textarea name="description" id="description" placeholder="Please enter a description" class="form__field form__field--large" cols="30" rows="10"></textarea>
+		<legend class="form__field-title">Category</legend>
+		<section class="form-container">
+			<input type="text" name="categories" placeholder="add category" class="form__field form__field--alt tag tag--add">
+		</section>
+		<legend class="form__field-title">Price</legend>
+		<span class="form__field">$<input type="number" name="price" min="0" step="0.1" placeholder="0" autocomplete="off" class="form__field--inner"></span>
+		<legend class="form__field-title">Discount</legend>
+		<span class="checkbox-wrapper">
+			<input class="checkbox" type="checkbox" id="discount" value="enable discount" name="discount">
+			<label class="checkbox-label" for="discount">Enable discount</label>
+		</span>
+		<span class="form__field">%<input type="number" name="discount" min="0" max="100" step="1" placeholder="0" autocomplete="off" class="form__field--inner"></span>
+		<legend class="form__field-title">Specs</legend>
+		<span class="video__spec-wrapper">
+			<strong>Length</strong>
+			<p class="video__spec-value">00:00:00</p>
+		</span>
+		<span class="video__spec-wrapper">
+			<strong>Resolution</strong>
+			<p class="video__spec-value">1280 x 720</p>
+		</span>
+		<legend class="form__field-title">GIF</legend>
+		<div class="content__image-container content__image-container--small">
+			<!-- <img src="img/leaf.jpg" alt="" class="content__image"> -->
+		</div>
+ 		<button class="button button--center">Save</button>
+	</section>
+	
+<section class="footer">
+		<ul class="footer__list">
+			<li class="footer__item"><a href="support.html" class="footer__item-link">Support</a></li>
+			<li class="footer__item"><a href="sign-in.html" class="footer__item-link">Log out</a></li>
+		</ul>
+	</section>
+	
+</body>
+</html>
