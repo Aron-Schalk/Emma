@@ -3,11 +3,11 @@
 	max-width: 1320px;
 	height: 100%;
 	margin: 0 auto;
-	padding: 120px 4% 180px;
+	padding: 120px 4%;
 
 	@include media-query('breakpoint-tablet') {
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	@include media-query('breakpoint-tablet-small') {
@@ -60,6 +60,23 @@
 			@include media-query('breakpoint-tablet') {
 				width: 100%;
 			}
+		}
+	}
+
+	&--half {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@include media-query('breakpoint-tablet') {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		& > section {
+			flex: 1 1 50%;
+			max-width: 50%;
 		}
 	}
 }

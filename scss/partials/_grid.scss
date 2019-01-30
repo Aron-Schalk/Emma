@@ -77,6 +77,15 @@
 		}
 	}
 
+	&--fourth {
+		width: calc(25% - 20px);
+		flex-grow: unset;
+
+		@include media-query('breakpoint-tablet') {
+			width: 100%;
+		}
+	}
+
 	&--center {
 		display: flex;
 		justify-content: center;

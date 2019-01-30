@@ -48,71 +48,75 @@
 		</ul>
 	</nav>
 
-	<section class="container container--640">
-		<h1 class="page__header ">Add Item</h1>
-		<p class="sidebar__item sidebar__item--header">Emma Store Rules</p>
-			<ul class="sidebar__item-list">
-				<li class="sidebar__item">Upload at least 1 image</li>
-				<li class="sidebar__item">Supported file types: jpg, jpeg, png, gif</li>
-				<li class="sidebar__item">Maximum file size: 5 MB</li>
-				<li class="sidebar__item"><strong>No content involving: </strong>Underage Material, Animal Sex, Rape, Blood, Pissing/Peeing, Scat(feces), Vomit</li>
-				<li class="sidebar__item"><a href="" class="sidebar__item-link">Read all rules</a></li>
-				<li class="sidebar__item">If you're having trouble with creating/uploading an item to the Store, please contact us at <a href="mailto:help@emma.club">help@emma.club</a></li>
-				<li class="sidebar__item sidebar__item--gray">By uploading an image I confirm that it does not violate <a href="">Emma Terms</a>*</li>
-			</ul>
-		<div class="content__image-container">
-			<!-- <img src="img/leaf.jpg" alt="" class="content__image"> -->
+	<section class="container">
+		<p class="header header--center">Emma Store Rules</p>
+		<p class="paragraph paragraph--margin">Upload at least 1 image</p>
+		<p class="paragraph paragraph--margin">Supported file types: <strong>.JPG, .JPEG, .PNG, .GIF</strong></p>
+		<p class="paragraph paragraph--margin">Maximum file size: <strong>5 MB</strong></p>
+		<p class="paragraph paragraph--margin"><strong>No content involving: </strong>Underage Material, Animal Sex, Rape, Blood, Pissing/Peeing, Scat(feces), Vomit</p>
+		<p class="paragraph paragraph--margin"><a href="" class="link link--caps">Read all rules</a></p>
+		<p class="paragraph paragraph--margin">If you're having trouble with creating/uploading an item to the Store, please contact us at <a class="link link--underline" href="mailto:help@emma.club">help@emma.club</a></p>
+		<p class="paragraph paragraph--margin">By uploading content I confirm that it does not violate <a class="link link--caps" href="">Emma Terms</a>*</p>
+			<div class="video-wrapper video-wrapper--upload">
+				<label for="file" class="file-input-wrapper file-input-wrapper--full">
+					<span class="button button--light button--center">Upload Image</span>
+					<input type="file" name="file" id="file" class="file-input">
+				</label>
+			</div>
+			<div class="form-container form-container--wide">
+				<form action="">
+					<div class="form__field-container">
+						<div class="form__field-wrapper">
+							<p class="form__field-title">Title</p>
+							<input type="text" name="title" placeholder="Please enter a title" autocomplete="off" class="form__field">
+						</div>
+						<div class="form__field-wrapper">
+							<p class="form__field-title">Category</p>
+							<select id="category" class="form__field">
+								<option value="accessories">Accessories</option>
+								<option value="babydolls">Babydolls</option>
+								<option value="bikinis">Bikinis</option>
+								<option value="bodystockings">Body Stocking</option>
+								<option value="braandpantysey">Bra and Panty Set</option>
+								<option value="bras">Bras</option>
+								<option value="panties">Panties</option>
+								<option value="clubwear">Club Wear</option>
+								<option value="jewelry">Jewelry</option>
+								<option value="messaging">Messaging</option>
+								<option value="photoset">Photo Set</option>
+								<option value="printedmedia">Printed Media</option>
+								<option value="sexybottoms">Sexy Bottoms</option>
+								<option value="sexycostumes">Sexy Costumes</option>
+								<option value="shoes">Shoes</option>
+								<option value="stockings">Stockings</option>
+								<option value="tanktops">Tank Tops</option>
+								<option value="toys">Toys</option>
+								<option value="treats">Treats</option>
+								<option value="vidbundle">Vid Bundle</option>
+								<option value="others">Others</option>
+							</select>
+						</div>
+					</div>
+					<p class="form__field-title">Description</p>
+					<textarea name="description" id="description" placeholder="Please enter a description"  class="form__field form__field--large" cols="30" rows="10"></textarea>
+					<div class="form__field-container">
+						<div class="form__field-wrapper">
+							<p class="form__field-title">Status</p>
+							<select id="status" class="form__field">
+								<option value="online">Online</option>
+								<option value="offline">Offline</option>
+							</select>
+						</div>
+						<div class="form__field-wrapper">
+							<p class="form__field-title">Price</p>
+							<div class="form__field">$<input type="number" name="price" min="0" step="0.1" placeholder="0" autocomplete="off" class="form__field form__field--inner"></div>
+						</div>
+					</div>
+				</form>
+				<hr class="seperator seperator--margin-top">
+			</div>
 		</div>
-		<label for="file" class="file-input-wrapper file-input-wrapper--full">
-			<span class="button button--center">Upload image</span>
-			<input type="file" name="file" id="file" class="file-input">
-		</label>
-		<fieldset class="form">
-			<p class="form__field-title">Title</p>
-			<input type="text" name="title" placeholder="Please enter a title" class="form__field">
-			<p class="form__field-title">Description</p>
-			<textarea name="about" id="about" placeholder="Please enter a description" class="form__field form__field--large" cols="30" rows="10"></textarea>
-		</fieldset>
-		<section class="form-container store-content__details">
-			<fieldset class="form">
-				<p class="form__field-title">Category</p>
-				<select id="category" class="form__field">
-					<option value="accessories">Accessories</option>
-					<option value="babydolls">Babydolls</option>
-					<option value="bikinis">Bikinis</option>
-					<option value="bodystockings">Body Stocking</option>
-					<option value="braandpantysey">Bra and Panty Set</option>
-					<option value="bras">Bras</option>
-					<option value="panties">Panties</option>
-					<option value="clubwear">Club Wear</option>
-					<option value="jewelry">Jewelry</option>
-					<option value="messaging">Messaging</option>
-					<option value="photoset">Photo Set</option>
-					<option value="printedmedia">Printed Media</option>
-					<option value="sexybottoms">Sexy Bottoms</option>
-					<option value="sexycostumes">Sexy Costumes</option>
-					<option value="shoes">Shoes</option>
-					<option value="stockings">Stockings</option>
-					<option value="tanktops">Tank Tops</option>
-					<option value="toys">Toys</option>
-					<option value="treats">Treats</option>
-					<option value="vidbundle">Vid Bundle</option>
-					<option value="others">Others</option>
-				</select>
-			</fieldset>
-			<fieldset class="form">
-				<p class="form__field-title">Price</p>
-				<input type="number" name="price" min="0" step="0.05" placeholder="$ 0.00" class="form__field">
-			</fieldset>
-			<fieldset class="form">
-				<p class="form__field-title">Status</p>
-				<select id="status" class="form__field">
-					<option value="online">Online</option>
-					<option value="offline">Offline</option>
-				</select>
-			</fieldset>
-		</section>
- 		<button class="button button--center">Save</button>
+		<input type="submit" class="button button--center" value="Save">
 	</section>
 	
 <section class="footer">
