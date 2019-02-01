@@ -15,6 +15,10 @@
 		margin: 0;
 	}
 
+	&--narrow {
+		padding: 0 10%;
+	}
+
 	&--space-around {
 		justify-content: space-around;
 	}
@@ -51,6 +55,14 @@
 
 		.content__description::after {
 			background: linear-gradient(transparent 40px, $color-gray-light);
+		}
+	}
+
+	&--white {
+		background: $color-white;
+
+		&:hover {
+			background: $color-white;
 		}
 	}
 

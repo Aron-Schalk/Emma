@@ -43,6 +43,13 @@
 		}
 	}
 
+	&--wide {
+		@include media-query('breakpoint-tablet') {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
 	&--sidebar {
 		display: flex;
 		flex-direction: row;
