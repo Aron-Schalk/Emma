@@ -90,7 +90,7 @@
 		color: $color-red;
 		background: $color-gray-light;
 		border: none;
-		border-radius: 100%;
+		border-radius: 100px;
 		cursor: pointer;
 		transition: all ease-in-out 0.1s;
 
@@ -103,6 +103,19 @@
 			background: $color-white;
 			border: none;
 			transform: scale(1.1);
+		}
+
+		&-inverse {
+			background: $color-red;
+			color: $color-white;
+
+			i {
+				color: $color-white;
+			}
+
+			&:hover {
+				background: $color-red-light;
+			}
 		}
 	}
 
@@ -124,48 +137,88 @@
 		&:hover {
 			background: $color-gray-dark;
 		}
-	}
+	}	
+}
 
-	&-collapse {
+.button-fixed {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	z-index: 100;
+	outline: none;
+	transition: all ease-in-out 0.05s;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+	
+	&--top-right {
+		top: 20px;
+		right: 20px;
+	}
+	
+	&--bottom-right {
+		bottom: 20px;
+		right: 20px;
+	}
+}
+
+.button-toggle {
+	display: block;
+	background: $color-red;
+
+	@include media-query('breakpoint-tablet-small') {
 		display: none;
-
-		&--show {
-			display: block;
-		}
 	}
+}
 
-	&-apply {
-		display: none;
-		
-		&--show {
-			display: block;
-		}
-	}
+.button--round.button-toggle {
+	display: none;
 
-	&-preview {
-		display: none;
-		margin-top: 20px;
-		margin-bottom: -20px;
-
-		&--show {
-			display: block;
-		}
-	}
-
-	&-wrapper {
+	@include media-query('breakpoint-tablet-small') {
 		display: flex;
-		justify-content: center;
-		position: sticky;
-		position: -webkit-sticky;
-		top: 0px;
-		left: 0px;
-		width: 100%;
-		background: $color-gray-light;
-		z-index: 1;
+	}
+}
 
-		@include media-query('breakpoint-tablet') {
-			top: 20px;
-		}
+.button-collapse {
+	display: none;
+
+	&--show {
+		display: block;
+	}
+}
+
+.button-apply {
+	display: none;
+	
+	&--show {
+		display: block;
+	}
+}
+
+.button-preview {
+	display: none;
+	margin-top: 20px;
+	margin-bottom: -20px;
+
+	&--show {
+		display: block;
+	}
+}
+
+.button-wrapper {
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background: $color-gray-light;
+	z-index: 1;
+
+	@include media-query('breakpoint-tablet') {
+		top: 20px;
 	}
 }
 

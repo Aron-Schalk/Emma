@@ -76,12 +76,13 @@ a {
     .hamburger {
       display: flex; } }
   .hamburger:hover {
-    background: #931717;
-    transform: scale(1.05); }
+    background: #bc3434; }
     .hamburger:hover .hamburger__bar {
       background: #fff; }
   .hamburger--cross {
     background: #b21717; }
+    .hamburger--cross:hover {
+      background: #b21717; }
     .hamburger--cross .hamburger__bar {
       width: 24px;
       background: #fff;
@@ -94,13 +95,6 @@ a {
     .hamburger--cross :nth-child(3) {
       margin-top: -5px;
       transform: rotate(-45deg); }
-  .hamburger-container {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    z-index: 100; }
   .hamburger__bar {
     width: 24px;
     height: 2px;
@@ -698,7 +692,10 @@ a {
     align-items: flex-start;
     margin: 0; }
   .grid--narrow {
-    padding: 0 10%; }
+    padding: 0 40px; }
+    @media only screen and (max-width: 813px) {
+      .grid--narrow {
+        padding: 0 10px; } }
   .grid--space-around {
     justify-content: space-around; }
 
@@ -884,7 +881,7 @@ a {
     color: #b21717;
     background: #f4f4f4;
     border: none;
-    border-radius: 100%;
+    border-radius: 100px;
     cursor: pointer;
     transition: all ease-in-out 0.1s; }
     .button--round i {
@@ -894,6 +891,13 @@ a {
       background: #fff;
       border: none;
       transform: scale(1.1); }
+    .button--round-inverse {
+      background: #b21717;
+      color: #fff; }
+      .button--round-inverse i {
+        color: #fff; }
+      .button--round-inverse:hover {
+        background: #bc3434; }
   .button--close {
     position: absolute;
     top: -15px;
@@ -908,33 +912,66 @@ a {
       color: #fff; }
     .button--close:hover {
       background: #121010; }
-  .button-collapse {
-    display: none; }
-    .button-collapse--show {
-      display: block; }
-  .button-apply {
-    display: none; }
-    .button-apply--show {
-      display: block; }
-  .button-preview {
-    display: none;
-    margin-top: 20px;
-    margin-bottom: -20px; }
-    .button-preview--show {
-      display: block; }
-  .button-wrapper {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background: #f4f4f4;
-    z-index: 1; }
-    @media only screen and (max-width: 813px) {
-      .button-wrapper {
-        top: 20px; } }
+
+.button-fixed {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  outline: none;
+  transition: all ease-in-out 0.05s; }
+  .button-fixed:hover {
+    transform: scale(1.05); }
+  .button-fixed--top-right {
+    top: 20px;
+    right: 20px; }
+  .button-fixed--bottom-right {
+    bottom: 20px;
+    right: 20px; }
+
+.button-toggle {
+  display: block;
+  background: #b21717; }
+  @media only screen and (max-width: 641px) {
+    .button-toggle {
+      display: none; } }
+
+.button--round.button-toggle {
+  display: none; }
+  @media only screen and (max-width: 641px) {
+    .button--round.button-toggle {
+      display: flex; } }
+
+.button-collapse {
+  display: none; }
+  .button-collapse--show {
+    display: block; }
+
+.button-apply {
+  display: none; }
+  .button-apply--show {
+    display: block; }
+
+.button-preview {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: -20px; }
+  .button-preview--show {
+    display: block; }
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: #f4f4f4;
+  z-index: 1; }
+  @media only screen and (max-width: 813px) {
+    .button-wrapper {
+      top: 20px; } }
 
 .double-button-wrapper {
   display: flex;
@@ -1548,7 +1585,9 @@ input[type=range]::-webkit-slider-thumb {
   @media only screen and (max-width: 813px) {
     .drop-section {
       max-width: calc(50% - 10px);
-      margin: 0 0 0 10px; } }
+      border-radius: 10px;
+      margin: 0 0 0 10px;
+      padding: 40px 0; } }
 
 .header {
   font-size: 18px;

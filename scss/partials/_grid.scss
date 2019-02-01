@@ -8,15 +8,19 @@
 	@include media-query('breakpoint-tablet-small') {
 		margin: 0;
 	}
-
+	
 	&--vertical {
 		flex-direction: column;
 		align-items: flex-start;
 		margin: 0;
 	}
-
+	
 	&--narrow {
-		padding: 0 10%;
+		padding: 0 40px;
+			
+		@include media-query('breakpoint-tablet') {
+			padding: 0 10px;
+		}
 	}
 
 	&--space-around {

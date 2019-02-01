@@ -136,9 +136,7 @@ a {
 }
 
 .hamburger:hover {
-  background: #931717;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  background: #bc3434;
 }
 
 .hamburger:hover .hamburger__bar {
@@ -146,6 +144,10 @@ a {
 }
 
 .hamburger--cross {
+  background: #b21717;
+}
+
+.hamburger--cross:hover {
   background: #b21717;
 }
 
@@ -172,15 +174,6 @@ a {
   margin-top: -5px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-.hamburger-container {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  z-index: 100;
 }
 
 .hamburger__bar {
@@ -1286,7 +1279,13 @@ a {
 }
 
 .grid--narrow {
-  padding: 0 10%;
+  padding: 0 40px;
+}
+
+@media only screen and (max-width: 813px) {
+  .grid--narrow {
+    padding: 0 10px;
+  }
 }
 
 .grid--space-around {
@@ -1613,7 +1612,7 @@ a {
   color: #b21717;
   background: #f4f4f4;
   border: none;
-  border-radius: 100%;
+  border-radius: 100px;
   cursor: pointer;
   -webkit-transition: all ease-in-out 0.1s;
   transition: all ease-in-out 0.1s;
@@ -1629,6 +1628,19 @@ a {
   border: none;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.button--round-inverse {
+  background: #b21717;
+  color: #fff;
+}
+
+.button--round-inverse i {
+  color: #fff;
+}
+
+.button--round-inverse:hover {
+  background: #bc3434;
 }
 
 .button--close {
@@ -1649,6 +1661,54 @@ a {
 
 .button--close:hover {
   background: #121010;
+}
+
+.button-fixed {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+  outline: none;
+  -webkit-transition: all ease-in-out 0.05s;
+  transition: all ease-in-out 0.05s;
+}
+
+.button-fixed:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.button-fixed--top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.button-fixed--bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.button-toggle {
+  display: block;
+  background: #b21717;
+}
+
+@media only screen and (max-width: 641px) {
+  .button-toggle {
+    display: none;
+  }
+}
+
+.button--round.button-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 641px) {
+  .button--round.button-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .button-collapse {
@@ -2726,7 +2786,9 @@ input[type=range]::-webkit-slider-thumb:active {
 @media only screen and (max-width: 813px) {
   .drop-section {
     max-width: calc(50% - 10px);
+    border-radius: 10px;
     margin: 0 0 0 10px;
+    padding: 40px 0;
   }
 }
 
