@@ -16,7 +16,7 @@
 	}
 	
 	&--narrow {
-		padding: 0 40px;
+		padding: 0 20px;
 			
 		@include media-query('breakpoint-tablet') {
 			padding: 0 10px;
@@ -80,6 +80,10 @@
 		width: 100%;
 		max-width: unset;
 		margin: 0 0 10px;
+		
+		@include media-query('breakpoint-tablet') {
+			padding-bottom: 8px;
+		}
 	}
 
 	&--half {

@@ -549,6 +549,16 @@
 	box-shadow: inset 0 -100px 160px -80px $color-gray-dark;
 }
 
+.sticky {
+	position: sticky;
+	top: 80px;
+	z-index: 1;
+
+	@include media-query('breakpoint-tablet-small') {
+		top: 0;
+	}
+}
+
 .flex-wrapper {
 	display: flex;
 
@@ -617,11 +627,11 @@
 }
 
 .drag-section, .drop-section {
+	max-width: 50%;
 
 	@include media-query('breakpoint-tablet') {
 		width: auto;
 		max-width: 50%;
-		margin-top: 20px;
 
 		.content__info {
 			max-height: 80px;
@@ -637,28 +647,26 @@
 	}
 }
 
+.drag-section {
+	padding: 0 20px;
+
+	@include media-query('breakpoint-tablet') {
+		padding: 0 10px;
+	}
+}
+
 .drop-section {
 	position: relative;
 	height: auto;
-	max-width: calc(50% - 40px);
-	background: $color-gray-light;
-	border-radius: 20px;
-	margin: -40px 0 0 40px;
-	padding: 20px 0;
-
-	@include media-query('breakpoint-tablet') {
-		max-width: calc(50% - 10px);
-		border-radius: 10px;
-		margin-top: 20px;
-		margin-left: 10px;
-		padding: 10px 0;
-	}
+	border-left: 1px solid $color-gray-dark;
+	margin-top: 0;
 }
 
 .header {
 	font-size: $size-large;
 	font-weight: $bold;
 	line-height: 2;
+	background: $color-white;
 	text-transform: uppercase;
 	padding: 20px 0;
 
@@ -669,7 +677,7 @@
 }
 
 .paragraph {
-	font-size: $size-small;
+	font-size: $size-regular;
 	font-weight: $normal;
 
 	&--gray {

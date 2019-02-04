@@ -30,6 +30,18 @@
 	}
 }
 
+.sticky-container {
+	position: sticky;
+	top: -384px;
+	background: $color-white;
+	z-index: 1;
+
+	@include media-query('breakpoint-tablet-small') {
+		position: relative;
+		top: unset;
+	}
+}
+
 .form__title, {
 	width: 100%;
 	font-weight: $bold;
@@ -99,7 +111,7 @@
 	font-size: $size-xx-small;
 	font-weight: $bold;
 	color: $color-red;
-	line-height: 3;
+	line-height: 2;
 	text-transform: uppercase;
 }
 
@@ -116,7 +128,7 @@
 	border: none;
 	border-radius: 20px;
 	padding: 10px;
-	margin-bottom: $size-regular;
+	margin-bottom: 20px;
 	cursor: auto;
 	transition: all ease-in-out 0.15s;
 

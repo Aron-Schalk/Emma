@@ -39,16 +39,50 @@
 				<li class="submenu__item"><a href="profile-images.html" class="submenu__item-link">Images</a></li>
 				<li class="submenu__item"><a href="profile-items.html" class="submenu__item-link">Items</a></li>
 				<li class="submenu__item"><a href="sale-links.html" class="submenu__item-link">Sale links</a></li>
-				<li class="submenu__item"><a href="change-password.html" class="submenu__item-link">Edit Profile</a></li>
+				<li class="submenu__item"><a href="profile-edit.html" class="submenu__item-link">Edit Profile</a></li>
 			</ul>
+			<li class="menu__item"><a href="upload-content.html" class="menu__item-link">Upload</a></li>
 			<li class="menu__item"><a href="support.html" class="menu__item-link">Support</a></li>
 			<li class="menu__item"><a href="sign-in.html" class="menu__item-link">Log out</a></li>
 		</ul>
 	</nav>
 
 	<section class="container container--wide">
+		<p class="header header--center">Create Sale Link</p>
+		<p class="paragraph paragraph--margin">Upload your vids on Emma.club</p>
+		<p class="paragraph paragraph--margin">Select content and create your unique sale link(URL)</p>
+		<p class="paragraph paragraph--margin">Share this link with your fan</p>
+		<p class="paragraph paragraph--margin">After creating a Member account for free, your content will be added to their Library</p>
+		<div class="form-container form-container--wide sticky-container">
+			<form action="">
+				<legend class="form__title">Details</legend>
+				<div class="form__field-container">
+					<div class="form__field-wrapper">
+						<p class="form__field-title">Title</p>
+						<input type="text" class="form__field" name="title" placeholder="Please enter a title" autocomplete="off">
+					</div>
+				</div>
+				<div class="form__field-container">
+					<div class="form__field-wrapper">
+						<p class="form__field-title">Description</p>
+						<textarea name="description" id="description" placeholder="Please enter a description"  class="form__field form__field--large" cols="30" rows="10"></textarea>
+					</div>
+				</div>
+				<div class="form__field-container">
+					<div class="form__field-wrapper">
+						<p class="form__field-title">Price</p>
+						<div class="form__field">$<input type="number" name="price" min="0" step="0.1" placeholder="0" autocomplete="off" class="form__field form__field--inner"></div>
+					</div>
+				</div>
+			</form>
+			<div class="button-wrapper">
+				<button class="button button-toggle">Create</button>
+			</div>
+			<hr class="seperator seperator--margin-top">
+		</div>
 		<div class="flex-wrapper">
 			<section class="flex-child drag-section">
+				<p class="header header--center sticky">Your content</p>
 				<ul class="grid grid--vertical">
 					<li class="grid__item grid__item--full">
 						<div class="content__image-container">
@@ -93,9 +127,7 @@
 				</ul>
 			</section>
 			<section class="flex-child drop-section">
-					<div class="button-wrapper">
-						<button class="button button-toggle">Next step</button>
-					</div>
+					<p class="header header--center sticky">Sale Link</p>
 					<ul class="grid grid--vertical grid--narrow">
 						<li class="grid__item grid__item--full grid__item--white">
 							<div class="content__image-container">
@@ -109,128 +141,9 @@
 						</li>
 					</ul>
 			</section>
-			<button class="button-fixed button-fixed--bottom-right hamburger-container button-fixed button-fixed--top-right--bottom button-toggle button--round button--round-inverse button--button--right"><i class="fas fa-chevron-right icon--large"></i></button>
+			<button class="button-fixed button-fixed--bottom-right button-fixed button-fixed--top-right--bottom button-toggle button--round button--round-inverse button--button--right"><i class="fas fa-check icon--large"></i></button>
 		</div>
 	</section>
-
-
-	<!-- <section class="container">
-		<h1 class="page__header ">New Sale Link</h1>
-		<p class="page__description page__description--left">
-			Drag the video's you want to include into the 'sale link' section.
-			when you are done, click the 'next step' button and enter the details.
-		</p>
-		<section class="content-selection">
-			<section class="your-videos">
-				<p class="section__title section__title--center">Your content</p>
-				<div class="content__filter-container">
-					<p class="filter__categories">Categories:</p>
-					<p class="filter__sort">Sort by:</p>
-				</div>
-				<section class="content__list-container">
-					<ul class="content__list content__list--vertical">
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-						<li class="content__list-item">
-							<div class="content__image-container">
-								<img src="img/leaf.jpg" alt="" class="content__image">
-							</div>
-							<p class="content__title">Video title</p>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="selected-videos">
-				<p class="section__title section__title--center">Selected video's</p>
-				<ul class="content__list content__list--vertical">
-					<li class="content__list-item">
-						<div class="content__image-container">
-							<img src="img/leaf.jpg" alt="" class="content__image">
-						</div>
-						<p class="content__title">Video title</p>
-					</li>
-					<li class="content__list-item">
-						<div class="content__image-container">
-							<img src="img/leaf.jpg" alt="" class="content__image">
-						</div>
-						<p class="content__title">Video title</p>
-					</li>
-					<li class="content__list-item">
-						<div class="content__image-container">
-							<img src="img/leaf.jpg" alt="" class="content__image">
-						</div>
-						<p class="content__title">Video title</p>
-					</li>
-				</ul>
-				<button class="button button--center button-modal">Next Step</button>
-			</section>
-		</section>
-		
-	</section> -->
 	
 <section class="footer">
 		<ul class="footer__list">
