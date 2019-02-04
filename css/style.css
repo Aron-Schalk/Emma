@@ -1178,11 +1178,10 @@ input[type=range]::-webkit-slider-thumb {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  position: relative;
   height: 48px;
   list-style-type: none;
   margin: 0 0 20px; }
-  @media only screen and (max-width: 641px) {
+  @media only screen and (max-width: 813px) {
     .content__nav {
       justify-content: space-around;
       height: 60px;
@@ -1191,7 +1190,7 @@ input[type=range]::-webkit-slider-thumb {
       border-bottom: 1px solid #121010; } }
   .content__nav-item {
     height: 47px; }
-    @media only screen and (max-width: 641px) {
+    @media only screen and (max-width: 813px) {
       .content__nav-item {
         height: 100%;
         width: 33%; } }
@@ -1214,13 +1213,13 @@ input[type=range]::-webkit-slider-thumb {
   .content__nav::after {
     content: "";
     position: absolute;
-    top: 47px;
-    left: -50vw;
-    width: 200vw;
+    top: 532px;
+    left: 0;
+    width: 100vw;
     height: 1px;
     background: #8d8d8d;
     z-index: -1; }
-    @media only screen and (max-width: 641px) {
+    @media only screen and (max-width: 813px) {
       .content__nav::after {
         display: none; } }
 
@@ -1526,10 +1525,19 @@ input[type=range]::-webkit-slider-thumb {
 
 .sticky {
   position: sticky;
-  top: 139px;
   z-index: 1; }
+
+.header--center.sticky {
+  top: 139px; }
   @media only screen and (max-width: 641px) {
-    .sticky {
+    .header--center.sticky {
+      position: relative;
+      top: 0; } }
+
+.header--center.sticky--top {
+  top: 60px; }
+  @media only screen and (max-width: 641px) {
+    .header--center.sticky--top {
       position: relative;
       top: 0; } }
 
@@ -1593,17 +1601,25 @@ input[type=range]::-webkit-slider-thumb {
   .drag-section .content__image-container, .drop-section .content__image-container {
     z-index: 0; }
 
-.drag-section {
-  padding: 0 20px; }
-  @media only screen and (max-width: 813px) {
-    .drag-section {
-      padding: 0 10px; } }
+@media only screen and (max-width: 813px) {
+  .drag-section {
+    padding-right: 10px; } }
+
+@media only screen and (max-width: 813px) {
+  .drag-section {
+    padding-right: 0; } }
 
 .drop-section {
   position: relative;
   height: auto;
   border-left: 1px solid #121010;
   margin-top: 0; }
+  @media only screen and (max-width: 813px) {
+    .drop-section {
+      padding-left: 10px; } }
+  @media only screen and (max-width: 813px) {
+    .drop-section {
+      padding-left: 0; } }
 
 .header {
   font-size: 18px;
