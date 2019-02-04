@@ -62,14 +62,6 @@
 		}
 	}
 
-	&--white {
-		background: $color-white;
-
-		&:hover {
-			background: $color-white;
-		}
-	}
-
 	&--static {
 		flex-grow: unset;
 		width: calc(50% - 20px);

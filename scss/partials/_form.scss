@@ -30,18 +30,6 @@
 	}
 }
 
-.sticky-container {
-	position: sticky;
-	top: -384px;
-	background: $color-white;
-	z-index: 1;
-
-	@include media-query('breakpoint-tablet-small') {
-		position: relative;
-		top: unset;
-	}
-}
-
 .form__title, {
 	width: 100%;
 	font-weight: $bold;

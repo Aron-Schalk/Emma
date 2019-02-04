@@ -498,7 +498,6 @@
 .video {
 	display: block;
 	width: 100%;
-	// max-width: 1320px;
 	height: 100%;
 	margin: 0 auto;
 
@@ -549,12 +548,25 @@
 	box-shadow: inset 0 -100px 160px -80px $color-gray-dark;
 }
 
-.sticky {
+.sticky-container {
 	position: sticky;
-	top: 80px;
+	top: -314px;
+	background: $color-white;
 	z-index: 1;
 
 	@include media-query('breakpoint-tablet-small') {
+		position: relative;
+		top: unset;
+	}
+}
+
+.sticky {
+	position: sticky;
+	top: 139px;
+	z-index: 1;
+
+	@include media-query('breakpoint-tablet-small') {
+		position: relative;
 		top: 0;
 	}
 }
