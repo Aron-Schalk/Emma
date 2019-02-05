@@ -696,10 +696,10 @@ a {
     align-items: flex-start;
     margin: 0; }
   .grid--narrow {
-    padding: 0 20px; }
+    padding: 0 20px 20px; }
     @media only screen and (max-width: 641px) {
       .grid--narrow {
-        padding: 0 10px; } }
+        padding: 0 10px 10px; } }
   .grid--space-around {
     justify-content: space-around; }
 
@@ -733,8 +733,6 @@ a {
     .grid__item--inverse:hover {
       background: #fff;
       transform: translateY(-2px); }
-    .grid__item--inverse:active {
-      border: 2px solid #b21717; }
   .grid__item--static {
     flex-grow: unset;
     width: calc(50% - 20px);
@@ -1383,10 +1381,12 @@ input[type=range]::-webkit-slider-thumb {
   .content__title--alt {
     margin-bottom: 0;
     white-space: nowrap;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-right: 10px; }
     @media only screen and (max-width: 813px) {
       .content__title--alt {
-        white-space: normal; } }
+        white-space: normal;
+        margin: 0; } }
   .content__title--large {
     font-size: 36px; }
 
@@ -1573,7 +1573,9 @@ input[type=range]::-webkit-slider-thumb {
     flex-wrap: wrap; }
   .flex-wrapper--top {
     align-items: flex-start; }
-  .flex-wrapper--center {
+  .flex-wrapper--center-hor {
+    justify-content: center; }
+  .flex-wrapper--center-vert {
     align-items: center;
     height: 100%; }
   .flex-wrapper--bottom {
@@ -1642,10 +1644,33 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 0; }
   @media only screen and (max-width: 813px) {
     .drop-section {
-      padding-left: 10px; } }
-  @media only screen and (max-width: 813px) {
-    .drop-section {
       padding-left: 0; } }
+
+.page-counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 20px; }
+
+.page-number {
+  font-size: 18px;
+  color: #8d8d8d;
+  padding: 0 4px;
+  transition: all 0.15s ease-in-out; }
+  @media only screen and (max-width: 813px) {
+    .page-number {
+      display: none; } }
+  .page-number:hover {
+    color: #b21717;
+    padding: 0 6px;
+    transform: scale(1.4); }
+  .page-number--active {
+    color: #b21717;
+    padding: 0 5px;
+    transform: scale(1.4); }
+    @media only screen and (max-width: 813px) {
+      .page-number--active {
+        display: block; } }
 
 .header {
   font-size: 18px;
