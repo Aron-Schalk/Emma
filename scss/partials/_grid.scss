@@ -17,8 +17,8 @@
 	
 	&--narrow {
 		padding: 0 20px;
-			
-		@include media-query('breakpoint-tablet') {
+
+		@include media-query('breakpoint-tablet-small') {
 			padding: 0 10px;
 		}
 	}
@@ -57,8 +57,17 @@
 			opacity: 1;
 		}
 
-		.content__description::after {
+		.content__description::after, .content__info::after {
 			background: linear-gradient(transparent 40px, $color-gray-light);
+		}
+	}
+
+	&--inverse {
+		background: $color-gray-light;
+
+		&:hover {
+			background: $color-white;
+			transform: translateY(-2px);
 		}
 	}
 
@@ -91,6 +100,7 @@
 
 	&--fourth {
 		width: calc(25% - 20px);
+		min-width: unset;
 		flex-grow: unset;
 
 		@include media-query('breakpoint-tablet') {
