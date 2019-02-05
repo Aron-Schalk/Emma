@@ -15,47 +15,41 @@
 	padding: 10px 20px;
 	margin: 20px 10px;
 	cursor: pointer;
-	transition: all ease-in-out 0.05s;
+	transition: all ease-in-out 0.15s;
 
 	&:hover {
 		background: $color-red-light;
 		border-color: $color-red-light;
-		transform: scale(1.02);
+		box-shadow: 0 2px 8px -4px $color-gray-dark;
+		transform: scale(1.05);
 	}
 
 	&:active {
-		font-weight: $normal;
+		box-shadow: 0 2px 6px -4px $color-gray-dark;
+		transform: scale(1.02);
+		transition: all 0.05s ease-in-out;
 	}
-
-	&--ghost {
-		color: $color-gray-dark;
-		background: $color-white;
-		border-color: $color-gray-dark;
-
-		&:hover {
-			color: $color-gray-dark;
-			background: $color-gray-light;
-			border-color: $color-gray-light;
-		}
 	
-		&:active {
-			font-weight: $normal;
-		}
-	}
-
 	&--light {
-		color: $color-red;
+		color: $color-gray-dark;
 		background: $color-gray-light;
 		border-color: $color-gray-light;
 
 		&:hover {
-			color: $color-gray-dark;
 			background: $color-gray-light;
 			border-color: $color-gray-light;
 		}
+	}
 
-		&:active {
-			font-weight: $normal;
+	&--ghost {
+		color: $color-red;
+		background: $color-white;
+		border-color: $color-red;
+
+		&:hover {
+			background: $color-white;
+			border-color: $color-red;
+			box-shadow: 0 2px 8px -4px $color-gray;
 		}
 	}
 
@@ -102,6 +96,7 @@
 		&:hover {
 			background: $color-white;
 			border: none;
+			box-shadow: 0 2px 8px -4px $color-gray-dark;
 			transform: scale(1.1);
 		}
 
@@ -257,5 +252,29 @@
 		.button {
 			margin: 0;
 		}
+	}
+}
+
+.content__image-button {
+	opacity: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	box-shadow: 0 2px 8px -4px $color-gray-dark;
+
+	&:hover {
+		box-shadow: 0 3px 8px -3px $color-gray-dark;
+		transform: unset;
+	}
+
+	@include media-query('breakpoint-tablet-small') {
+		opacity: 1;
+		left: 10px;
+		width: 50px;
+		height: 50px;
+	}
+
+	&--left {
+		left: 10px;
 	}
 }

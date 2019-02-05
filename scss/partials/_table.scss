@@ -73,20 +73,17 @@
 		align-items: flex-end;
 		margin-left: auto;
 		padding: 0 15px 0 0;
-
-		// @include media-query('breakpoint-tablet') {
-		// 	display: none;
-		// }
 	}
 }
 
 .table__content {
 	
 	&-item {
+		position: relative;
 		background: $color-gray-light;
 		border-radius: 10px;
 		overflow: hidden;
-		transition: all ease-in-out 0.1s;
+		transition: all ease-in-out 0.15s;
 
 		@include media-query('breakpoint-tablet') {
 			border: none;
@@ -97,7 +94,9 @@
 		}
 
 		&:hover {
-			background: $color-gray-light;
+			background: $color-white;
+			transform: scale(1.02);
+			box-shadow: 0 2px 8px -4px $color-gray-dark;
 
 			.content__image-button {
 				opacity: 1;

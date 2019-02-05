@@ -80,7 +80,7 @@ a {
     .hamburger {
       display: flex; } }
   .hamburger:hover {
-    background: #bc3434; }
+    background: #e03030; }
     .hamburger:hover .hamburger__bar {
       background: #fff; }
   .hamburger--cross {
@@ -151,7 +151,7 @@ a {
     z-index: 90;
     transition: all ease-in-out 0.1s; }
     .menu__item:hover {
-      background: #931717; }
+      background: #801717; }
       .menu__item:hover .menu__item-link {
         transform: translateY(-2px); }
         @media only screen and (max-width: 641px) {
@@ -168,7 +168,7 @@ a {
       transform: translateY(0);
       transition: background-color ease-in-out 0.05s, transform ease-in-out 0.1s; }
       .menu__item-link:hover {
-        background: #931717; }
+        background: #801717; }
       @media only screen and (max-width: 641px) {
         .menu__item-link {
           padding: 16px 32px; } }
@@ -181,7 +181,7 @@ a {
   position: absolute;
   top: 60px;
   left: 0;
-  background: #931717;
+  background: #801717;
   overflow: hidden;
   z-index: -80;
   transform: translateY(-100%);
@@ -201,7 +201,7 @@ a {
     @media only screen and (max-width: 641px) {
       .submenu--show {
         position: unset;
-        background: #931717;
+        background: #801717;
         transition: transform ease-in-out 0.05s; }
         .submenu--show .submenu__item-link {
           transition: opacity 0.1s ease-in-out 0.05s; } }
@@ -370,7 +370,7 @@ a {
     .avatar-container .button--round i {
       color: #fff; }
     .avatar-container .button--round:hover {
-      background: #bc3434; }
+      background: #e03030; }
   .avatar-container--small {
     width: 100px;
     height: 100px; }
@@ -641,17 +641,20 @@ a {
     padding: 0 15px 0 0; }
 
 .table__content-item {
+  position: relative;
   background: #f4f4f4;
   border-radius: 10px;
   overflow: hidden;
-  transition: all ease-in-out 0.1s; }
+  transition: all ease-in-out 0.15s; }
   @media only screen and (max-width: 813px) {
     .table__content-item {
       border: none; } }
   .table__content-item .button--round {
     opacity: 0; }
   .table__content-item:hover {
-    background: #f4f4f4; }
+    background: #fff;
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px -4px #121010; }
     .table__content-item:hover .content__image-button {
       opacity: 1; }
     .table__content-item:hover .button--round {
@@ -710,7 +713,9 @@ a {
   width: calc(30% - 20px);
   min-width: 140px;
   max-width: calc(50% - 20px);
+  background: #f4f4f4;
   margin: 0 10px 20px;
+  z-index: 0;
   cursor: pointer;
   transition: all ease-in-out 0.1s; }
   @media only screen and (max-width: 641px) {
@@ -722,8 +727,9 @@ a {
       width: 100%;
       margin: 0 0 20px; } }
   .grid__item:hover {
-    background: #f4f4f4;
-    transform: translateY(-2px); }
+    background: #fff;
+    box-shadow: 0 2px 8px -4px #121010;
+    transform: scale(1.02); }
     .grid__item:hover .content__image-button {
       opacity: 1; }
     .grid__item:hover .content__description::after, .grid__item:hover .content__info::after {
@@ -810,7 +816,7 @@ a {
 .link {
   transition: all 0.1s ease-in-out; }
   .link:hover {
-    color: #931717;
+    color: #801717;
     text-decoration: underline;
     transform: translateY(-2px); }
   .link--underline {
@@ -842,33 +848,31 @@ a {
   padding: 10px 20px;
   margin: 20px 10px;
   cursor: pointer;
-  transition: all ease-in-out 0.05s; }
+  transition: all ease-in-out 0.15s; }
   .button:hover {
-    background: #bc3434;
-    border-color: #bc3434;
-    transform: scale(1.02); }
+    background: #e03030;
+    border-color: #e03030;
+    box-shadow: 0 2px 8px -4px #121010;
+    transform: scale(1.05); }
   .button:active {
-    font-weight: 400; }
-  .button--ghost {
-    color: #121010;
-    background: #fff;
-    border-color: #121010; }
-    .button--ghost:hover {
-      color: #121010;
-      background: #f4f4f4;
-      border-color: #f4f4f4; }
-    .button--ghost:active {
-      font-weight: 400; }
+    box-shadow: 0 2px 6px -4px #121010;
+    transform: scale(1.02);
+    transition: all 0.05s ease-in-out; }
   .button--light {
-    color: #b21717;
+    color: #121010;
     background: #f4f4f4;
     border-color: #f4f4f4; }
     .button--light:hover {
-      color: #121010;
       background: #f4f4f4;
       border-color: #f4f4f4; }
-    .button--light:active {
-      font-weight: 400; }
+  .button--ghost {
+    color: #b21717;
+    background: #fff;
+    border-color: #b21717; }
+    .button--ghost:hover {
+      background: #fff;
+      border-color: #b21717;
+      box-shadow: 0 2px 8px -4px #8d8d8d; }
   .button--full {
     width: 100%;
     margin: 40px 0 20px; }
@@ -899,6 +903,7 @@ a {
     .button--round:hover {
       background: #fff;
       border: none;
+      box-shadow: 0 2px 8px -4px #121010;
       transform: scale(1.1); }
     .button--round-inverse {
       background: #b21717;
@@ -906,7 +911,7 @@ a {
       .button--round-inverse i {
         color: #fff; }
       .button--round-inverse:hover {
-        background: #bc3434; }
+        background: #e03030; }
   .button--close {
     position: absolute;
     top: -15px;
@@ -992,7 +997,7 @@ a {
   border-color: #b21717; }
   .radio__container input:checked ~ .radio__button:hover {
     color: #fff;
-    background: #bc3434; }
+    background: #e03030; }
 
 .file-input {
   display: none; }
@@ -1009,6 +1014,24 @@ a {
     .file-input-wrapper .button {
       margin: 0; }
 
+.content__image-button {
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  box-shadow: 0 2px 8px -4px #121010; }
+  .content__image-button:hover {
+    box-shadow: 0 3px 8px -3px #121010;
+    transform: unset; }
+  @media only screen and (max-width: 641px) {
+    .content__image-button {
+      opacity: 1;
+      left: 10px;
+      width: 50px;
+      height: 50px; } }
+  .content__image-button--left {
+    left: 10px; }
+
 .tag-wrapper {
   display: flex;
   flex-wrap: wrap; }
@@ -1021,7 +1044,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   max-height: 24px;
-  background: #bc3434;
+  background: #e03030;
   font-weight: 600;
   color: #fff;
   border-radius: 20px;
@@ -1303,20 +1326,6 @@ input[type=range]::-webkit-slider-thumb {
       max-width: unset; }
     .content__image-container .file-input-wrapper {
       margin: 120px auto; }
-
-.content__image-button {
-  opacity: 0;
-  position: absolute;
-  top: 10px;
-  right: 10px; }
-  @media only screen and (max-width: 641px) {
-    .content__image-button {
-      opacity: 1;
-      left: 10px;
-      width: 50px;
-      height: 50px; } }
-  .content__image-button--left {
-    left: 10px; }
 
 .content__info {
   word-break: break-word;

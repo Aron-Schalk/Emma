@@ -239,24 +239,6 @@
 	}
 }
 
-.content__image-button {
-	opacity: 0;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-
-	@include media-query('breakpoint-tablet-small') {
-		opacity: 1;
-		left: 10px;
-		width: 50px;
-		height: 50px;
-	}
-
-	&--left {
-		left: 10px;
-	}
-}
-
 .content__info {
 	word-break: break-word;
 	padding: 24px 16px;

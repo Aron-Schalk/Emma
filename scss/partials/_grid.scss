@@ -35,7 +35,9 @@
 	width: calc(30% - 20px);
 	min-width: 140px;
 	max-width: calc(50% - 20px);
+	background: $color-gray-light;
 	margin: 0 10px 20px;
+	z-index: 0;
 	cursor: pointer;
 	transition: all ease-in-out 0.1s;
 
@@ -50,8 +52,9 @@
 	}
 
 	&:hover {
-		background: $color-gray-light;
-		transform: translateY(-2px);
+		background: $color-white;
+		box-shadow: 0 2px 8px -4px $color-gray-dark;
+		transform: scale(1.02);
 
 		.content__image-button {
 			opacity: 1;
