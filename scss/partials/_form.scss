@@ -31,12 +31,16 @@
 }
 
 .form__title, {
+	position: sticky;
+	top: 60px;
 	width: 100%;
 	font-weight: $bold;
 	text-transform: uppercase;
+	background: $color-white;
 	border-bottom: 1px solid $color-gray-dark;
 	padding: 10px 0;
 	margin: 10px 0;
+	z-index: 20;
 
 	&--alt {
 		border: none;
@@ -113,7 +117,7 @@
 	line-height: 1.4;
 	outline: none;
 	color: $color-gray-dark;
-	border: none;
+	border: 1px solid $color-gray-light;
 	border-radius: 20px;
 	padding: 10px;
 	margin-bottom: 20px;
@@ -124,7 +128,13 @@
 		max-width: unset;
 	}
 
-	&:hover, &:focus-within {
+	&:hover {
+		background: $color-white;
+		box-shadow: 0 2px 8px -4px $color-gray-dark;
+		transform: scale(1.02);
+	}
+	
+	&:focus-within {
 		background: $color-white;
 		text-indent: 4px;
 	}

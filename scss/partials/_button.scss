@@ -141,10 +141,11 @@
 	height: 50px;
 	z-index: 80;
 	outline: none;
-	transition: all ease-in-out 0.05s;
+	transition: all ease-in-out 0.1s;
 
 	&:hover {
-		transform: scale(1.05);
+		transform: scale(1.1);
+		box-shadow: 0 2px 8px -4px $color-gray-dark;
 	}
 	
 	&--top-right {

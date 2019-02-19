@@ -1,5 +1,9 @@
-.hamburger-container.button-fixed {
-	z-index: 100;
+.hamburger-container {
+	border-radius: 50px;
+
+	&.button-fixed {
+		z-index: 100;
+	}
 }
 
 .hamburger {
@@ -90,7 +94,7 @@
 		min-height: 100%;
 		padding: 100px 0 0;
 		overflow-y: scroll;
-		transition: right ease-in-out 0.15s;
+		transition: right ease-in-out 0.1s;
 	}
 
 	&::-webkit-scrollbar {
@@ -106,6 +110,7 @@
 		justify-content: flex-end;
 		align-content: center;
 		position: relative;
+		background: $color-red;
 		list-style-type: none;
 		
 		@include media-query('breakpoint-tablet-small') {
@@ -126,17 +131,13 @@
 			background: $color-red-dark;
 
 			.menu__item-link {
-				transform: translateY(-2px);
-
-				@include media-query('breakpoint-tablet-small') {
-					transform: translateX(2px);
-				}
+				transform: scale(1.05);
 			}			
 		}
 
 		&-link {
 			display: block;
-			background: $color-red;
+			// background: $color-red;
 			font-size: $size-regular;
 			font-weight: $bold;
 			color: $color-white;
@@ -144,10 +145,6 @@
 			padding: 18px 32px;
 			transform: translateY(0);
 			transition: background-color ease-in-out 0.05s, transform ease-in-out 0.1s;
-
-			&:hover {
-				background: $color-red-dark;
-			}
 
 			@include media-query('breakpoint-tablet-small') {
 				padding: 16px 32px;
@@ -165,7 +162,6 @@
 	position: absolute;
 	top: 60px;
 	left: 0;
-	// height: 0;
 	background: $color-red-dark;
 	overflow: hidden;
 	z-index: -80;
@@ -173,17 +169,13 @@
 	transition: transform 0.05s ease-in-out 0.05s;
 
 	@include media-query('breakpoint-tablet-small') {
-		// position: unset;
-		// height: 0;
 		width: 200px;
 		background: $color-red;
 		z-index: unset;
-		// transform: translateY(0);
 		transition: unset;
 	}
 
 	&--show {
-		// height: auto;
 		transform: translateY(0);
 		transition: transform ease-in-out 0.1s;
 
@@ -205,13 +197,13 @@
 
 	&__item {
 		cursor: pointer;
-		transition: all ease-in-out 0.15s;
+		transition: all ease-in-out 0.1s;
 
 		&:hover {
 			background: $color-red;
 
 			.submenu__item-link {
-				transform: translateX(2px);
+				transform: scale(1.1);
 			}
 		}
 

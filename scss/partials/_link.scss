@@ -8,7 +8,7 @@
 	&:hover {
 		color: $color-red-dark;
 		text-decoration: underline;
-		transform: translateY(-2px);
+		transform: scale(1.05);
 	}
 
 	&--underline {
